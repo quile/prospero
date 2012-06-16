@@ -1,0 +1,6624 @@
+Warnings:
+---------
+4 shift/reduce conflicts and 1 reduce/reduce conflict
+
+Conflicts:
+----------
+Conflict in state 137 between rule 146 and token DIV resolved as shift.
+Conflict in state 137 between rule 146 and token AND resolved as reduce.
+Conflict in state 137 between rule 146 and token BINOP resolved as shift.
+Conflict in state 137 between rule 146 and token OR resolved as reduce.
+Conflict in state 137 between rule 146 and token '+' resolved as shift.
+Conflict in state 137 between rule 146 and token CAT resolved as shift.
+Conflict in state 137 between rule 146 and token CMPOP resolved as shift.
+Conflict in state 137 between rule 146 and token '?' resolved as reduce.
+Conflict in state 137 between rule 146 and token MOD resolved as shift.
+Conflict in state 137 between rule 146 and token '/' resolved as shift.
+Conflict in state 240 between rule 139 and token DIV resolved as shift.
+Conflict in state 240 between rule 139 and token AND resolved as reduce.
+Conflict in state 240 between rule 139 and token BINOP resolved as reduce.
+Conflict in state 240 between rule 139 and token OR resolved as reduce.
+Conflict in state 240 between rule 139 and token '+' resolved as reduce.
+Conflict in state 240 between rule 139 and token CAT resolved as reduce.
+Conflict in state 240 between rule 139 and token CMPOP resolved as reduce.
+Conflict in state 240 between rule 139 and token '?' resolved as reduce.
+Conflict in state 240 between rule 139 and token MOD resolved as shift.
+Conflict in state 240 between rule 139 and token '/' resolved as shift.
+Conflict in state 242 between rule 140 and token DIV resolved as reduce.
+Conflict in state 242 between rule 140 and token AND resolved as reduce.
+Conflict in state 242 between rule 140 and token BINOP resolved as reduce.
+Conflict in state 242 between rule 140 and token OR resolved as reduce.
+Conflict in state 242 between rule 140 and token '+' resolved as reduce.
+Conflict in state 242 between rule 140 and token CAT resolved as reduce.
+Conflict in state 242 between rule 140 and token CMPOP resolved as reduce.
+Conflict in state 242 between rule 140 and token '?' resolved as reduce.
+Conflict in state 242 between rule 140 and token MOD resolved as shift.
+Conflict in state 242 between rule 140 and token '/' resolved as reduce.
+Conflict in state 243 between rule 144 and token DIV resolved as shift.
+Conflict in state 243 between rule 144 and token AND resolved as reduce.
+Conflict in state 243 between rule 144 and token BINOP resolved as shift.
+Conflict in state 243 between rule 144 and token OR resolved as reduce.
+Conflict in state 243 between rule 144 and token '+' resolved as shift.
+Conflict in state 243 between rule 144 and token CAT resolved as shift.
+Conflict in state 243 between rule 144 and token CMPOP resolved as shift.
+Conflict in state 243 between rule 144 and token '?' resolved as reduce.
+Conflict in state 243 between rule 144 and token MOD resolved as shift.
+Conflict in state 243 between rule 144 and token '/' resolved as shift.
+Conflict in state 244 between rule 137 and token DIV resolved as shift.
+Conflict in state 244 between rule 137 and token AND resolved as reduce.
+Conflict in state 244 between rule 137 and token BINOP resolved as reduce.
+Conflict in state 244 between rule 137 and token OR resolved as reduce.
+Conflict in state 244 between rule 137 and token '+' resolved as shift.
+Conflict in state 244 between rule 137 and token CAT resolved as reduce.
+Conflict in state 244 between rule 137 and token CMPOP resolved as reduce.
+Conflict in state 244 between rule 137 and token '?' resolved as reduce.
+Conflict in state 244 between rule 137 and token MOD resolved as shift.
+Conflict in state 244 between rule 137 and token '/' resolved as shift.
+Conflict in state 245 between rule 145 and token DIV resolved as shift.
+Conflict in state 245 between rule 145 and token AND resolved as reduce.
+Conflict in state 245 between rule 145 and token BINOP resolved as shift.
+Conflict in state 245 between rule 145 and token OR resolved as reduce.
+Conflict in state 245 between rule 145 and token '+' resolved as shift.
+Conflict in state 245 between rule 145 and token CAT resolved as shift.
+Conflict in state 245 between rule 145 and token CMPOP resolved as shift.
+Conflict in state 245 between rule 145 and token '?' resolved as reduce.
+Conflict in state 245 between rule 145 and token MOD resolved as shift.
+Conflict in state 245 between rule 145 and token '/' resolved as shift.
+Conflict in state 246 between rule 143 and token DIV resolved as shift.
+Conflict in state 246 between rule 143 and token AND resolved as reduce.
+Conflict in state 246 between rule 143 and token BINOP resolved as shift.
+Conflict in state 246 between rule 143 and token OR resolved as reduce.
+Conflict in state 246 between rule 143 and token '+' resolved as shift.
+Conflict in state 246 between rule 143 and token CAT resolved as reduce.
+Conflict in state 246 between rule 143 and token CMPOP resolved as shift.
+Conflict in state 246 between rule 143 and token '?' resolved as reduce.
+Conflict in state 246 between rule 143 and token MOD resolved as shift.
+Conflict in state 246 between rule 143 and token '/' resolved as shift.
+Conflict in state 247 between rule 142 and token DIV resolved as shift.
+Conflict in state 247 between rule 142 and token AND resolved as reduce.
+Conflict in state 247 between rule 142 and token BINOP resolved as shift.
+Conflict in state 247 between rule 142 and token OR resolved as reduce.
+Conflict in state 247 between rule 142 and token '+' resolved as shift.
+Conflict in state 247 between rule 142 and token CAT resolved as reduce.
+Conflict in state 247 between rule 142 and token CMPOP resolved as reduce.
+Conflict in state 247 between rule 142 and token '?' resolved as reduce.
+Conflict in state 247 between rule 142 and token MOD resolved as shift.
+Conflict in state 247 between rule 142 and token '/' resolved as shift.
+Conflict in state 248 between rule 141 and token DIV resolved as reduce.
+Conflict in state 248 between rule 141 and token AND resolved as reduce.
+Conflict in state 248 between rule 141 and token BINOP resolved as reduce.
+Conflict in state 248 between rule 141 and token OR resolved as reduce.
+Conflict in state 248 between rule 141 and token '+' resolved as reduce.
+Conflict in state 248 between rule 141 and token CAT resolved as reduce.
+Conflict in state 248 between rule 141 and token CMPOP resolved as reduce.
+Conflict in state 248 between rule 141 and token '?' resolved as reduce.
+Conflict in state 248 between rule 141 and token MOD resolved as reduce.
+Conflict in state 248 between rule 141 and token '/' resolved as reduce.
+Conflict in state 249 between rule 138 and token DIV resolved as shift.
+Conflict in state 249 between rule 138 and token AND resolved as reduce.
+Conflict in state 249 between rule 138 and token BINOP resolved as reduce.
+Conflict in state 249 between rule 138 and token OR resolved as reduce.
+Conflict in state 249 between rule 138 and token '+' resolved as reduce.
+Conflict in state 249 between rule 138 and token CAT resolved as reduce.
+Conflict in state 249 between rule 138 and token CMPOP resolved as reduce.
+Conflict in state 249 between rule 138 and token '?' resolved as reduce.
+Conflict in state 249 between rule 138 and token MOD resolved as shift.
+Conflict in state 249 between rule 138 and token '/' resolved as reduce.
+Conflict in state 323 between rule 147 and token DIV resolved as shift.
+Conflict in state 323 between rule 147 and token AND resolved as shift.
+Conflict in state 323 between rule 147 and token BINOP resolved as shift.
+Conflict in state 323 between rule 147 and token OR resolved as shift.
+Conflict in state 323 between rule 147 and token '+' resolved as shift.
+Conflict in state 323 between rule 147 and token CAT resolved as shift.
+Conflict in state 323 between rule 147 and token CMPOP resolved as shift.
+Conflict in state 323 between rule 147 and token '?' resolved as shift.
+Conflict in state 323 between rule 147 and token MOD resolved as shift.
+Conflict in state 323 between rule 147 and token '/' resolved as shift.
+State 39 contains 1 shift/reduce conflict
+State 94 contains 1 shift/reduce conflict
+State 260 contains 2 shift/reduce conflicts
+State 275 contains 1 reduce/reduce conflict
+
+Rules:
+------
+0:	$start -> template $end
+1:	template -> block
+2:	block -> chunks
+3:	block -> /* empty */
+4:	chunks -> chunks chunk
+5:	chunks -> chunk
+6:	chunk -> TEXT
+7:	chunk -> statement ';'
+8:	statement -> directive
+9:	statement -> defblock
+10:	statement -> anonblock
+11:	statement -> capture
+12:	statement -> macro
+13:	statement -> use
+14:	statement -> view
+15:	statement -> rawperl
+16:	statement -> expr
+17:	statement -> META metadata
+18:	statement -> /* empty */
+19:	directive -> setlist
+20:	directive -> atomdir
+21:	directive -> condition
+22:	directive -> switch
+23:	directive -> loop
+24:	directive -> bind
+25:	directive -> try
+26:	directive -> perl
+27:	atomexpr -> expr
+28:	atomexpr -> atomdir
+29:	atomdir -> GET expr
+30:	atomdir -> CALL expr
+31:	atomdir -> SET setlist
+32:	atomdir -> DEFAULT setlist
+33:	atomdir -> INSERT nameargs
+34:	atomdir -> INCLUDE nameargs
+35:	atomdir -> PROCESS nameargs
+36:	atomdir -> THROW nameargs
+37:	atomdir -> RETURN
+38:	atomdir -> STOP
+39:	atomdir -> CLEAR
+40:	atomdir -> LAST
+41:	atomdir -> NEXT
+42:	atomdir -> DEBUG nameargs
+43:	atomdir -> wrapper
+44:	atomdir -> filter
+45:	condition -> IF expr ';' block else END
+46:	condition -> atomexpr IF expr
+47:	condition -> UNLESS expr ';' block else END
+48:	condition -> atomexpr UNLESS expr
+49:	else -> ELSIF expr ';' block else
+50:	else -> ELSE ';' block
+51:	else -> /* empty */
+52:	switch -> SWITCH expr ';' block case END
+53:	case -> CASE term ';' block case
+54:	case -> CASE DEFAULT ';' block
+55:	case -> CASE ';' block
+56:	case -> /* empty */
+57:	@1-3 -> /* empty */
+58:	loop -> FOR loopvar ';' @1-3 block END
+59:	loop -> atomexpr FOR loopvar
+60:	@2-3 -> /* empty */
+61:	loop -> WHILE expr ';' @2-3 block END
+62:	loop -> atomexpr WHILE expr
+63:	@3-3 -> /* empty */
+64:	bind -> BINDING name ';' @3-3 block END
+65:	bind -> COMPONENT name
+66:	loopvar -> IDENT ASSIGN term args
+67:	loopvar -> IDENT IN term args
+68:	loopvar -> term args
+69:	wrapper -> WRAPPER nameargs ';' block END
+70:	wrapper -> atomexpr WRAPPER nameargs
+71:	try -> TRY ';' block final END
+72:	final -> CATCH filename ';' block final
+73:	final -> CATCH DEFAULT ';' block final
+74:	final -> CATCH ';' block final
+75:	final -> FINAL ';' block
+76:	final -> /* empty */
+77:	use -> USE lnameargs
+78:	@4-3 -> /* empty */
+79:	view -> VIEW nameargs ';' @4-3 block END
+80:	@5-2 -> /* empty */
+81:	perl -> PERL ';' @5-2 block END
+82:	@6-1 -> /* empty */
+83:	rawperl -> RAWPERL @6-1 ';' TEXT END
+84:	filter -> FILTER lnameargs ';' block END
+85:	filter -> atomexpr FILTER lnameargs
+86:	defblock -> defblockname blockargs ';' template END
+87:	defblockname -> BLOCK blockname
+88:	blockname -> filename
+89:	blockname -> LITERAL
+90:	blockargs -> metadata
+91:	blockargs -> /* empty */
+92:	anonblock -> BLOCK blockargs ';' block END
+93:	capture -> ident ASSIGN mdir
+94:	macro -> MACRO IDENT '(' margs ')' mdir
+95:	macro -> MACRO IDENT mdir
+96:	mdir -> directive
+97:	mdir -> BLOCK ';' block END
+98:	margs -> margs IDENT
+99:	margs -> margs COMMA
+100:	margs -> IDENT
+101:	metadata -> metadata meta
+102:	metadata -> metadata COMMA
+103:	metadata -> meta
+104:	meta -> IDENT ASSIGN LITERAL
+105:	meta -> IDENT ASSIGN '"' TEXT '"'
+106:	meta -> IDENT ASSIGN NUMBER
+107:	term -> lterm
+108:	term -> sterm
+109:	lterm -> '[' list ']'
+110:	lterm -> '[' range ']'
+111:	lterm -> '[' ']'
+112:	lterm -> '{' hash '}'
+113:	sterm -> ident
+114:	sterm -> REF ident
+115:	sterm -> '"' quoted '"'
+116:	sterm -> LITERAL
+117:	sterm -> NUMBER
+118:	list -> list term
+119:	list -> list COMMA
+120:	list -> term
+121:	range -> sterm TO sterm
+122:	hash -> params
+123:	hash -> /* empty */
+124:	params -> params param
+125:	params -> params COMMA
+126:	params -> param
+127:	param -> LITERAL ASSIGN expr
+128:	param -> item ASSIGN expr
+129:	ident -> ident DOT node
+130:	ident -> ident DOT NUMBER
+131:	ident -> node
+132:	node -> item
+133:	node -> item '(' args ')'
+134:	item -> IDENT
+135:	item -> '${' sterm '}'
+136:	item -> '$' IDENT
+137:	expr -> expr BINOP expr
+138:	expr -> expr '/' expr
+139:	expr -> expr '+' expr
+140:	expr -> expr DIV expr
+141:	expr -> expr MOD expr
+142:	expr -> expr CMPOP expr
+143:	expr -> expr CAT expr
+144:	expr -> expr AND expr
+145:	expr -> expr OR expr
+146:	expr -> NOT expr
+147:	expr -> expr '?' expr ':' expr
+148:	expr -> '(' assign ')'
+149:	expr -> '(' expr ')'
+150:	expr -> term
+151:	setlist -> setlist assign
+152:	setlist -> setlist COMMA
+153:	setlist -> assign
+154:	assign -> ident ASSIGN expr
+155:	assign -> LITERAL ASSIGN expr
+156:	args -> args expr
+157:	args -> args param
+158:	args -> args ident ASSIGN expr
+159:	args -> args COMMA
+160:	args -> /* empty */
+161:	lnameargs -> lvalue ASSIGN nameargs
+162:	lnameargs -> nameargs
+163:	lvalue -> item
+164:	lvalue -> '"' quoted '"'
+165:	lvalue -> LITERAL
+166:	nameargs -> '$' ident args
+167:	nameargs -> names args
+168:	nameargs -> names '(' args ')'
+169:	names -> names '+' name
+170:	names -> name
+171:	name -> '"' quoted '"'
+172:	name -> filename
+173:	name -> LITERAL
+174:	filename -> filename DOT filepart
+175:	filename -> filepart
+176:	filepart -> FILENAME
+177:	filepart -> IDENT
+178:	filepart -> NUMBER
+179:	quoted -> quoted quotable
+180:	quoted -> /* empty */
+181:	quotable -> ident
+182:	quotable -> TEXT
+183:	quotable -> ';'
+
+States:
+-------
+State 0:
+
+	$start -> . template $end	(Rule 0)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 3 (block)
+
+	item	go to state 39
+	loop	go to state 4
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 11
+	atomdir	go to state 12
+	anonblock	go to state 50
+	template	go to state 52
+	defblockname	go to state 14
+	bind	go to state 54
+	ident	go to state 16
+	assign	go to state 19
+	macro	go to state 20
+	lterm	go to state 58
+	node	go to state 23
+	term	go to state 60
+	rawperl	go to state 61
+	expr	go to state 64
+	use	go to state 65
+	defblock	go to state 68
+	filter	go to state 29
+	sterm	go to state 71
+	perl	go to state 31
+	chunks	go to state 33
+	setlist	go to state 73
+	try	go to state 35
+	switch	go to state 34
+	directive	go to state 74
+	block	go to state 75
+	condition	go to state 76
+
+State 1:
+
+	atomdir -> SET . setlist	(Rule 31)
+
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 78
+
+	setlist	go to state 79
+	item	go to state 39
+	assign	go to state 19
+	node	go to state 23
+	ident	go to state 77
+
+State 2:
+
+	item -> IDENT .	(Rule 134)
+
+	$default	reduce using rule 134 (item)
+
+State 3:
+
+	condition -> UNLESS . expr ';' block else END	(Rule 47)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 82
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 4:
+
+	directive -> loop .	(Rule 23)
+
+	$default	reduce using rule 23 (directive)
+
+State 5:
+
+	chunk -> statement . ';'	(Rule 7)
+
+	';'	shift, and go to state 83
+
+State 6:
+
+	atomdir -> STOP .	(Rule 38)
+
+	$default	reduce using rule 38 (atomdir)
+
+State 7:
+
+	statement -> view .	(Rule 14)
+
+	$default	reduce using rule 14 (statement)
+
+State 8:
+
+	atomdir -> THROW . nameargs	(Rule 36)
+
+	'"'	shift, and go to state 92
+	'$'	shift, and go to state 89
+	FILENAME	shift, and go to state 86
+	IDENT	shift, and go to state 84
+	LITERAL	shift, and go to state 91
+	NUMBER	shift, and go to state 87
+
+	filepart	go to state 90
+	names	go to state 94
+	nameargs	go to state 93
+	filename	go to state 88
+	name	go to state 85
+
+State 9:
+
+	lterm -> '[' . list ']'	(Rule 109)
+	lterm -> '[' . range ']'	(Rule 110)
+	lterm -> '[' . ']'	(Rule 111)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'['	shift, and go to state 9
+	']'	shift, and go to state 97
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	sterm	go to state 99
+	item	go to state 39
+	range	go to state 96
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 98
+	lterm	go to state 58
+	list	go to state 95
+
+State 10:
+
+	try -> TRY . ';' block final END	(Rule 71)
+
+	';'	shift, and go to state 100
+
+State 11:
+
+	chunks -> chunk .	(Rule 5)
+
+	$default	reduce using rule 5 (chunks)
+
+State 12:
+
+	directive -> atomdir .	(Rule 20)
+	atomexpr -> atomdir .	(Rule 28)
+
+	';'	reduce using rule 20 (directive)
+	$default	reduce using rule 28 (atomexpr)
+
+State 13:
+
+	rawperl -> RAWPERL . @6-1 ';' TEXT END	(Rule 83)
+
+	$default	reduce using rule 82 (@6-1)
+
+	@6-1	go to state 101
+
+State 14:
+
+	defblock -> defblockname . blockargs ';' template END	(Rule 86)
+
+	IDENT	shift, and go to state 102
+
+	$default	reduce using rule 91 (blockargs)
+
+	blockargs	go to state 105
+	metadata	go to state 104
+	meta	go to state 103
+
+State 15:
+
+	statement -> META . metadata	(Rule 17)
+
+	IDENT	shift, and go to state 102
+
+	metadata	go to state 106
+	meta	go to state 103
+
+State 16:
+
+	capture -> ident . ASSIGN mdir	(Rule 93)
+	sterm -> ident .	(Rule 113)
+	ident -> ident . DOT node	(Rule 129)
+	ident -> ident . DOT NUMBER	(Rule 130)
+	assign -> ident . ASSIGN expr	(Rule 154)
+
+	ASSIGN	shift, and go to state 108
+	DOT	shift, and go to state 107
+
+	$default	reduce using rule 113 (sterm)
+
+State 17:
+
+	atomdir -> INCLUDE . nameargs	(Rule 34)
+
+	'"'	shift, and go to state 92
+	'$'	shift, and go to state 89
+	FILENAME	shift, and go to state 86
+	IDENT	shift, and go to state 84
+	LITERAL	shift, and go to state 91
+	NUMBER	shift, and go to state 87
+
+	filepart	go to state 90
+	names	go to state 94
+	nameargs	go to state 109
+	filename	go to state 88
+	name	go to state 85
+
+State 18:
+
+	macro -> MACRO . IDENT '(' margs ')' mdir	(Rule 94)
+	macro -> MACRO . IDENT mdir	(Rule 95)
+
+	IDENT	shift, and go to state 110
+
+State 19:
+
+	setlist -> assign .	(Rule 153)
+
+	$default	reduce using rule 153 (setlist)
+
+State 20:
+
+	statement -> macro .	(Rule 12)
+
+	$default	reduce using rule 12 (statement)
+
+State 21:
+
+	loop -> FOR . loopvar ';' @1-3 block END	(Rule 58)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 111
+	LITERAL	shift, and go to state 81
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	sterm	go to state 71
+	item	go to state 39
+	loopvar	go to state 113
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 112
+	lterm	go to state 58
+
+State 22:
+
+	atomdir -> NEXT .	(Rule 41)
+
+	$default	reduce using rule 41 (atomdir)
+
+State 23:
+
+	ident -> node .	(Rule 131)
+
+	$default	reduce using rule 131 (ident)
+
+State 24:
+
+	chunk -> TEXT .	(Rule 6)
+
+	$default	reduce using rule 6 (chunk)
+
+State 25:
+
+	filter -> FILTER . lnameargs ';' block END	(Rule 84)
+
+	'"'	shift, and go to state 120
+	'$'	shift, and go to state 117
+	'${'	shift, and go to state 37
+	FILENAME	shift, and go to state 86
+	IDENT	shift, and go to state 114
+	LITERAL	shift, and go to state 119
+	NUMBER	shift, and go to state 87
+
+	names	go to state 94
+	lvalue	go to state 115
+	item	go to state 116
+	name	go to state 85
+	filepart	go to state 90
+	filename	go to state 88
+	nameargs	go to state 121
+	lnameargs	go to state 118
+
+State 26:
+
+	sterm -> NUMBER .	(Rule 117)
+
+	$default	reduce using rule 117 (sterm)
+
+State 27:
+
+	sterm -> REF . ident	(Rule 114)
+
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	IDENT	shift, and go to state 2
+
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 122
+
+State 28:
+
+	defblockname -> BLOCK . blockname	(Rule 87)
+	anonblock -> BLOCK . blockargs ';' block END	(Rule 92)
+
+	FILENAME	shift, and go to state 86
+	IDENT	shift, and go to state 123
+	LITERAL	shift, and go to state 127
+	NUMBER	shift, and go to state 87
+
+	$default	reduce using rule 91 (blockargs)
+
+	blockargs	go to state 126
+	filepart	go to state 90
+	filename	go to state 125
+	blockname	go to state 124
+	metadata	go to state 104
+	meta	go to state 103
+
+State 29:
+
+	atomdir -> filter .	(Rule 44)
+
+	$default	reduce using rule 44 (atomdir)
+
+State 30:
+
+	lterm -> '{' . hash '}'	(Rule 112)
+
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 132
+
+	$default	reduce using rule 123 (hash)
+
+	params	go to state 131
+	hash	go to state 128
+	item	go to state 129
+	param	go to state 130
+
+State 31:
+
+	directive -> perl .	(Rule 26)
+
+	$default	reduce using rule 26 (directive)
+
+State 32:
+
+	use -> USE . lnameargs	(Rule 77)
+
+	'"'	shift, and go to state 120
+	'$'	shift, and go to state 117
+	'${'	shift, and go to state 37
+	FILENAME	shift, and go to state 86
+	IDENT	shift, and go to state 114
+	LITERAL	shift, and go to state 119
+	NUMBER	shift, and go to state 87
+
+	names	go to state 94
+	lvalue	go to state 115
+	item	go to state 116
+	name	go to state 85
+	filepart	go to state 90
+	filename	go to state 88
+	nameargs	go to state 121
+	lnameargs	go to state 133
+
+State 33:
+
+	block -> chunks .	(Rule 2)
+	chunks -> chunks . chunk	(Rule 4)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 2 (block)
+
+	item	go to state 39
+	node	go to state 23
+	rawperl	go to state 61
+	term	go to state 60
+	loop	go to state 4
+	use	go to state 65
+	expr	go to state 64
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 134
+	defblock	go to state 68
+	atomdir	go to state 12
+	anonblock	go to state 50
+	sterm	go to state 71
+	defblockname	go to state 14
+	filter	go to state 29
+	bind	go to state 54
+	ident	go to state 16
+	perl	go to state 31
+	setlist	go to state 73
+	try	go to state 35
+	switch	go to state 34
+	assign	go to state 19
+	directive	go to state 74
+	macro	go to state 20
+	condition	go to state 76
+	lterm	go to state 58
+
+State 34:
+
+	directive -> switch .	(Rule 22)
+
+	$default	reduce using rule 22 (directive)
+
+State 35:
+
+	directive -> try .	(Rule 25)
+
+	$default	reduce using rule 25 (directive)
+
+State 36:
+
+	view -> VIEW . nameargs ';' @4-3 block END	(Rule 79)
+
+	'"'	shift, and go to state 92
+	'$'	shift, and go to state 89
+	FILENAME	shift, and go to state 86
+	IDENT	shift, and go to state 84
+	LITERAL	shift, and go to state 91
+	NUMBER	shift, and go to state 87
+
+	filepart	go to state 90
+	names	go to state 94
+	nameargs	go to state 135
+	filename	go to state 88
+	name	go to state 85
+
+State 37:
+
+	item -> '${' . sterm '}'	(Rule 135)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	sterm	go to state 136
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+
+State 38:
+
+	expr -> NOT . expr	(Rule 146)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 137
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 39:
+
+	node -> item .	(Rule 132)
+	node -> item . '(' args ')'	(Rule 133)
+
+	'('	shift, and go to state 138
+
+	'('	[reduce using rule 132 (node)]
+	$default	reduce using rule 132 (node)
+
+State 40:
+
+	perl -> PERL . ';' @5-2 block END	(Rule 81)
+
+	';'	shift, and go to state 139
+
+State 41:
+
+	atomdir -> CLEAR .	(Rule 39)
+
+	$default	reduce using rule 39 (atomdir)
+
+State 42:
+
+	statement -> capture .	(Rule 11)
+
+	$default	reduce using rule 11 (statement)
+
+State 43:
+
+	item -> '$' . IDENT	(Rule 136)
+
+	IDENT	shift, and go to state 140
+
+State 44:
+
+	condition -> IF . expr ';' block else END	(Rule 45)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 141
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 45:
+
+	atomdir -> CALL . expr	(Rule 30)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 142
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 46:
+
+	atomdir -> wrapper .	(Rule 43)
+
+	$default	reduce using rule 43 (atomdir)
+
+State 47:
+
+	atomdir -> GET . expr	(Rule 29)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 143
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 48:
+
+	condition -> atomexpr . IF expr	(Rule 46)
+	condition -> atomexpr . UNLESS expr	(Rule 48)
+	loop -> atomexpr . FOR loopvar	(Rule 59)
+	loop -> atomexpr . WHILE expr	(Rule 62)
+	wrapper -> atomexpr . WRAPPER nameargs	(Rule 70)
+	filter -> atomexpr . FILTER lnameargs	(Rule 85)
+
+	FILTER	shift, and go to state 146
+	FOR	shift, and go to state 145
+	IF	shift, and go to state 147
+	UNLESS	shift, and go to state 144
+	WHILE	shift, and go to state 149
+	WRAPPER	shift, and go to state 148
+
+State 49:
+
+	atomdir -> LAST .	(Rule 40)
+
+	$default	reduce using rule 40 (atomdir)
+
+State 50:
+
+	statement -> anonblock .	(Rule 10)
+
+	$default	reduce using rule 10 (statement)
+
+State 51:
+
+	atomdir -> DEBUG . nameargs	(Rule 42)
+
+	'"'	shift, and go to state 92
+	'$'	shift, and go to state 89
+	FILENAME	shift, and go to state 86
+	IDENT	shift, and go to state 84
+	LITERAL	shift, and go to state 91
+	NUMBER	shift, and go to state 87
+
+	filepart	go to state 90
+	names	go to state 94
+	nameargs	go to state 150
+	filename	go to state 88
+	name	go to state 85
+
+State 52:
+
+	$start -> template . $end	(Rule 0)
+
+	$end	shift, and go to state 151
+
+State 53:
+
+	bind -> COMPONENT . name	(Rule 65)
+
+	'"'	shift, and go to state 92
+	FILENAME	shift, and go to state 86
+	IDENT	shift, and go to state 84
+	LITERAL	shift, and go to state 91
+	NUMBER	shift, and go to state 87
+
+	filepart	go to state 90
+	filename	go to state 88
+	name	go to state 152
+
+State 54:
+
+	directive -> bind .	(Rule 24)
+
+	$default	reduce using rule 24 (directive)
+
+State 55:
+
+	expr -> '(' . assign ')'	(Rule 148)
+	expr -> '(' . expr ')'	(Rule 149)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 59
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 155
+	sterm	go to state 71
+	item	go to state 39
+	assign	go to state 154
+	node	go to state 23
+	ident	go to state 153
+	term	go to state 60
+	lterm	go to state 58
+
+State 56:
+
+	switch -> SWITCH . expr ';' block case END	(Rule 52)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 156
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 57:
+
+	wrapper -> WRAPPER . nameargs ';' block END	(Rule 69)
+
+	'"'	shift, and go to state 92
+	'$'	shift, and go to state 89
+	FILENAME	shift, and go to state 86
+	IDENT	shift, and go to state 84
+	LITERAL	shift, and go to state 91
+	NUMBER	shift, and go to state 87
+
+	filepart	go to state 90
+	names	go to state 94
+	nameargs	go to state 157
+	filename	go to state 88
+	name	go to state 85
+
+State 58:
+
+	term -> lterm .	(Rule 107)
+
+	$default	reduce using rule 107 (term)
+
+State 59:
+
+	sterm -> LITERAL .	(Rule 116)
+	assign -> LITERAL . ASSIGN expr	(Rule 155)
+
+	ASSIGN	shift, and go to state 158
+
+	$default	reduce using rule 116 (sterm)
+
+State 60:
+
+	expr -> term .	(Rule 150)
+
+	$default	reduce using rule 150 (expr)
+
+State 61:
+
+	statement -> rawperl .	(Rule 15)
+
+	$default	reduce using rule 15 (statement)
+
+State 62:
+
+	sterm -> '"' . quoted '"'	(Rule 115)
+
+	$default	reduce using rule 180 (quoted)
+
+	quoted	go to state 159
+
+State 63:
+
+	atomdir -> PROCESS . nameargs	(Rule 35)
+
+	'"'	shift, and go to state 92
+	'$'	shift, and go to state 89
+	FILENAME	shift, and go to state 86
+	IDENT	shift, and go to state 84
+	LITERAL	shift, and go to state 91
+	NUMBER	shift, and go to state 87
+
+	filepart	go to state 90
+	names	go to state 94
+	nameargs	go to state 160
+	filename	go to state 88
+	name	go to state 85
+
+State 64:
+
+	statement -> expr .	(Rule 16)
+	atomexpr -> expr .	(Rule 27)
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	'?'	shift, and go to state 162
+	AND	shift, and go to state 164
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+	OR	shift, and go to state 166
+
+	';'	reduce using rule 16 (statement)
+	$default	reduce using rule 27 (atomexpr)
+
+State 65:
+
+	statement -> use .	(Rule 13)
+
+	$default	reduce using rule 13 (statement)
+
+State 66:
+
+	atomdir -> RETURN .	(Rule 37)
+
+	$default	reduce using rule 37 (atomdir)
+
+State 67:
+
+	atomdir -> INSERT . nameargs	(Rule 33)
+
+	'"'	shift, and go to state 92
+	'$'	shift, and go to state 89
+	FILENAME	shift, and go to state 86
+	IDENT	shift, and go to state 84
+	LITERAL	shift, and go to state 91
+	NUMBER	shift, and go to state 87
+
+	filepart	go to state 90
+	names	go to state 94
+	nameargs	go to state 171
+	filename	go to state 88
+	name	go to state 85
+
+State 68:
+
+	statement -> defblock .	(Rule 9)
+
+	$default	reduce using rule 9 (statement)
+
+State 69:
+
+	bind -> BINDING . name ';' @3-3 block END	(Rule 64)
+
+	'"'	shift, and go to state 92
+	FILENAME	shift, and go to state 86
+	IDENT	shift, and go to state 84
+	LITERAL	shift, and go to state 91
+	NUMBER	shift, and go to state 87
+
+	filepart	go to state 90
+	filename	go to state 88
+	name	go to state 172
+
+State 70:
+
+	loop -> WHILE . expr ';' @2-3 block END	(Rule 61)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 173
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 71:
+
+	term -> sterm .	(Rule 108)
+
+	$default	reduce using rule 108 (term)
+
+State 72:
+
+	atomdir -> DEFAULT . setlist	(Rule 32)
+
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 78
+
+	setlist	go to state 174
+	item	go to state 39
+	assign	go to state 19
+	node	go to state 23
+	ident	go to state 77
+
+State 73:
+
+	directive -> setlist .	(Rule 19)
+	setlist -> setlist . assign	(Rule 151)
+	setlist -> setlist . COMMA	(Rule 152)
+
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	COMMA	shift, and go to state 176
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 78
+
+	$default	reduce using rule 19 (directive)
+
+	item	go to state 39
+	assign	go to state 175
+	node	go to state 23
+	ident	go to state 77
+
+State 74:
+
+	statement -> directive .	(Rule 8)
+
+	$default	reduce using rule 8 (statement)
+
+State 75:
+
+	template -> block .	(Rule 1)
+
+	$default	reduce using rule 1 (template)
+
+State 76:
+
+	directive -> condition .	(Rule 21)
+
+	$default	reduce using rule 21 (directive)
+
+State 77:
+
+	ident -> ident . DOT node	(Rule 129)
+	ident -> ident . DOT NUMBER	(Rule 130)
+	assign -> ident . ASSIGN expr	(Rule 154)
+
+	ASSIGN	shift, and go to state 177
+	DOT	shift, and go to state 107
+
+State 78:
+
+	assign -> LITERAL . ASSIGN expr	(Rule 155)
+
+	ASSIGN	shift, and go to state 158
+
+State 79:
+
+	atomdir -> SET setlist .	(Rule 31)
+	setlist -> setlist . assign	(Rule 151)
+	setlist -> setlist . COMMA	(Rule 152)
+
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	COMMA	shift, and go to state 176
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 78
+
+	$default	reduce using rule 31 (atomdir)
+
+	item	go to state 39
+	assign	go to state 175
+	node	go to state 23
+	ident	go to state 77
+
+State 80:
+
+	sterm -> ident .	(Rule 113)
+	ident -> ident . DOT node	(Rule 129)
+	ident -> ident . DOT NUMBER	(Rule 130)
+
+	DOT	shift, and go to state 107
+
+	$default	reduce using rule 113 (sterm)
+
+State 81:
+
+	sterm -> LITERAL .	(Rule 116)
+
+	$default	reduce using rule 116 (sterm)
+
+State 82:
+
+	condition -> UNLESS expr . ';' block else END	(Rule 47)
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	';'	shift, and go to state 178
+	'?'	shift, and go to state 162
+	AND	shift, and go to state 164
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+	OR	shift, and go to state 166
+
+State 83:
+
+	chunk -> statement ';' .	(Rule 7)
+
+	$default	reduce using rule 7 (chunk)
+
+State 84:
+
+	filepart -> IDENT .	(Rule 177)
+
+	$default	reduce using rule 177 (filepart)
+
+State 85:
+
+	names -> name .	(Rule 170)
+
+	$default	reduce using rule 170 (names)
+
+State 86:
+
+	filepart -> FILENAME .	(Rule 176)
+
+	$default	reduce using rule 176 (filepart)
+
+State 87:
+
+	filepart -> NUMBER .	(Rule 178)
+
+	$default	reduce using rule 178 (filepart)
+
+State 88:
+
+	name -> filename .	(Rule 172)
+	filename -> filename . DOT filepart	(Rule 174)
+
+	DOT	shift, and go to state 179
+
+	$default	reduce using rule 172 (name)
+
+State 89:
+
+	nameargs -> '$' . ident args	(Rule 166)
+
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	IDENT	shift, and go to state 2
+
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 180
+
+State 90:
+
+	filename -> filepart .	(Rule 175)
+
+	$default	reduce using rule 175 (filename)
+
+State 91:
+
+	name -> LITERAL .	(Rule 173)
+
+	$default	reduce using rule 173 (name)
+
+State 92:
+
+	name -> '"' . quoted '"'	(Rule 171)
+
+	$default	reduce using rule 180 (quoted)
+
+	quoted	go to state 181
+
+State 93:
+
+	atomdir -> THROW nameargs .	(Rule 36)
+
+	$default	reduce using rule 36 (atomdir)
+
+State 94:
+
+	nameargs -> names . args	(Rule 167)
+	nameargs -> names . '(' args ')'	(Rule 168)
+	names -> names . '+' name	(Rule 169)
+
+	'('	shift, and go to state 183
+	'+'	shift, and go to state 182
+
+	'('	[reduce using rule 160 (args)]
+	$default	reduce using rule 160 (args)
+
+	args	go to state 184
+
+State 95:
+
+	lterm -> '[' list . ']'	(Rule 109)
+	list -> list . term	(Rule 118)
+	list -> list . COMMA	(Rule 119)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'['	shift, and go to state 9
+	']'	shift, and go to state 185
+	'{'	shift, and go to state 30
+	COMMA	shift, and go to state 187
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 186
+	lterm	go to state 58
+
+State 96:
+
+	lterm -> '[' range . ']'	(Rule 110)
+
+	']'	shift, and go to state 188
+
+State 97:
+
+	lterm -> '[' ']' .	(Rule 111)
+
+	$default	reduce using rule 111 (lterm)
+
+State 98:
+
+	list -> term .	(Rule 120)
+
+	$default	reduce using rule 120 (list)
+
+State 99:
+
+	term -> sterm .	(Rule 108)
+	range -> sterm . TO sterm	(Rule 121)
+
+	TO	shift, and go to state 189
+
+	$default	reduce using rule 108 (term)
+
+State 100:
+
+	try -> TRY ';' . block final END	(Rule 71)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 3 (block)
+
+	item	go to state 39
+	loop	go to state 4
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 11
+	atomdir	go to state 12
+	anonblock	go to state 50
+	defblockname	go to state 14
+	bind	go to state 54
+	ident	go to state 16
+	assign	go to state 19
+	macro	go to state 20
+	lterm	go to state 58
+	node	go to state 23
+	term	go to state 60
+	rawperl	go to state 61
+	expr	go to state 64
+	use	go to state 65
+	defblock	go to state 68
+	filter	go to state 29
+	sterm	go to state 71
+	perl	go to state 31
+	chunks	go to state 33
+	setlist	go to state 73
+	switch	go to state 34
+	try	go to state 35
+	directive	go to state 74
+	block	go to state 190
+	condition	go to state 76
+
+State 101:
+
+	rawperl -> RAWPERL @6-1 . ';' TEXT END	(Rule 83)
+
+	';'	shift, and go to state 191
+
+State 102:
+
+	meta -> IDENT . ASSIGN LITERAL	(Rule 104)
+	meta -> IDENT . ASSIGN '"' TEXT '"'	(Rule 105)
+	meta -> IDENT . ASSIGN NUMBER	(Rule 106)
+
+	ASSIGN	shift, and go to state 192
+
+State 103:
+
+	metadata -> meta .	(Rule 103)
+
+	$default	reduce using rule 103 (metadata)
+
+State 104:
+
+	blockargs -> metadata .	(Rule 90)
+	metadata -> metadata . meta	(Rule 101)
+	metadata -> metadata . COMMA	(Rule 102)
+
+	COMMA	shift, and go to state 194
+	IDENT	shift, and go to state 102
+
+	$default	reduce using rule 90 (blockargs)
+
+	meta	go to state 193
+
+State 105:
+
+	defblock -> defblockname blockargs . ';' template END	(Rule 86)
+
+	';'	shift, and go to state 195
+
+State 106:
+
+	statement -> META metadata .	(Rule 17)
+	metadata -> metadata . meta	(Rule 101)
+	metadata -> metadata . COMMA	(Rule 102)
+
+	COMMA	shift, and go to state 194
+	IDENT	shift, and go to state 102
+
+	$default	reduce using rule 17 (statement)
+
+	meta	go to state 193
+
+State 107:
+
+	ident -> ident DOT . node	(Rule 129)
+	ident -> ident DOT . NUMBER	(Rule 130)
+
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	IDENT	shift, and go to state 2
+	NUMBER	shift, and go to state 197
+
+	item	go to state 39
+	node	go to state 196
+
+State 108:
+
+	capture -> ident ASSIGN . mdir	(Rule 93)
+	assign -> ident ASSIGN . expr	(Rule 154)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 198
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	item	go to state 39
+	node	go to state 23
+	term	go to state 60
+	loop	go to state 4
+	expr	go to state 200
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	atomdir	go to state 12
+	mdir	go to state 199
+	sterm	go to state 71
+	filter	go to state 29
+	bind	go to state 54
+	ident	go to state 153
+	perl	go to state 31
+	setlist	go to state 73
+	try	go to state 35
+	switch	go to state 34
+	assign	go to state 19
+	directive	go to state 201
+	condition	go to state 76
+	lterm	go to state 58
+
+State 109:
+
+	atomdir -> INCLUDE nameargs .	(Rule 34)
+
+	$default	reduce using rule 34 (atomdir)
+
+State 110:
+
+	macro -> MACRO IDENT . '(' margs ')' mdir	(Rule 94)
+	macro -> MACRO IDENT . mdir	(Rule 95)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 203
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 198
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	item	go to state 39
+	node	go to state 23
+	term	go to state 60
+	loop	go to state 4
+	expr	go to state 204
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	atomdir	go to state 12
+	mdir	go to state 202
+	sterm	go to state 71
+	filter	go to state 29
+	bind	go to state 54
+	ident	go to state 153
+	perl	go to state 31
+	setlist	go to state 73
+	try	go to state 35
+	switch	go to state 34
+	assign	go to state 19
+	directive	go to state 201
+	condition	go to state 76
+	lterm	go to state 58
+
+State 111:
+
+	loopvar -> IDENT . ASSIGN term args	(Rule 66)
+	loopvar -> IDENT . IN term args	(Rule 67)
+	item -> IDENT .	(Rule 134)
+
+	ASSIGN	shift, and go to state 205
+	IN	shift, and go to state 206
+
+	$default	reduce using rule 134 (item)
+
+State 112:
+
+	loopvar -> term . args	(Rule 68)
+
+	$default	reduce using rule 160 (args)
+
+	args	go to state 207
+
+State 113:
+
+	loop -> FOR loopvar . ';' @1-3 block END	(Rule 58)
+
+	';'	shift, and go to state 208
+
+State 114:
+
+	item -> IDENT .	(Rule 134)
+	filepart -> IDENT .	(Rule 177)
+
+	ASSIGN	reduce using rule 134 (item)
+	$default	reduce using rule 177 (filepart)
+
+State 115:
+
+	lnameargs -> lvalue . ASSIGN nameargs	(Rule 161)
+
+	ASSIGN	shift, and go to state 209
+
+State 116:
+
+	lvalue -> item .	(Rule 163)
+
+	$default	reduce using rule 163 (lvalue)
+
+State 117:
+
+	item -> '$' . IDENT	(Rule 136)
+	nameargs -> '$' . ident args	(Rule 166)
+
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	IDENT	shift, and go to state 210
+
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 180
+
+State 118:
+
+	filter -> FILTER lnameargs . ';' block END	(Rule 84)
+
+	';'	shift, and go to state 211
+
+State 119:
+
+	lvalue -> LITERAL .	(Rule 165)
+	name -> LITERAL .	(Rule 173)
+
+	ASSIGN	reduce using rule 165 (lvalue)
+	$default	reduce using rule 173 (name)
+
+State 120:
+
+	lvalue -> '"' . quoted '"'	(Rule 164)
+	name -> '"' . quoted '"'	(Rule 171)
+
+	$default	reduce using rule 180 (quoted)
+
+	quoted	go to state 212
+
+State 121:
+
+	lnameargs -> nameargs .	(Rule 162)
+
+	$default	reduce using rule 162 (lnameargs)
+
+State 122:
+
+	sterm -> REF ident .	(Rule 114)
+	ident -> ident . DOT node	(Rule 129)
+	ident -> ident . DOT NUMBER	(Rule 130)
+
+	DOT	shift, and go to state 107
+
+	$default	reduce using rule 114 (sterm)
+
+State 123:
+
+	meta -> IDENT . ASSIGN LITERAL	(Rule 104)
+	meta -> IDENT . ASSIGN '"' TEXT '"'	(Rule 105)
+	meta -> IDENT . ASSIGN NUMBER	(Rule 106)
+	filepart -> IDENT .	(Rule 177)
+
+	ASSIGN	shift, and go to state 192
+
+	$default	reduce using rule 177 (filepart)
+
+State 124:
+
+	defblockname -> BLOCK blockname .	(Rule 87)
+
+	$default	reduce using rule 87 (defblockname)
+
+State 125:
+
+	blockname -> filename .	(Rule 88)
+	filename -> filename . DOT filepart	(Rule 174)
+
+	DOT	shift, and go to state 179
+
+	$default	reduce using rule 88 (blockname)
+
+State 126:
+
+	anonblock -> BLOCK blockargs . ';' block END	(Rule 92)
+
+	';'	shift, and go to state 213
+
+State 127:
+
+	blockname -> LITERAL .	(Rule 89)
+
+	$default	reduce using rule 89 (blockname)
+
+State 128:
+
+	lterm -> '{' hash . '}'	(Rule 112)
+
+	'}'	shift, and go to state 214
+
+State 129:
+
+	param -> item . ASSIGN expr	(Rule 128)
+
+	ASSIGN	shift, and go to state 215
+
+State 130:
+
+	params -> param .	(Rule 126)
+
+	$default	reduce using rule 126 (params)
+
+State 131:
+
+	hash -> params .	(Rule 122)
+	params -> params . param	(Rule 124)
+	params -> params . COMMA	(Rule 125)
+
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	COMMA	shift, and go to state 217
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 132
+
+	$default	reduce using rule 122 (hash)
+
+	item	go to state 129
+	param	go to state 216
+
+State 132:
+
+	param -> LITERAL . ASSIGN expr	(Rule 127)
+
+	ASSIGN	shift, and go to state 218
+
+State 133:
+
+	use -> USE lnameargs .	(Rule 77)
+
+	$default	reduce using rule 77 (use)
+
+State 134:
+
+	chunks -> chunks chunk .	(Rule 4)
+
+	$default	reduce using rule 4 (chunks)
+
+State 135:
+
+	view -> VIEW nameargs . ';' @4-3 block END	(Rule 79)
+
+	';'	shift, and go to state 219
+
+State 136:
+
+	item -> '${' sterm . '}'	(Rule 135)
+
+	'}'	shift, and go to state 220
+
+State 137:
+
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> NOT expr .	(Rule 146)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+
+	$default	reduce using rule 146 (expr)
+
+State 138:
+
+	node -> item '(' . args ')'	(Rule 133)
+
+	$default	reduce using rule 160 (args)
+
+	args	go to state 221
+
+State 139:
+
+	perl -> PERL ';' . @5-2 block END	(Rule 81)
+
+	$default	reduce using rule 80 (@5-2)
+
+	@5-2	go to state 222
+
+State 140:
+
+	item -> '$' IDENT .	(Rule 136)
+
+	$default	reduce using rule 136 (item)
+
+State 141:
+
+	condition -> IF expr . ';' block else END	(Rule 45)
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	';'	shift, and go to state 223
+	'?'	shift, and go to state 162
+	AND	shift, and go to state 164
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+	OR	shift, and go to state 166
+
+State 142:
+
+	atomdir -> CALL expr .	(Rule 30)
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	'?'	shift, and go to state 162
+	AND	shift, and go to state 164
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+	OR	shift, and go to state 166
+
+	$default	reduce using rule 30 (atomdir)
+
+State 143:
+
+	atomdir -> GET expr .	(Rule 29)
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	'?'	shift, and go to state 162
+	AND	shift, and go to state 164
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+	OR	shift, and go to state 166
+
+	$default	reduce using rule 29 (atomdir)
+
+State 144:
+
+	condition -> atomexpr UNLESS . expr	(Rule 48)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 224
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 145:
+
+	loop -> atomexpr FOR . loopvar	(Rule 59)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 111
+	LITERAL	shift, and go to state 81
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	sterm	go to state 71
+	item	go to state 39
+	loopvar	go to state 225
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 112
+	lterm	go to state 58
+
+State 146:
+
+	filter -> atomexpr FILTER . lnameargs	(Rule 85)
+
+	'"'	shift, and go to state 120
+	'$'	shift, and go to state 117
+	'${'	shift, and go to state 37
+	FILENAME	shift, and go to state 86
+	IDENT	shift, and go to state 114
+	LITERAL	shift, and go to state 119
+	NUMBER	shift, and go to state 87
+
+	names	go to state 94
+	lvalue	go to state 115
+	item	go to state 116
+	name	go to state 85
+	filepart	go to state 90
+	filename	go to state 88
+	nameargs	go to state 121
+	lnameargs	go to state 226
+
+State 147:
+
+	condition -> atomexpr IF . expr	(Rule 46)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 227
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 148:
+
+	wrapper -> atomexpr WRAPPER . nameargs	(Rule 70)
+
+	'"'	shift, and go to state 92
+	'$'	shift, and go to state 89
+	FILENAME	shift, and go to state 86
+	IDENT	shift, and go to state 84
+	LITERAL	shift, and go to state 91
+	NUMBER	shift, and go to state 87
+
+	filepart	go to state 90
+	names	go to state 94
+	nameargs	go to state 228
+	filename	go to state 88
+	name	go to state 85
+
+State 149:
+
+	loop -> atomexpr WHILE . expr	(Rule 62)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 229
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 150:
+
+	atomdir -> DEBUG nameargs .	(Rule 42)
+
+	$default	reduce using rule 42 (atomdir)
+
+State 151:
+
+	$start -> template $end .	(Rule 0)
+
+	$default	accept
+
+State 152:
+
+	bind -> COMPONENT name .	(Rule 65)
+
+	$default	reduce using rule 65 (bind)
+
+State 153:
+
+	sterm -> ident .	(Rule 113)
+	ident -> ident . DOT node	(Rule 129)
+	ident -> ident . DOT NUMBER	(Rule 130)
+	assign -> ident . ASSIGN expr	(Rule 154)
+
+	ASSIGN	shift, and go to state 177
+	DOT	shift, and go to state 107
+
+	$default	reduce using rule 113 (sterm)
+
+State 154:
+
+	expr -> '(' assign . ')'	(Rule 148)
+
+	')'	shift, and go to state 230
+
+State 155:
+
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+	expr -> '(' expr . ')'	(Rule 149)
+
+	')'	shift, and go to state 231
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	'?'	shift, and go to state 162
+	AND	shift, and go to state 164
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+	OR	shift, and go to state 166
+
+State 156:
+
+	switch -> SWITCH expr . ';' block case END	(Rule 52)
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	';'	shift, and go to state 232
+	'?'	shift, and go to state 162
+	AND	shift, and go to state 164
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+	OR	shift, and go to state 166
+
+State 157:
+
+	wrapper -> WRAPPER nameargs . ';' block END	(Rule 69)
+
+	';'	shift, and go to state 233
+
+State 158:
+
+	assign -> LITERAL ASSIGN . expr	(Rule 155)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 234
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 159:
+
+	sterm -> '"' quoted . '"'	(Rule 115)
+	quoted -> quoted . quotable	(Rule 179)
+
+	'"'	shift, and go to state 239
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	';'	shift, and go to state 238
+	IDENT	shift, and go to state 2
+	TEXT	shift, and go to state 236
+
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 235
+	quotable	go to state 237
+
+State 160:
+
+	atomdir -> PROCESS nameargs .	(Rule 35)
+
+	$default	reduce using rule 35 (atomdir)
+
+State 161:
+
+	expr -> expr '+' . expr	(Rule 139)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 240
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 162:
+
+	expr -> expr '?' . expr ':' expr	(Rule 147)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 241
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 163:
+
+	expr -> expr DIV . expr	(Rule 140)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 242
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 164:
+
+	expr -> expr AND . expr	(Rule 144)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 243
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 165:
+
+	expr -> expr BINOP . expr	(Rule 137)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 244
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 166:
+
+	expr -> expr OR . expr	(Rule 145)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 245
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 167:
+
+	expr -> expr CAT . expr	(Rule 143)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 246
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 168:
+
+	expr -> expr CMPOP . expr	(Rule 142)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 247
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 169:
+
+	expr -> expr MOD . expr	(Rule 141)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 248
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 170:
+
+	expr -> expr '/' . expr	(Rule 138)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 249
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 171:
+
+	atomdir -> INSERT nameargs .	(Rule 33)
+
+	$default	reduce using rule 33 (atomdir)
+
+State 172:
+
+	bind -> BINDING name . ';' @3-3 block END	(Rule 64)
+
+	';'	shift, and go to state 250
+
+State 173:
+
+	loop -> WHILE expr . ';' @2-3 block END	(Rule 61)
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	';'	shift, and go to state 251
+	'?'	shift, and go to state 162
+	AND	shift, and go to state 164
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+	OR	shift, and go to state 166
+
+State 174:
+
+	atomdir -> DEFAULT setlist .	(Rule 32)
+	setlist -> setlist . assign	(Rule 151)
+	setlist -> setlist . COMMA	(Rule 152)
+
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	COMMA	shift, and go to state 176
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 78
+
+	$default	reduce using rule 32 (atomdir)
+
+	item	go to state 39
+	assign	go to state 175
+	node	go to state 23
+	ident	go to state 77
+
+State 175:
+
+	setlist -> setlist assign .	(Rule 151)
+
+	$default	reduce using rule 151 (setlist)
+
+State 176:
+
+	setlist -> setlist COMMA .	(Rule 152)
+
+	$default	reduce using rule 152 (setlist)
+
+State 177:
+
+	assign -> ident ASSIGN . expr	(Rule 154)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 252
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 178:
+
+	condition -> UNLESS expr ';' . block else END	(Rule 47)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 3 (block)
+
+	item	go to state 39
+	loop	go to state 4
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 11
+	atomdir	go to state 12
+	anonblock	go to state 50
+	defblockname	go to state 14
+	bind	go to state 54
+	ident	go to state 16
+	assign	go to state 19
+	macro	go to state 20
+	lterm	go to state 58
+	node	go to state 23
+	term	go to state 60
+	rawperl	go to state 61
+	expr	go to state 64
+	use	go to state 65
+	defblock	go to state 68
+	filter	go to state 29
+	sterm	go to state 71
+	perl	go to state 31
+	chunks	go to state 33
+	setlist	go to state 73
+	switch	go to state 34
+	try	go to state 35
+	directive	go to state 74
+	block	go to state 253
+	condition	go to state 76
+
+State 179:
+
+	filename -> filename DOT . filepart	(Rule 174)
+
+	FILENAME	shift, and go to state 86
+	IDENT	shift, and go to state 84
+	NUMBER	shift, and go to state 87
+
+	filepart	go to state 254
+
+State 180:
+
+	ident -> ident . DOT node	(Rule 129)
+	ident -> ident . DOT NUMBER	(Rule 130)
+	nameargs -> '$' ident . args	(Rule 166)
+
+	DOT	shift, and go to state 107
+
+	$default	reduce using rule 160 (args)
+
+	args	go to state 255
+
+State 181:
+
+	name -> '"' quoted . '"'	(Rule 171)
+	quoted -> quoted . quotable	(Rule 179)
+
+	'"'	shift, and go to state 256
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	';'	shift, and go to state 238
+	IDENT	shift, and go to state 2
+	TEXT	shift, and go to state 236
+
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 235
+	quotable	go to state 237
+
+State 182:
+
+	names -> names '+' . name	(Rule 169)
+
+	'"'	shift, and go to state 92
+	FILENAME	shift, and go to state 86
+	IDENT	shift, and go to state 84
+	LITERAL	shift, and go to state 91
+	NUMBER	shift, and go to state 87
+
+	filepart	go to state 90
+	filename	go to state 88
+	name	go to state 257
+
+State 183:
+
+	nameargs -> names '(' . args ')'	(Rule 168)
+
+	$default	reduce using rule 160 (args)
+
+	args	go to state 258
+
+State 184:
+
+	args -> args . expr	(Rule 156)
+	args -> args . param	(Rule 157)
+	args -> args . ident ASSIGN expr	(Rule 158)
+	args -> args . COMMA	(Rule 159)
+	nameargs -> names args .	(Rule 167)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	COMMA	shift, and go to state 264
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 262
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	$default	reduce using rule 167 (nameargs)
+
+	expr	go to state 263
+	sterm	go to state 71
+	item	go to state 260
+	param	go to state 261
+	node	go to state 23
+	ident	go to state 259
+	term	go to state 60
+	lterm	go to state 58
+
+State 185:
+
+	lterm -> '[' list ']' .	(Rule 109)
+
+	$default	reduce using rule 109 (lterm)
+
+State 186:
+
+	list -> list term .	(Rule 118)
+
+	$default	reduce using rule 118 (list)
+
+State 187:
+
+	list -> list COMMA .	(Rule 119)
+
+	$default	reduce using rule 119 (list)
+
+State 188:
+
+	lterm -> '[' range ']' .	(Rule 110)
+
+	$default	reduce using rule 110 (lterm)
+
+State 189:
+
+	range -> sterm TO . sterm	(Rule 121)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	sterm	go to state 265
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+
+State 190:
+
+	try -> TRY ';' block . final END	(Rule 71)
+
+	CATCH	shift, and go to state 268
+	FINAL	shift, and go to state 266
+
+	$default	reduce using rule 76 (final)
+
+	final	go to state 267
+
+State 191:
+
+	rawperl -> RAWPERL @6-1 ';' . TEXT END	(Rule 83)
+
+	TEXT	shift, and go to state 269
+
+State 192:
+
+	meta -> IDENT ASSIGN . LITERAL	(Rule 104)
+	meta -> IDENT ASSIGN . '"' TEXT '"'	(Rule 105)
+	meta -> IDENT ASSIGN . NUMBER	(Rule 106)
+
+	'"'	shift, and go to state 272
+	LITERAL	shift, and go to state 271
+	NUMBER	shift, and go to state 270
+
+State 193:
+
+	metadata -> metadata meta .	(Rule 101)
+
+	$default	reduce using rule 101 (metadata)
+
+State 194:
+
+	metadata -> metadata COMMA .	(Rule 102)
+
+	$default	reduce using rule 102 (metadata)
+
+State 195:
+
+	defblock -> defblockname blockargs ';' . template END	(Rule 86)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 3 (block)
+
+	item	go to state 39
+	loop	go to state 4
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 11
+	atomdir	go to state 12
+	anonblock	go to state 50
+	template	go to state 273
+	defblockname	go to state 14
+	bind	go to state 54
+	ident	go to state 16
+	assign	go to state 19
+	macro	go to state 20
+	lterm	go to state 58
+	node	go to state 23
+	term	go to state 60
+	rawperl	go to state 61
+	expr	go to state 64
+	use	go to state 65
+	defblock	go to state 68
+	filter	go to state 29
+	sterm	go to state 71
+	perl	go to state 31
+	chunks	go to state 33
+	setlist	go to state 73
+	switch	go to state 34
+	try	go to state 35
+	directive	go to state 74
+	block	go to state 75
+	condition	go to state 76
+
+State 196:
+
+	ident -> ident DOT node .	(Rule 129)
+
+	$default	reduce using rule 129 (ident)
+
+State 197:
+
+	ident -> ident DOT NUMBER .	(Rule 130)
+
+	$default	reduce using rule 130 (ident)
+
+State 198:
+
+	mdir -> BLOCK . ';' block END	(Rule 97)
+
+	';'	shift, and go to state 274
+
+State 199:
+
+	capture -> ident ASSIGN mdir .	(Rule 93)
+
+	$default	reduce using rule 93 (capture)
+
+State 200:
+
+	atomexpr -> expr .	(Rule 27)
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+	assign -> ident ASSIGN expr .	(Rule 154)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	'?'	shift, and go to state 162
+	AND	shift, and go to state 164
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+	OR	shift, and go to state 166
+
+	'$'	reduce using rule 154 (assign)
+	'${'	reduce using rule 154 (assign)
+	';'	reduce using rule 154 (assign)
+	COMMA	reduce using rule 154 (assign)
+	IDENT	reduce using rule 154 (assign)
+	LITERAL	reduce using rule 154 (assign)
+	$default	reduce using rule 27 (atomexpr)
+
+State 201:
+
+	mdir -> directive .	(Rule 96)
+
+	$default	reduce using rule 96 (mdir)
+
+State 202:
+
+	macro -> MACRO IDENT mdir .	(Rule 95)
+
+	$default	reduce using rule 95 (macro)
+
+State 203:
+
+	macro -> MACRO IDENT '(' . margs ')' mdir	(Rule 94)
+	expr -> '(' . assign ')'	(Rule 148)
+	expr -> '(' . expr ')'	(Rule 149)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 275
+	LITERAL	shift, and go to state 59
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 155
+	sterm	go to state 71
+	item	go to state 39
+	assign	go to state 154
+	margs	go to state 276
+	node	go to state 23
+	ident	go to state 153
+	term	go to state 60
+	lterm	go to state 58
+
+State 204:
+
+	atomexpr -> expr .	(Rule 27)
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	'?'	shift, and go to state 162
+	AND	shift, and go to state 164
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+	OR	shift, and go to state 166
+
+	$default	reduce using rule 27 (atomexpr)
+
+State 205:
+
+	loopvar -> IDENT ASSIGN . term args	(Rule 66)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 277
+	lterm	go to state 58
+
+State 206:
+
+	loopvar -> IDENT IN . term args	(Rule 67)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 278
+	lterm	go to state 58
+
+State 207:
+
+	loopvar -> term args .	(Rule 68)
+	args -> args . expr	(Rule 156)
+	args -> args . param	(Rule 157)
+	args -> args . ident ASSIGN expr	(Rule 158)
+	args -> args . COMMA	(Rule 159)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	COMMA	shift, and go to state 264
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 262
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	$default	reduce using rule 68 (loopvar)
+
+	expr	go to state 263
+	sterm	go to state 71
+	item	go to state 260
+	param	go to state 261
+	node	go to state 23
+	ident	go to state 259
+	term	go to state 60
+	lterm	go to state 58
+
+State 208:
+
+	loop -> FOR loopvar ';' . @1-3 block END	(Rule 58)
+
+	$default	reduce using rule 57 (@1-3)
+
+	@1-3	go to state 279
+
+State 209:
+
+	lnameargs -> lvalue ASSIGN . nameargs	(Rule 161)
+
+	'"'	shift, and go to state 92
+	'$'	shift, and go to state 89
+	FILENAME	shift, and go to state 86
+	IDENT	shift, and go to state 84
+	LITERAL	shift, and go to state 91
+	NUMBER	shift, and go to state 87
+
+	filepart	go to state 90
+	names	go to state 94
+	nameargs	go to state 280
+	filename	go to state 88
+	name	go to state 85
+
+State 210:
+
+	item -> IDENT .	(Rule 134)
+	item -> '$' IDENT .	(Rule 136)
+
+	ASSIGN	reduce using rule 136 (item)
+	$default	reduce using rule 134 (item)
+
+State 211:
+
+	filter -> FILTER lnameargs ';' . block END	(Rule 84)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 3 (block)
+
+	item	go to state 39
+	loop	go to state 4
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 11
+	atomdir	go to state 12
+	anonblock	go to state 50
+	defblockname	go to state 14
+	bind	go to state 54
+	ident	go to state 16
+	assign	go to state 19
+	macro	go to state 20
+	lterm	go to state 58
+	node	go to state 23
+	term	go to state 60
+	rawperl	go to state 61
+	expr	go to state 64
+	use	go to state 65
+	defblock	go to state 68
+	filter	go to state 29
+	sterm	go to state 71
+	perl	go to state 31
+	chunks	go to state 33
+	setlist	go to state 73
+	switch	go to state 34
+	try	go to state 35
+	directive	go to state 74
+	block	go to state 281
+	condition	go to state 76
+
+State 212:
+
+	lvalue -> '"' quoted . '"'	(Rule 164)
+	name -> '"' quoted . '"'	(Rule 171)
+	quoted -> quoted . quotable	(Rule 179)
+
+	'"'	shift, and go to state 282
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	';'	shift, and go to state 238
+	IDENT	shift, and go to state 2
+	TEXT	shift, and go to state 236
+
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 235
+	quotable	go to state 237
+
+State 213:
+
+	anonblock -> BLOCK blockargs ';' . block END	(Rule 92)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 3 (block)
+
+	item	go to state 39
+	loop	go to state 4
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 11
+	atomdir	go to state 12
+	anonblock	go to state 50
+	defblockname	go to state 14
+	bind	go to state 54
+	ident	go to state 16
+	assign	go to state 19
+	macro	go to state 20
+	lterm	go to state 58
+	node	go to state 23
+	term	go to state 60
+	rawperl	go to state 61
+	expr	go to state 64
+	use	go to state 65
+	defblock	go to state 68
+	filter	go to state 29
+	sterm	go to state 71
+	perl	go to state 31
+	chunks	go to state 33
+	setlist	go to state 73
+	switch	go to state 34
+	try	go to state 35
+	directive	go to state 74
+	block	go to state 283
+	condition	go to state 76
+
+State 214:
+
+	lterm -> '{' hash '}' .	(Rule 112)
+
+	$default	reduce using rule 112 (lterm)
+
+State 215:
+
+	param -> item ASSIGN . expr	(Rule 128)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 284
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 216:
+
+	params -> params param .	(Rule 124)
+
+	$default	reduce using rule 124 (params)
+
+State 217:
+
+	params -> params COMMA .	(Rule 125)
+
+	$default	reduce using rule 125 (params)
+
+State 218:
+
+	param -> LITERAL ASSIGN . expr	(Rule 127)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 285
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 219:
+
+	view -> VIEW nameargs ';' . @4-3 block END	(Rule 79)
+
+	$default	reduce using rule 78 (@4-3)
+
+	@4-3	go to state 286
+
+State 220:
+
+	item -> '${' sterm '}' .	(Rule 135)
+
+	$default	reduce using rule 135 (item)
+
+State 221:
+
+	node -> item '(' args . ')'	(Rule 133)
+	args -> args . expr	(Rule 156)
+	args -> args . param	(Rule 157)
+	args -> args . ident ASSIGN expr	(Rule 158)
+	args -> args . COMMA	(Rule 159)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	')'	shift, and go to state 287
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	COMMA	shift, and go to state 264
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 262
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 263
+	sterm	go to state 71
+	item	go to state 260
+	param	go to state 261
+	node	go to state 23
+	ident	go to state 259
+	term	go to state 60
+	lterm	go to state 58
+
+State 222:
+
+	perl -> PERL ';' @5-2 . block END	(Rule 81)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 3 (block)
+
+	item	go to state 39
+	loop	go to state 4
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 11
+	atomdir	go to state 12
+	anonblock	go to state 50
+	defblockname	go to state 14
+	bind	go to state 54
+	ident	go to state 16
+	assign	go to state 19
+	macro	go to state 20
+	lterm	go to state 58
+	node	go to state 23
+	term	go to state 60
+	rawperl	go to state 61
+	expr	go to state 64
+	use	go to state 65
+	defblock	go to state 68
+	filter	go to state 29
+	sterm	go to state 71
+	perl	go to state 31
+	chunks	go to state 33
+	setlist	go to state 73
+	switch	go to state 34
+	try	go to state 35
+	directive	go to state 74
+	block	go to state 288
+	condition	go to state 76
+
+State 223:
+
+	condition -> IF expr ';' . block else END	(Rule 45)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 3 (block)
+
+	item	go to state 39
+	loop	go to state 4
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 11
+	atomdir	go to state 12
+	anonblock	go to state 50
+	defblockname	go to state 14
+	bind	go to state 54
+	ident	go to state 16
+	assign	go to state 19
+	macro	go to state 20
+	lterm	go to state 58
+	node	go to state 23
+	term	go to state 60
+	rawperl	go to state 61
+	expr	go to state 64
+	use	go to state 65
+	defblock	go to state 68
+	filter	go to state 29
+	sterm	go to state 71
+	perl	go to state 31
+	chunks	go to state 33
+	setlist	go to state 73
+	switch	go to state 34
+	try	go to state 35
+	directive	go to state 74
+	block	go to state 289
+	condition	go to state 76
+
+State 224:
+
+	condition -> atomexpr UNLESS expr .	(Rule 48)
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	'?'	shift, and go to state 162
+	AND	shift, and go to state 164
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+	OR	shift, and go to state 166
+
+	$default	reduce using rule 48 (condition)
+
+State 225:
+
+	loop -> atomexpr FOR loopvar .	(Rule 59)
+
+	$default	reduce using rule 59 (loop)
+
+State 226:
+
+	filter -> atomexpr FILTER lnameargs .	(Rule 85)
+
+	$default	reduce using rule 85 (filter)
+
+State 227:
+
+	condition -> atomexpr IF expr .	(Rule 46)
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	'?'	shift, and go to state 162
+	AND	shift, and go to state 164
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+	OR	shift, and go to state 166
+
+	$default	reduce using rule 46 (condition)
+
+State 228:
+
+	wrapper -> atomexpr WRAPPER nameargs .	(Rule 70)
+
+	$default	reduce using rule 70 (wrapper)
+
+State 229:
+
+	loop -> atomexpr WHILE expr .	(Rule 62)
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	'?'	shift, and go to state 162
+	AND	shift, and go to state 164
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+	OR	shift, and go to state 166
+
+	$default	reduce using rule 62 (loop)
+
+State 230:
+
+	expr -> '(' assign ')' .	(Rule 148)
+
+	$default	reduce using rule 148 (expr)
+
+State 231:
+
+	expr -> '(' expr ')' .	(Rule 149)
+
+	$default	reduce using rule 149 (expr)
+
+State 232:
+
+	switch -> SWITCH expr ';' . block case END	(Rule 52)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 3 (block)
+
+	item	go to state 39
+	loop	go to state 4
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 11
+	atomdir	go to state 12
+	anonblock	go to state 50
+	defblockname	go to state 14
+	bind	go to state 54
+	ident	go to state 16
+	assign	go to state 19
+	macro	go to state 20
+	lterm	go to state 58
+	node	go to state 23
+	term	go to state 60
+	rawperl	go to state 61
+	expr	go to state 64
+	use	go to state 65
+	defblock	go to state 68
+	filter	go to state 29
+	sterm	go to state 71
+	perl	go to state 31
+	chunks	go to state 33
+	setlist	go to state 73
+	switch	go to state 34
+	try	go to state 35
+	directive	go to state 74
+	block	go to state 290
+	condition	go to state 76
+
+State 233:
+
+	wrapper -> WRAPPER nameargs ';' . block END	(Rule 69)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 3 (block)
+
+	item	go to state 39
+	loop	go to state 4
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 11
+	atomdir	go to state 12
+	anonblock	go to state 50
+	defblockname	go to state 14
+	bind	go to state 54
+	ident	go to state 16
+	assign	go to state 19
+	macro	go to state 20
+	lterm	go to state 58
+	node	go to state 23
+	term	go to state 60
+	rawperl	go to state 61
+	expr	go to state 64
+	use	go to state 65
+	defblock	go to state 68
+	filter	go to state 29
+	sterm	go to state 71
+	perl	go to state 31
+	chunks	go to state 33
+	setlist	go to state 73
+	switch	go to state 34
+	try	go to state 35
+	directive	go to state 74
+	block	go to state 291
+	condition	go to state 76
+
+State 234:
+
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+	assign -> LITERAL ASSIGN expr .	(Rule 155)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	'?'	shift, and go to state 162
+	AND	shift, and go to state 164
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+	OR	shift, and go to state 166
+
+	$default	reduce using rule 155 (assign)
+
+State 235:
+
+	ident -> ident . DOT node	(Rule 129)
+	ident -> ident . DOT NUMBER	(Rule 130)
+	quotable -> ident .	(Rule 181)
+
+	DOT	shift, and go to state 107
+
+	$default	reduce using rule 181 (quotable)
+
+State 236:
+
+	quotable -> TEXT .	(Rule 182)
+
+	$default	reduce using rule 182 (quotable)
+
+State 237:
+
+	quoted -> quoted quotable .	(Rule 179)
+
+	$default	reduce using rule 179 (quoted)
+
+State 238:
+
+	quotable -> ';' .	(Rule 183)
+
+	$default	reduce using rule 183 (quotable)
+
+State 239:
+
+	sterm -> '"' quoted '"' .	(Rule 115)
+
+	$default	reduce using rule 115 (sterm)
+
+State 240:
+
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr '+' expr .	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+
+	'/'	shift, and go to state 170
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+
+	$default	reduce using rule 139 (expr)
+
+State 241:
+
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+	expr -> expr '?' expr . ':' expr	(Rule 147)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	':'	shift, and go to state 292
+	'?'	shift, and go to state 162
+	AND	shift, and go to state 164
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+	OR	shift, and go to state 166
+
+State 242:
+
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr DIV expr .	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+
+	MOD	shift, and go to state 169
+
+	$default	reduce using rule 140 (expr)
+
+State 243:
+
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr AND expr .	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+
+	$default	reduce using rule 144 (expr)
+
+State 244:
+
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr BINOP expr .	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+
+	$default	reduce using rule 137 (expr)
+
+State 245:
+
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr OR expr .	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+
+	$default	reduce using rule 145 (expr)
+
+State 246:
+
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr CAT expr .	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	BINOP	shift, and go to state 165
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+
+	$default	reduce using rule 143 (expr)
+
+State 247:
+
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr CMPOP expr .	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	BINOP	shift, and go to state 165
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+
+	$default	reduce using rule 142 (expr)
+
+State 248:
+
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr MOD expr .	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+
+	$default	reduce using rule 141 (expr)
+
+State 249:
+
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr '/' expr .	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+
+	$default	reduce using rule 138 (expr)
+
+State 250:
+
+	bind -> BINDING name ';' . @3-3 block END	(Rule 64)
+
+	$default	reduce using rule 63 (@3-3)
+
+	@3-3	go to state 293
+
+State 251:
+
+	loop -> WHILE expr ';' . @2-3 block END	(Rule 61)
+
+	$default	reduce using rule 60 (@2-3)
+
+	@2-3	go to state 294
+
+State 252:
+
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+	assign -> ident ASSIGN expr .	(Rule 154)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	'?'	shift, and go to state 162
+	AND	shift, and go to state 164
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+	OR	shift, and go to state 166
+
+	$default	reduce using rule 154 (assign)
+
+State 253:
+
+	condition -> UNLESS expr ';' block . else END	(Rule 47)
+
+	ELSE	shift, and go to state 295
+	ELSIF	shift, and go to state 297
+
+	$default	reduce using rule 51 (else)
+
+	else	go to state 296
+
+State 254:
+
+	filename -> filename DOT filepart .	(Rule 174)
+
+	$default	reduce using rule 174 (filename)
+
+State 255:
+
+	args -> args . expr	(Rule 156)
+	args -> args . param	(Rule 157)
+	args -> args . ident ASSIGN expr	(Rule 158)
+	args -> args . COMMA	(Rule 159)
+	nameargs -> '$' ident args .	(Rule 166)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	COMMA	shift, and go to state 264
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 262
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	$default	reduce using rule 166 (nameargs)
+
+	expr	go to state 263
+	sterm	go to state 71
+	item	go to state 260
+	param	go to state 261
+	node	go to state 23
+	ident	go to state 259
+	term	go to state 60
+	lterm	go to state 58
+
+State 256:
+
+	name -> '"' quoted '"' .	(Rule 171)
+
+	$default	reduce using rule 171 (name)
+
+State 257:
+
+	names -> names '+' name .	(Rule 169)
+
+	$default	reduce using rule 169 (names)
+
+State 258:
+
+	args -> args . expr	(Rule 156)
+	args -> args . param	(Rule 157)
+	args -> args . ident ASSIGN expr	(Rule 158)
+	args -> args . COMMA	(Rule 159)
+	nameargs -> names '(' args . ')'	(Rule 168)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	')'	shift, and go to state 298
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	COMMA	shift, and go to state 264
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 262
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 263
+	sterm	go to state 71
+	item	go to state 260
+	param	go to state 261
+	node	go to state 23
+	ident	go to state 259
+	term	go to state 60
+	lterm	go to state 58
+
+State 259:
+
+	sterm -> ident .	(Rule 113)
+	ident -> ident . DOT node	(Rule 129)
+	ident -> ident . DOT NUMBER	(Rule 130)
+	args -> args ident . ASSIGN expr	(Rule 158)
+
+	ASSIGN	shift, and go to state 299
+	DOT	shift, and go to state 107
+
+	$default	reduce using rule 113 (sterm)
+
+State 260:
+
+	param -> item . ASSIGN expr	(Rule 128)
+	node -> item .	(Rule 132)
+	node -> item . '(' args ')'	(Rule 133)
+
+	'('	shift, and go to state 138
+	ASSIGN	shift, and go to state 215
+
+	'('	[reduce using rule 132 (node)]
+	ASSIGN	[reduce using rule 132 (node)]
+	$default	reduce using rule 132 (node)
+
+State 261:
+
+	args -> args param .	(Rule 157)
+
+	$default	reduce using rule 157 (args)
+
+State 262:
+
+	sterm -> LITERAL .	(Rule 116)
+	param -> LITERAL . ASSIGN expr	(Rule 127)
+
+	ASSIGN	shift, and go to state 218
+
+	$default	reduce using rule 116 (sterm)
+
+State 263:
+
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+	args -> args expr .	(Rule 156)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	'?'	shift, and go to state 162
+	AND	shift, and go to state 164
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+	OR	shift, and go to state 166
+
+	$default	reduce using rule 156 (args)
+
+State 264:
+
+	args -> args COMMA .	(Rule 159)
+
+	$default	reduce using rule 159 (args)
+
+State 265:
+
+	range -> sterm TO sterm .	(Rule 121)
+
+	$default	reduce using rule 121 (range)
+
+State 266:
+
+	final -> FINAL . ';' block	(Rule 75)
+
+	';'	shift, and go to state 300
+
+State 267:
+
+	try -> TRY ';' block final . END	(Rule 71)
+
+	END	shift, and go to state 301
+
+State 268:
+
+	final -> CATCH . filename ';' block final	(Rule 72)
+	final -> CATCH . DEFAULT ';' block final	(Rule 73)
+	final -> CATCH . ';' block final	(Rule 74)
+
+	';'	shift, and go to state 303
+	DEFAULT	shift, and go to state 304
+	FILENAME	shift, and go to state 86
+	IDENT	shift, and go to state 84
+	NUMBER	shift, and go to state 87
+
+	filepart	go to state 90
+	filename	go to state 302
+
+State 269:
+
+	rawperl -> RAWPERL @6-1 ';' TEXT . END	(Rule 83)
+
+	END	shift, and go to state 305
+
+State 270:
+
+	meta -> IDENT ASSIGN NUMBER .	(Rule 106)
+
+	$default	reduce using rule 106 (meta)
+
+State 271:
+
+	meta -> IDENT ASSIGN LITERAL .	(Rule 104)
+
+	$default	reduce using rule 104 (meta)
+
+State 272:
+
+	meta -> IDENT ASSIGN '"' . TEXT '"'	(Rule 105)
+
+	TEXT	shift, and go to state 306
+
+State 273:
+
+	defblock -> defblockname blockargs ';' template . END	(Rule 86)
+
+	END	shift, and go to state 307
+
+State 274:
+
+	mdir -> BLOCK ';' . block END	(Rule 97)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 3 (block)
+
+	item	go to state 39
+	loop	go to state 4
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 11
+	atomdir	go to state 12
+	anonblock	go to state 50
+	defblockname	go to state 14
+	bind	go to state 54
+	ident	go to state 16
+	assign	go to state 19
+	macro	go to state 20
+	lterm	go to state 58
+	node	go to state 23
+	term	go to state 60
+	rawperl	go to state 61
+	expr	go to state 64
+	use	go to state 65
+	defblock	go to state 68
+	filter	go to state 29
+	sterm	go to state 71
+	perl	go to state 31
+	chunks	go to state 33
+	setlist	go to state 73
+	switch	go to state 34
+	try	go to state 35
+	directive	go to state 74
+	block	go to state 308
+	condition	go to state 76
+
+State 275:
+
+	margs -> IDENT .	(Rule 100)
+	item -> IDENT .	(Rule 134)
+
+	')'	[reduce using rule 134 (item)]
+	')'	reduce using rule 100 (margs)
+	COMMA	reduce using rule 100 (margs)
+	IDENT	reduce using rule 100 (margs)
+	$default	reduce using rule 134 (item)
+
+State 276:
+
+	macro -> MACRO IDENT '(' margs . ')' mdir	(Rule 94)
+	margs -> margs . IDENT	(Rule 98)
+	margs -> margs . COMMA	(Rule 99)
+
+	')'	shift, and go to state 310
+	COMMA	shift, and go to state 311
+	IDENT	shift, and go to state 309
+
+State 277:
+
+	loopvar -> IDENT ASSIGN term . args	(Rule 66)
+
+	$default	reduce using rule 160 (args)
+
+	args	go to state 312
+
+State 278:
+
+	loopvar -> IDENT IN term . args	(Rule 67)
+
+	$default	reduce using rule 160 (args)
+
+	args	go to state 313
+
+State 279:
+
+	loop -> FOR loopvar ';' @1-3 . block END	(Rule 58)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 3 (block)
+
+	item	go to state 39
+	loop	go to state 4
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 11
+	atomdir	go to state 12
+	anonblock	go to state 50
+	defblockname	go to state 14
+	bind	go to state 54
+	ident	go to state 16
+	assign	go to state 19
+	macro	go to state 20
+	lterm	go to state 58
+	node	go to state 23
+	term	go to state 60
+	rawperl	go to state 61
+	expr	go to state 64
+	use	go to state 65
+	defblock	go to state 68
+	filter	go to state 29
+	sterm	go to state 71
+	perl	go to state 31
+	chunks	go to state 33
+	setlist	go to state 73
+	switch	go to state 34
+	try	go to state 35
+	directive	go to state 74
+	block	go to state 314
+	condition	go to state 76
+
+State 280:
+
+	lnameargs -> lvalue ASSIGN nameargs .	(Rule 161)
+
+	$default	reduce using rule 161 (lnameargs)
+
+State 281:
+
+	filter -> FILTER lnameargs ';' block . END	(Rule 84)
+
+	END	shift, and go to state 315
+
+State 282:
+
+	lvalue -> '"' quoted '"' .	(Rule 164)
+	name -> '"' quoted '"' .	(Rule 171)
+
+	ASSIGN	reduce using rule 164 (lvalue)
+	$default	reduce using rule 171 (name)
+
+State 283:
+
+	anonblock -> BLOCK blockargs ';' block . END	(Rule 92)
+
+	END	shift, and go to state 316
+
+State 284:
+
+	param -> item ASSIGN expr .	(Rule 128)
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	'?'	shift, and go to state 162
+	AND	shift, and go to state 164
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+	OR	shift, and go to state 166
+
+	$default	reduce using rule 128 (param)
+
+State 285:
+
+	param -> LITERAL ASSIGN expr .	(Rule 127)
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	'?'	shift, and go to state 162
+	AND	shift, and go to state 164
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+	OR	shift, and go to state 166
+
+	$default	reduce using rule 127 (param)
+
+State 286:
+
+	view -> VIEW nameargs ';' @4-3 . block END	(Rule 79)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 3 (block)
+
+	item	go to state 39
+	loop	go to state 4
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 11
+	atomdir	go to state 12
+	anonblock	go to state 50
+	defblockname	go to state 14
+	bind	go to state 54
+	ident	go to state 16
+	assign	go to state 19
+	macro	go to state 20
+	lterm	go to state 58
+	node	go to state 23
+	term	go to state 60
+	rawperl	go to state 61
+	expr	go to state 64
+	use	go to state 65
+	defblock	go to state 68
+	filter	go to state 29
+	sterm	go to state 71
+	perl	go to state 31
+	chunks	go to state 33
+	setlist	go to state 73
+	switch	go to state 34
+	try	go to state 35
+	directive	go to state 74
+	block	go to state 317
+	condition	go to state 76
+
+State 287:
+
+	node -> item '(' args ')' .	(Rule 133)
+
+	$default	reduce using rule 133 (node)
+
+State 288:
+
+	perl -> PERL ';' @5-2 block . END	(Rule 81)
+
+	END	shift, and go to state 318
+
+State 289:
+
+	condition -> IF expr ';' block . else END	(Rule 45)
+
+	ELSE	shift, and go to state 295
+	ELSIF	shift, and go to state 297
+
+	$default	reduce using rule 51 (else)
+
+	else	go to state 319
+
+State 290:
+
+	switch -> SWITCH expr ';' block . case END	(Rule 52)
+
+	CASE	shift, and go to state 320
+
+	$default	reduce using rule 56 (case)
+
+	case	go to state 321
+
+State 291:
+
+	wrapper -> WRAPPER nameargs ';' block . END	(Rule 69)
+
+	END	shift, and go to state 322
+
+State 292:
+
+	expr -> expr '?' expr ':' . expr	(Rule 147)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 323
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 293:
+
+	bind -> BINDING name ';' @3-3 . block END	(Rule 64)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 3 (block)
+
+	item	go to state 39
+	loop	go to state 4
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 11
+	atomdir	go to state 12
+	anonblock	go to state 50
+	defblockname	go to state 14
+	bind	go to state 54
+	ident	go to state 16
+	assign	go to state 19
+	macro	go to state 20
+	lterm	go to state 58
+	node	go to state 23
+	term	go to state 60
+	rawperl	go to state 61
+	expr	go to state 64
+	use	go to state 65
+	defblock	go to state 68
+	filter	go to state 29
+	sterm	go to state 71
+	perl	go to state 31
+	chunks	go to state 33
+	setlist	go to state 73
+	switch	go to state 34
+	try	go to state 35
+	directive	go to state 74
+	block	go to state 324
+	condition	go to state 76
+
+State 294:
+
+	loop -> WHILE expr ';' @2-3 . block END	(Rule 61)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 3 (block)
+
+	item	go to state 39
+	loop	go to state 4
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 11
+	atomdir	go to state 12
+	anonblock	go to state 50
+	defblockname	go to state 14
+	bind	go to state 54
+	ident	go to state 16
+	assign	go to state 19
+	macro	go to state 20
+	lterm	go to state 58
+	node	go to state 23
+	term	go to state 60
+	rawperl	go to state 61
+	expr	go to state 64
+	use	go to state 65
+	defblock	go to state 68
+	filter	go to state 29
+	sterm	go to state 71
+	perl	go to state 31
+	chunks	go to state 33
+	setlist	go to state 73
+	switch	go to state 34
+	try	go to state 35
+	directive	go to state 74
+	block	go to state 325
+	condition	go to state 76
+
+State 295:
+
+	else -> ELSE . ';' block	(Rule 50)
+
+	';'	shift, and go to state 326
+
+State 296:
+
+	condition -> UNLESS expr ';' block else . END	(Rule 47)
+
+	END	shift, and go to state 327
+
+State 297:
+
+	else -> ELSIF . expr ';' block else	(Rule 49)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 328
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 298:
+
+	nameargs -> names '(' args ')' .	(Rule 168)
+
+	$default	reduce using rule 168 (nameargs)
+
+State 299:
+
+	args -> args ident ASSIGN . expr	(Rule 158)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	expr	go to state 329
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 60
+	lterm	go to state 58
+
+State 300:
+
+	final -> FINAL ';' . block	(Rule 75)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 3 (block)
+
+	item	go to state 39
+	loop	go to state 4
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 11
+	atomdir	go to state 12
+	anonblock	go to state 50
+	defblockname	go to state 14
+	bind	go to state 54
+	ident	go to state 16
+	assign	go to state 19
+	macro	go to state 20
+	lterm	go to state 58
+	node	go to state 23
+	term	go to state 60
+	rawperl	go to state 61
+	expr	go to state 64
+	use	go to state 65
+	defblock	go to state 68
+	filter	go to state 29
+	sterm	go to state 71
+	perl	go to state 31
+	chunks	go to state 33
+	setlist	go to state 73
+	switch	go to state 34
+	try	go to state 35
+	directive	go to state 74
+	block	go to state 330
+	condition	go to state 76
+
+State 301:
+
+	try -> TRY ';' block final END .	(Rule 71)
+
+	$default	reduce using rule 71 (try)
+
+State 302:
+
+	final -> CATCH filename . ';' block final	(Rule 72)
+	filename -> filename . DOT filepart	(Rule 174)
+
+	';'	shift, and go to state 331
+	DOT	shift, and go to state 179
+
+State 303:
+
+	final -> CATCH ';' . block final	(Rule 74)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 3 (block)
+
+	item	go to state 39
+	loop	go to state 4
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 11
+	atomdir	go to state 12
+	anonblock	go to state 50
+	defblockname	go to state 14
+	bind	go to state 54
+	ident	go to state 16
+	assign	go to state 19
+	macro	go to state 20
+	lterm	go to state 58
+	node	go to state 23
+	term	go to state 60
+	rawperl	go to state 61
+	expr	go to state 64
+	use	go to state 65
+	defblock	go to state 68
+	filter	go to state 29
+	sterm	go to state 71
+	perl	go to state 31
+	chunks	go to state 33
+	setlist	go to state 73
+	switch	go to state 34
+	try	go to state 35
+	directive	go to state 74
+	block	go to state 332
+	condition	go to state 76
+
+State 304:
+
+	final -> CATCH DEFAULT . ';' block final	(Rule 73)
+
+	';'	shift, and go to state 333
+
+State 305:
+
+	rawperl -> RAWPERL @6-1 ';' TEXT END .	(Rule 83)
+
+	$default	reduce using rule 83 (rawperl)
+
+State 306:
+
+	meta -> IDENT ASSIGN '"' TEXT . '"'	(Rule 105)
+
+	'"'	shift, and go to state 334
+
+State 307:
+
+	defblock -> defblockname blockargs ';' template END .	(Rule 86)
+
+	$default	reduce using rule 86 (defblock)
+
+State 308:
+
+	mdir -> BLOCK ';' block . END	(Rule 97)
+
+	END	shift, and go to state 335
+
+State 309:
+
+	margs -> margs IDENT .	(Rule 98)
+
+	$default	reduce using rule 98 (margs)
+
+State 310:
+
+	macro -> MACRO IDENT '(' margs ')' . mdir	(Rule 94)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 198
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	item	go to state 39
+	node	go to state 23
+	term	go to state 60
+	loop	go to state 4
+	expr	go to state 204
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	atomdir	go to state 12
+	mdir	go to state 336
+	sterm	go to state 71
+	filter	go to state 29
+	bind	go to state 54
+	ident	go to state 153
+	perl	go to state 31
+	setlist	go to state 73
+	try	go to state 35
+	switch	go to state 34
+	assign	go to state 19
+	directive	go to state 201
+	condition	go to state 76
+	lterm	go to state 58
+
+State 311:
+
+	margs -> margs COMMA .	(Rule 99)
+
+	$default	reduce using rule 99 (margs)
+
+State 312:
+
+	loopvar -> IDENT ASSIGN term args .	(Rule 66)
+	args -> args . expr	(Rule 156)
+	args -> args . param	(Rule 157)
+	args -> args . ident ASSIGN expr	(Rule 158)
+	args -> args . COMMA	(Rule 159)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	COMMA	shift, and go to state 264
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 262
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	$default	reduce using rule 66 (loopvar)
+
+	expr	go to state 263
+	sterm	go to state 71
+	item	go to state 260
+	param	go to state 261
+	node	go to state 23
+	ident	go to state 259
+	term	go to state 60
+	lterm	go to state 58
+
+State 313:
+
+	loopvar -> IDENT IN term args .	(Rule 67)
+	args -> args . expr	(Rule 156)
+	args -> args . param	(Rule 157)
+	args -> args . ident ASSIGN expr	(Rule 158)
+	args -> args . COMMA	(Rule 159)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	COMMA	shift, and go to state 264
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 262
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	$default	reduce using rule 67 (loopvar)
+
+	expr	go to state 263
+	sterm	go to state 71
+	item	go to state 260
+	param	go to state 261
+	node	go to state 23
+	ident	go to state 259
+	term	go to state 60
+	lterm	go to state 58
+
+State 314:
+
+	loop -> FOR loopvar ';' @1-3 block . END	(Rule 58)
+
+	END	shift, and go to state 337
+
+State 315:
+
+	filter -> FILTER lnameargs ';' block END .	(Rule 84)
+
+	$default	reduce using rule 84 (filter)
+
+State 316:
+
+	anonblock -> BLOCK blockargs ';' block END .	(Rule 92)
+
+	$default	reduce using rule 92 (anonblock)
+
+State 317:
+
+	view -> VIEW nameargs ';' @4-3 block . END	(Rule 79)
+
+	END	shift, and go to state 338
+
+State 318:
+
+	perl -> PERL ';' @5-2 block END .	(Rule 81)
+
+	$default	reduce using rule 81 (perl)
+
+State 319:
+
+	condition -> IF expr ';' block else . END	(Rule 45)
+
+	END	shift, and go to state 339
+
+State 320:
+
+	case -> CASE . term ';' block case	(Rule 53)
+	case -> CASE . DEFAULT ';' block	(Rule 54)
+	case -> CASE . ';' block	(Rule 55)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	';'	shift, and go to state 340
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	DEFAULT	shift, and go to state 342
+	IDENT	shift, and go to state 2
+	LITERAL	shift, and go to state 81
+	NUMBER	shift, and go to state 26
+	REF	shift, and go to state 27
+
+	sterm	go to state 71
+	item	go to state 39
+	node	go to state 23
+	ident	go to state 80
+	term	go to state 341
+	lterm	go to state 58
+
+State 321:
+
+	switch -> SWITCH expr ';' block case . END	(Rule 52)
+
+	END	shift, and go to state 343
+
+State 322:
+
+	wrapper -> WRAPPER nameargs ';' block END .	(Rule 69)
+
+	$default	reduce using rule 69 (wrapper)
+
+State 323:
+
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+	expr -> expr '?' expr ':' expr .	(Rule 147)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	'?'	shift, and go to state 162
+	AND	shift, and go to state 164
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+	OR	shift, and go to state 166
+
+	$default	reduce using rule 147 (expr)
+
+State 324:
+
+	bind -> BINDING name ';' @3-3 block . END	(Rule 64)
+
+	END	shift, and go to state 344
+
+State 325:
+
+	loop -> WHILE expr ';' @2-3 block . END	(Rule 61)
+
+	END	shift, and go to state 345
+
+State 326:
+
+	else -> ELSE ';' . block	(Rule 50)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 3 (block)
+
+	item	go to state 39
+	loop	go to state 4
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 11
+	atomdir	go to state 12
+	anonblock	go to state 50
+	defblockname	go to state 14
+	bind	go to state 54
+	ident	go to state 16
+	assign	go to state 19
+	macro	go to state 20
+	lterm	go to state 58
+	node	go to state 23
+	term	go to state 60
+	rawperl	go to state 61
+	expr	go to state 64
+	use	go to state 65
+	defblock	go to state 68
+	filter	go to state 29
+	sterm	go to state 71
+	perl	go to state 31
+	chunks	go to state 33
+	setlist	go to state 73
+	switch	go to state 34
+	try	go to state 35
+	directive	go to state 74
+	block	go to state 346
+	condition	go to state 76
+
+State 327:
+
+	condition -> UNLESS expr ';' block else END .	(Rule 47)
+
+	$default	reduce using rule 47 (condition)
+
+State 328:
+
+	else -> ELSIF expr . ';' block else	(Rule 49)
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	';'	shift, and go to state 347
+	'?'	shift, and go to state 162
+	AND	shift, and go to state 164
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+	OR	shift, and go to state 166
+
+State 329:
+
+	expr -> expr . BINOP expr	(Rule 137)
+	expr -> expr . '/' expr	(Rule 138)
+	expr -> expr . '+' expr	(Rule 139)
+	expr -> expr . DIV expr	(Rule 140)
+	expr -> expr . MOD expr	(Rule 141)
+	expr -> expr . CMPOP expr	(Rule 142)
+	expr -> expr . CAT expr	(Rule 143)
+	expr -> expr . AND expr	(Rule 144)
+	expr -> expr . OR expr	(Rule 145)
+	expr -> expr . '?' expr ':' expr	(Rule 147)
+	args -> args ident ASSIGN expr .	(Rule 158)
+
+	'+'	shift, and go to state 161
+	'/'	shift, and go to state 170
+	'?'	shift, and go to state 162
+	AND	shift, and go to state 164
+	BINOP	shift, and go to state 165
+	CAT	shift, and go to state 167
+	CMPOP	shift, and go to state 168
+	DIV	shift, and go to state 163
+	MOD	shift, and go to state 169
+	OR	shift, and go to state 166
+
+	$default	reduce using rule 158 (args)
+
+State 330:
+
+	final -> FINAL ';' block .	(Rule 75)
+
+	$default	reduce using rule 75 (final)
+
+State 331:
+
+	final -> CATCH filename ';' . block final	(Rule 72)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 3 (block)
+
+	item	go to state 39
+	loop	go to state 4
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 11
+	atomdir	go to state 12
+	anonblock	go to state 50
+	defblockname	go to state 14
+	bind	go to state 54
+	ident	go to state 16
+	assign	go to state 19
+	macro	go to state 20
+	lterm	go to state 58
+	node	go to state 23
+	term	go to state 60
+	rawperl	go to state 61
+	expr	go to state 64
+	use	go to state 65
+	defblock	go to state 68
+	filter	go to state 29
+	sterm	go to state 71
+	perl	go to state 31
+	chunks	go to state 33
+	setlist	go to state 73
+	switch	go to state 34
+	try	go to state 35
+	directive	go to state 74
+	block	go to state 348
+	condition	go to state 76
+
+State 332:
+
+	final -> CATCH ';' block . final	(Rule 74)
+
+	CATCH	shift, and go to state 268
+	FINAL	shift, and go to state 266
+
+	$default	reduce using rule 76 (final)
+
+	final	go to state 349
+
+State 333:
+
+	final -> CATCH DEFAULT ';' . block final	(Rule 73)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 3 (block)
+
+	item	go to state 39
+	loop	go to state 4
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 11
+	atomdir	go to state 12
+	anonblock	go to state 50
+	defblockname	go to state 14
+	bind	go to state 54
+	ident	go to state 16
+	assign	go to state 19
+	macro	go to state 20
+	lterm	go to state 58
+	node	go to state 23
+	term	go to state 60
+	rawperl	go to state 61
+	expr	go to state 64
+	use	go to state 65
+	defblock	go to state 68
+	filter	go to state 29
+	sterm	go to state 71
+	perl	go to state 31
+	chunks	go to state 33
+	setlist	go to state 73
+	switch	go to state 34
+	try	go to state 35
+	directive	go to state 74
+	block	go to state 350
+	condition	go to state 76
+
+State 334:
+
+	meta -> IDENT ASSIGN '"' TEXT '"' .	(Rule 105)
+
+	$default	reduce using rule 105 (meta)
+
+State 335:
+
+	mdir -> BLOCK ';' block END .	(Rule 97)
+
+	$default	reduce using rule 97 (mdir)
+
+State 336:
+
+	macro -> MACRO IDENT '(' margs ')' mdir .	(Rule 94)
+
+	$default	reduce using rule 94 (macro)
+
+State 337:
+
+	loop -> FOR loopvar ';' @1-3 block END .	(Rule 58)
+
+	$default	reduce using rule 58 (loop)
+
+State 338:
+
+	view -> VIEW nameargs ';' @4-3 block END .	(Rule 79)
+
+	$default	reduce using rule 79 (view)
+
+State 339:
+
+	condition -> IF expr ';' block else END .	(Rule 45)
+
+	$default	reduce using rule 45 (condition)
+
+State 340:
+
+	case -> CASE ';' . block	(Rule 55)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 3 (block)
+
+	item	go to state 39
+	loop	go to state 4
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 11
+	atomdir	go to state 12
+	anonblock	go to state 50
+	defblockname	go to state 14
+	bind	go to state 54
+	ident	go to state 16
+	assign	go to state 19
+	macro	go to state 20
+	lterm	go to state 58
+	node	go to state 23
+	term	go to state 60
+	rawperl	go to state 61
+	expr	go to state 64
+	use	go to state 65
+	defblock	go to state 68
+	filter	go to state 29
+	sterm	go to state 71
+	perl	go to state 31
+	chunks	go to state 33
+	setlist	go to state 73
+	switch	go to state 34
+	try	go to state 35
+	directive	go to state 74
+	block	go to state 351
+	condition	go to state 76
+
+State 341:
+
+	case -> CASE term . ';' block case	(Rule 53)
+
+	';'	shift, and go to state 352
+
+State 342:
+
+	case -> CASE DEFAULT . ';' block	(Rule 54)
+
+	';'	shift, and go to state 353
+
+State 343:
+
+	switch -> SWITCH expr ';' block case END .	(Rule 52)
+
+	$default	reduce using rule 52 (switch)
+
+State 344:
+
+	bind -> BINDING name ';' @3-3 block END .	(Rule 64)
+
+	$default	reduce using rule 64 (bind)
+
+State 345:
+
+	loop -> WHILE expr ';' @2-3 block END .	(Rule 61)
+
+	$default	reduce using rule 61 (loop)
+
+State 346:
+
+	else -> ELSE ';' block .	(Rule 50)
+
+	$default	reduce using rule 50 (else)
+
+State 347:
+
+	else -> ELSIF expr ';' . block else	(Rule 49)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 3 (block)
+
+	item	go to state 39
+	loop	go to state 4
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 11
+	atomdir	go to state 12
+	anonblock	go to state 50
+	defblockname	go to state 14
+	bind	go to state 54
+	ident	go to state 16
+	assign	go to state 19
+	macro	go to state 20
+	lterm	go to state 58
+	node	go to state 23
+	term	go to state 60
+	rawperl	go to state 61
+	expr	go to state 64
+	use	go to state 65
+	defblock	go to state 68
+	filter	go to state 29
+	sterm	go to state 71
+	perl	go to state 31
+	chunks	go to state 33
+	setlist	go to state 73
+	switch	go to state 34
+	try	go to state 35
+	directive	go to state 74
+	block	go to state 354
+	condition	go to state 76
+
+State 348:
+
+	final -> CATCH filename ';' block . final	(Rule 72)
+
+	CATCH	shift, and go to state 268
+	FINAL	shift, and go to state 266
+
+	$default	reduce using rule 76 (final)
+
+	final	go to state 355
+
+State 349:
+
+	final -> CATCH ';' block final .	(Rule 74)
+
+	$default	reduce using rule 74 (final)
+
+State 350:
+
+	final -> CATCH DEFAULT ';' block . final	(Rule 73)
+
+	CATCH	shift, and go to state 268
+	FINAL	shift, and go to state 266
+
+	$default	reduce using rule 76 (final)
+
+	final	go to state 356
+
+State 351:
+
+	case -> CASE ';' block .	(Rule 55)
+
+	$default	reduce using rule 55 (case)
+
+State 352:
+
+	case -> CASE term ';' . block case	(Rule 53)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 3 (block)
+
+	item	go to state 39
+	loop	go to state 4
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 11
+	atomdir	go to state 12
+	anonblock	go to state 50
+	defblockname	go to state 14
+	bind	go to state 54
+	ident	go to state 16
+	assign	go to state 19
+	macro	go to state 20
+	lterm	go to state 58
+	node	go to state 23
+	term	go to state 60
+	rawperl	go to state 61
+	expr	go to state 64
+	use	go to state 65
+	defblock	go to state 68
+	filter	go to state 29
+	sterm	go to state 71
+	perl	go to state 31
+	chunks	go to state 33
+	setlist	go to state 73
+	switch	go to state 34
+	try	go to state 35
+	directive	go to state 74
+	block	go to state 357
+	condition	go to state 76
+
+State 353:
+
+	case -> CASE DEFAULT ';' . block	(Rule 54)
+
+	'"'	shift, and go to state 62
+	'$'	shift, and go to state 43
+	'${'	shift, and go to state 37
+	'('	shift, and go to state 55
+	'['	shift, and go to state 9
+	'{'	shift, and go to state 30
+	BINDING	shift, and go to state 69
+	BLOCK	shift, and go to state 28
+	CALL	shift, and go to state 45
+	CLEAR	shift, and go to state 41
+	COMPONENT	shift, and go to state 53
+	DEBUG	shift, and go to state 51
+	DEFAULT	shift, and go to state 72
+	FILTER	shift, and go to state 25
+	FOR	shift, and go to state 21
+	GET	shift, and go to state 47
+	IDENT	shift, and go to state 2
+	IF	shift, and go to state 44
+	INCLUDE	shift, and go to state 17
+	INSERT	shift, and go to state 67
+	LAST	shift, and go to state 49
+	LITERAL	shift, and go to state 59
+	MACRO	shift, and go to state 18
+	META	shift, and go to state 15
+	NEXT	shift, and go to state 22
+	NOT	shift, and go to state 38
+	NUMBER	shift, and go to state 26
+	PERL	shift, and go to state 40
+	PROCESS	shift, and go to state 63
+	RAWPERL	shift, and go to state 13
+	REF	shift, and go to state 27
+	RETURN	shift, and go to state 66
+	SET	shift, and go to state 1
+	STOP	shift, and go to state 6
+	SWITCH	shift, and go to state 56
+	TEXT	shift, and go to state 24
+	THROW	shift, and go to state 8
+	TRY	shift, and go to state 10
+	UNLESS	shift, and go to state 3
+	USE	shift, and go to state 32
+	VIEW	shift, and go to state 36
+	WHILE	shift, and go to state 70
+	WRAPPER	shift, and go to state 57
+
+	';'	reduce using rule 18 (statement)
+	$default	reduce using rule 3 (block)
+
+	item	go to state 39
+	loop	go to state 4
+	capture	go to state 42
+	statement	go to state 5
+	view	go to state 7
+	wrapper	go to state 46
+	atomexpr	go to state 48
+	chunk	go to state 11
+	atomdir	go to state 12
+	anonblock	go to state 50
+	defblockname	go to state 14
+	bind	go to state 54
+	ident	go to state 16
+	assign	go to state 19
+	macro	go to state 20
+	lterm	go to state 58
+	node	go to state 23
+	term	go to state 60
+	rawperl	go to state 61
+	expr	go to state 64
+	use	go to state 65
+	defblock	go to state 68
+	filter	go to state 29
+	sterm	go to state 71
+	perl	go to state 31
+	chunks	go to state 33
+	setlist	go to state 73
+	switch	go to state 34
+	try	go to state 35
+	directive	go to state 74
+	block	go to state 358
+	condition	go to state 76
+
+State 354:
+
+	else -> ELSIF expr ';' block . else	(Rule 49)
+
+	ELSE	shift, and go to state 295
+	ELSIF	shift, and go to state 297
+
+	$default	reduce using rule 51 (else)
+
+	else	go to state 359
+
+State 355:
+
+	final -> CATCH filename ';' block final .	(Rule 72)
+
+	$default	reduce using rule 72 (final)
+
+State 356:
+
+	final -> CATCH DEFAULT ';' block final .	(Rule 73)
+
+	$default	reduce using rule 73 (final)
+
+State 357:
+
+	case -> CASE term ';' block . case	(Rule 53)
+
+	CASE	shift, and go to state 320
+
+	$default	reduce using rule 56 (case)
+
+	case	go to state 360
+
+State 358:
+
+	case -> CASE DEFAULT ';' block .	(Rule 54)
+
+	$default	reduce using rule 54 (case)
+
+State 359:
+
+	else -> ELSIF expr ';' block else .	(Rule 49)
+
+	$default	reduce using rule 49 (else)
+
+State 360:
+
+	case -> CASE term ';' block case .	(Rule 53)
+
+	$default	reduce using rule 53 (case)
+
+
+Summary:
+--------
+Number of rules         : 184
+Number of terminals     : 71
+Number of non-terminals : 65
+Number of states        : 361
