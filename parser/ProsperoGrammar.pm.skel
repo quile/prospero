@@ -49,7 +49,7 @@ my ($factory, $rawstart);
 	USE PLUGIN FILTER MACRO PERL RAWPERL TO STEP AND OR NOT DIV MOD
 	IF UNLESS ELSE ELSIF FOR NEXT WHILE SWITCH CASE META IN
 	TRY THROW CATCH FINAL LAST RETURN STOP CLEAR VIEW DEBUG
-    BINDING COMPONENT
+    BINDING AROUND
     );
 
 # for historical reasons, != and == are converted to ne and eq to perform

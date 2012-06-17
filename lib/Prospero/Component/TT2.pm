@@ -9,7 +9,7 @@ use Prospero::Component::TT2::Grammar;
 
 use Template;
 
-sub CONTENT_TAG { quotemeta( "<__CONTENT__>" ) }
+sub CONTENT_TAG { "<__CONTENT__>" }
 
 sub _engine {
     my ( $self, $context ) = @_;
@@ -22,12 +22,16 @@ sub _engine {
 sub render_in_context {
     my ( $self, $context ) = @_;
 
+    # stuff the context away
+    $self->set_context( $context );
+
     my $engine = $self->_engine( $context );
     my $template_path = $self->template_path();
     my $output;
     unless ( $engine->process( $template_path, { self => $self }, \$output ) ) {
         die $engine->error;
     }
+    $self->set_context( undef );
     return $output;
 }
 
@@ -39,27 +43,32 @@ sub template_path {
     return "$name.html";
 }
 
+# rename this
 sub bind {
     my ( $self, $name ) = @_;
     # get binding with name
 
     my $binding = $self->binding_with_name( $name ) or die "No such binding: $name";
 
+    if ( $binding->{type} eq "CONTENT" ) {
+        return ( CONTENT_TAG(), undef );
+    }
+
     # determine component type and instantiate
     my $component = $self->component_for_binding( $binding ) or die "Can't instantiate component for binding $name";
 
     # bind values into it
-    $self->push_values_to_component( $component );
+    #$self->push_values_to_component( $component );
 
     # render or unwind
-    my $content = $component->render_in_context( $context );
+    my $content = $component->render_in_context( $self->context() );
 
     # pull values out
-    $self->pull_values_from_component( $component );
+    #$self->pull_values_from_component( $component );
 
     # return content
 
-    return ( "BIND( $name )\n", "END( $name )\n" );
+    return split( quotemeta(CONTENT_TAG()), $content );
 }
 
 #-------------------------------------------------------

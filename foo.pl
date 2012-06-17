@@ -11,6 +11,8 @@ use Prospero::Component::TT2::Grammar;
 use Prospero::Context;
 
 use Unit::Component::Hello;
+use Unit::Component::Foo;
+use Unit::Component::Bar;
 
 my $context = Prospero::Context->new({
     environment => {

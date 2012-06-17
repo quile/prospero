@@ -7,9 +7,9 @@
     <p>[% self.foo %]</p>
     <p>[% self.bar %]</p>
 
-    <p>[% COMPONENT foo %]</p>
+    <p>[% BINDING foo %]</p>
 
-    [% BINDING bar %]
+    [% BINDING bar AROUND %]
        <h2>Yes</h2>
     [% END %]
   </body>

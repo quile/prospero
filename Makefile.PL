@@ -6,6 +6,7 @@ author   q{Kyle Dawkins <info@kyledawkins.com>};
 license  'MIT';
 
 requires 'Object::KeyValueCoding' => '0.98';
+requires 'Try::Tiny';
 
 build_requires 'Test::More';
 build_requires 'Test::Class';

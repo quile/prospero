@@ -6,10 +6,10 @@ use warnings;
 use base qw( Prospero::Object );
 
 sub new {
-    my ( $class, @args ) = @_;
-    my $self = $class->SUPER::new( @args );
+    my ( $class, $initial_frame ) = @_;
+    my $self = $class->SUPER::new();
 
-    $self->reset_frames();
+    $self->reset_frames( $initial_frame );
     return $self;
 }
 
@@ -41,8 +41,9 @@ sub set_value_for_key {
 }
 
 sub reset_frames {
-    my ( $self ) = @_;
-    $self->{_frames} = [ {} ];
+    my ( $self, $initial_frame ) = @_;
+    $initial_frame ||= {};
+    $self->{_frames} = [ $initial_frame ];
 }
 
 1;
