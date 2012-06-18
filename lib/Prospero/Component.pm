@@ -9,6 +9,8 @@ use Prospero::BindingDictionary;
 
 use base qw( Prospero::Object );
 
+sub CONTENT_TAG { "<__CONTENT__>" }
+
 sub new {
     my ( $class, @args ) = @_;
     my $self = $class->SUPER::new( @args );
@@ -33,17 +35,16 @@ sub append_to_response {
     unless ( $context->render_state() ) {
         $context->set_render_state( Prospero::RenderState->new() );
     }
-
-    my $rendered_content = $self->render_in_context( $context );
-    my $resolved_content = $self->resolve_rendered_content( $rendered_content, $context );
-
-    $response->append_content_string( $resolved_content );
+    # return content
+    # $response->appendContentString( $content );
 }
 
 sub render_in_context {
     my ( $self, $context ) = @_;
 
-    $self->unimplemented();
+    my $response = Prospero::Response->new();
+    $self->append_to_response( $response, $context );
+    return $response->content();
 }
 
 sub resolve_rendered_content {
@@ -75,6 +76,8 @@ sub component_for_binding {
     try {
         $cached_instance = $component_class->new();
         $self->{_subcomponents}->{ $binding->name() } = $cached_instance;
+        $self->context()->render_state()->increment_page_context_number();
+        $cached_instance->set_page_context_number( $self->context()->render_state()->page_context_number() );
     } catch {
         warn sprintf( "Component class $component_class (referenced from binding '%s') does not exist", $binding->name() );
     };
@@ -83,5 +86,7 @@ sub component_for_binding {
 
 sub context     { return $_[0]->{_context}  }
 sub set_context { $_[0]->{_context} = $_[1] }
+sub page_context_number     { return $_[0]->{_page_context_number}  }
+sub set_page_context_number { $_[0]->{_page_context_number} = $_[1] }
 
 1;

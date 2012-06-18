@@ -9,8 +9,6 @@ use Prospero::Component::TT2::Grammar;
 
 use Template;
 
-sub CONTENT_TAG { "<__CONTENT__>" }
-
 sub _engine {
     my ( $self, $context ) = @_;
     $context->environment()->{_TT2} ||= Template->new({
@@ -46,12 +44,14 @@ sub template_path {
 # rename this
 sub bind {
     my ( $self, $name ) = @_;
-    # get binding with name
 
+    $self->context()->render_state()->increase_page_context_depth( $self->context() );
+
+    # get binding with name
     my $binding = $self->binding_with_name( $name ) or die "No such binding: $name";
 
-    if ( $binding->{type} eq "CONTENT" ) {
-        return ( CONTENT_TAG(), undef );
+    if ( $binding->type() eq "CONTENT" ) {
+        return ( Prospero::Component::CONTENT_TAG(), undef );
     }
 
     # determine component type and instantiate
@@ -60,15 +60,17 @@ sub bind {
     # bind values into it
     #$self->push_values_to_component( $component );
 
+
     # render or unwind
     my $content = $component->render_in_context( $self->context() );
+
 
     # pull values out
     #$self->pull_values_from_component( $component );
 
-    # return content
+    $self->context()->render_state()->decrease_page_context_depth( $self->context() );
 
-    return split( quotemeta(CONTENT_TAG()), $content );
+    return split( quotemeta(Prospero::Component::CONTENT_TAG()), $content );
 }
 
 #-------------------------------------------------------

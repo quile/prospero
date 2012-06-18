@@ -5,5 +5,4 @@ use warnings;
 
 use base qw( Prospero::Object );
 
-
 1;

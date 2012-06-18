@@ -4,6 +4,8 @@ use lib 'lib';
 use lib 't/lib';
 
 use strict;
+use Data::Dumper;
+
 use Prospero;
 
 use Prospero::Component::TT2;
@@ -29,3 +31,5 @@ my $component = Unit::Component::Hello->new();
 my $output = $component->render_in_context( $context );
 
 print $output;
+
+print Dumper $component;

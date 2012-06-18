@@ -28,7 +28,7 @@ sub decrease_page_context_depth {
 
 sub increment_page_context_number {
     my $self = shift;
-    $self->{_page_context}->[ $#{$self->{_page_context}} ] += 1;
+    $self->{_page_context}->[-1] += 1;
 }
 
 sub page_context_number {

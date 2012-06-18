@@ -11,6 +11,12 @@
 
     [% BINDING bar AROUND %]
        <h2>Yes</h2>
+       [% BINDING foo %]
+
+       [% BINDING bar AROUND %]
+       <h2>No!</h2>
+       [% END %]
+
     [% END %]
   </body>
 </html>
