@@ -17,20 +17,43 @@ sub _engine {
     });
 }
 
-sub render_in_context {
+sub will_render {
     my ( $self, $context ) = @_;
+    $self->SUPER::will_render( $context );
+}
+
+sub append_to_response {
+    my ( $self, $response, $context ) = @_;
 
     # stuff the context away
     $self->set_context( $context );
 
+    # TODO:kd - get engine from context?
     my $engine = $self->_engine( $context );
+
+    # call this to get the template path - override
+    # this to
     my $template_path = $self->template_path();
+
     my $output;
     unless ( $engine->process( $template_path, { self => $self }, \$output ) ) {
         die $engine->error;
     }
+
+    # append to the response if there is one
+    if ( $response ) {
+        $response->append_content_string( $output );
+    }
+
     $self->set_context( undef );
+
+    # return the rendered output
     return $output;
+}
+
+sub did_render {
+    my ( $self, $response, $context ) = @_;
+    $self->SUPER::did_render( $response, $context );
 }
 
 # Override if you want
@@ -45,8 +68,6 @@ sub template_path {
 sub bind {
     my ( $self, $name ) = @_;
 
-    $self->context()->render_state()->increase_page_context_depth( $self->context() );
-
     # get binding with name
     my $binding = $self->binding_with_name( $name ) or die "No such binding: $name";
 
@@ -60,15 +81,11 @@ sub bind {
     # bind values into it
     #$self->push_values_to_component( $component );
 
-
     # render or unwind
     my $content = $component->render_in_context( $self->context() );
 
-
     # pull values out
     #$self->pull_values_from_component( $component );
-
-    $self->context()->render_state()->decrease_page_context_depth( $self->context() );
 
     return split( quotemeta(Prospero::Component::CONTENT_TAG()), $content );
 }

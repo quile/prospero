@@ -29,21 +29,35 @@ sub take_values_from_request {
 
 }
 
-sub append_to_response {
-    my ( $self, $response, $context ) = @_;
+sub will_render {
+    my ( $self, $context ) = @_;
 
     unless ( $context->render_state() ) {
         $context->set_render_state( Prospero::RenderState->new() );
     }
-    # return content
-    # $response->appendContentString( $content );
+
+    $context->render_state()->increase_page_context_depth();
+}
+
+sub append_to_response {
+    my ( $self, $response, $context ) = @_;
+
+    $self->unimplemented();
+}
+
+sub did_render {
+    my ( $self, $response, $context ) = @_;
+    $context->render_state()->decrease_page_context_depth();
 }
 
 sub render_in_context {
     my ( $self, $context ) = @_;
 
     my $response = Prospero::Response->new();
+
+    $self->will_render( $context );
     $self->append_to_response( $response, $context );
+    $self->did_render( $response, $context );
     return $response->content();
 }
 

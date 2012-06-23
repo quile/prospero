@@ -15,6 +15,7 @@ use Prospero::Context;
 use Unit::Component::Hello;
 use Unit::Component::Foo;
 use Unit::Component::Bar;
+use Unit::Component::Baz;
 
 my $context = Prospero::Context->new({
     environment => {
