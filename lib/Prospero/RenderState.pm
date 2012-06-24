@@ -6,61 +6,55 @@ use warnings;
 use base qw( Prospero::Object );
 
 sub new {
-    my $className = shift;
-    my $self = {
-        _page_context => [1],
-        _loop_context => [],
-        _rendered_components => {},
-    };
-    return bless $self, $className;
+    my $class = shift;
+    my $self = $class->_blank_state();
+    return bless $self, $class;
+}
+
+sub _blank_state {
+    return {
+        _page_context => [ 1 ],
+    }
+}
+
+sub reset {
+    my ( $self ) = @_;
+    my $state = $self->_blank_state();
+    foreach my $key ( keys %{ $state } ) {
+        $self->{$key} = $state->{$key};
+    }
 }
 
 # These are used in page generation
 sub increase_page_context_depth {
     my $self = shift;
     push (@{$self->{_page_context}}, 0);
+    return $self;
 }
 
 sub decrease_page_context_depth {
     my $self = shift;
     pop (@{$self->{_page_context}});
+    return $self;
 }
 
-sub increment_page_context_number {
+sub increment_node_id {
     my $self = shift;
     $self->{_page_context}->[-1] += 1;
+    return $self;
 }
 
-sub page_context_number {
+sub node_id {
     my $self = shift;
     return join("_", @{$self->{_page_context}});
 }
 
-# these mirror the page context stuff but are used
-# with a page context for keeping track of loops:
-sub increase_loop_context_depth {
-    my ($self) = @_;
-    push (@{$self->{_loop_context}}, 0);
-}
+sub next_node_id {
+    my ( $self ) = @_;
 
-sub decrease_loop_context_depth {
-    my ($self) = @_;
-    pop (@{$self->{_loop_context}});
-}
-
-sub increment_loop_context_number {
-    my ($self) = @_;
-    $self->{_loop_context}->[ -1 ] += 1;
-}
-
-sub loop_context_number {
-    my ($self) = @_;
-    return join("_", @{$self->{_loop_context}});
-}
-
-sub loop_context_depth {
-    my ($self) = @_;
-    return scalar @{$self->{_loop_context}};
+    my $next = $self->node_id();
+    $self->increment_node_id();
+    return $next;
 }
 
 1;

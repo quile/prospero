@@ -11,6 +11,7 @@ use Prospero;
 use Prospero::Component::TT2;
 use Prospero::Component::TT2::Grammar;
 use Prospero::Context;
+use Prospero::RequestFrame;
 
 use Unit::Component::Hello;
 use Unit::Component::Foo;
@@ -25,6 +26,7 @@ my $context = Prospero::Context->new({
             DEBUG => "parser",
         },
     },
+    request_frame => Prospero::RequestFrame->new(),
 });
 
 my $component = Unit::Component::Hello->new();
@@ -33,4 +35,4 @@ my $output = $component->render_in_context( $context );
 
 print $output;
 
-print Dumper $component;
+print Dumper( $component );

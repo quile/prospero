@@ -4,6 +4,7 @@ use strict;
 use warnings;
 
 use Try::Tiny;
+use Carp qw( croak );
 
 use Prospero::BindingDictionary;
 
@@ -12,31 +13,39 @@ use base qw( Prospero::Object );
 sub CONTENT_TAG { "<__CONTENT__>" }
 
 sub new {
-    my ( $class, @args ) = @_;
+    my ( $class, $render_state, @args ) = @_;
     my $self = $class->SUPER::new( @args );
 
-    $self->{_subcomponents} = {};
+    unless ( $render_state ) {
+        $render_state = Prospero::RenderState->new();
+    }
+    $self->set_render_state( $render_state );
+
+    $self->{_node_id} = $render_state->next_node_id();
     return $self;
+}
+
+sub will_respond {
+    my ( $self, $context ) = @_;
+
+    $self->render_state()->increase_page_context_depth();
 }
 
 sub take_values_from_request {
     my ( $self, $request, $context ) = @_;
 
-    unless ( $context->render_state() ) {
-        $context->set_render_state( Prospero::RenderState->new() );
-    }
+}
 
+sub did_respond {
+    my ( $self, $context ) = @_;
 
+    $self->render_state()->decrease_page_context_depth();
 }
 
 sub will_render {
     my ( $self, $context ) = @_;
 
-    unless ( $context->render_state() ) {
-        $context->set_render_state( Prospero::RenderState->new() );
-    }
-
-    $context->render_state()->increase_page_context_depth();
+    $self->render_state()->increase_page_context_depth();
 }
 
 sub append_to_response {
@@ -47,7 +56,8 @@ sub append_to_response {
 
 sub did_render {
     my ( $self, $response, $context ) = @_;
-    $context->render_state()->decrease_page_context_depth();
+    $context->request_frame()->add_rendered_component( $self );
+    $self->render_state()->decrease_page_context_depth();
 }
 
 sub render_in_context {
@@ -58,6 +68,7 @@ sub render_in_context {
     $self->will_render( $context );
     $self->append_to_response( $response, $context );
     $self->did_render( $response, $context );
+
     return $response->content();
 }
 
@@ -83,24 +94,22 @@ sub component_for_binding {
     my ( $self, $binding ) = @_;
 
     return undef unless $binding;
-    my $cached_instance = $self->{_subcomponents}->{ $binding->name() };
-    return $cached_instance if $cached_instance;
-    my $component_class = $binding->type();
 
+    my $component_class = $binding->type();
+    my $component;
     try {
-        $cached_instance = $component_class->new();
-        $self->{_subcomponents}->{ $binding->name() } = $cached_instance;
-        $self->context()->render_state()->increment_page_context_number();
-        $cached_instance->set_page_context_number( $self->context()->render_state()->page_context_number() );
+        $component = $component_class->new( $self->render_state() );
     } catch {
         warn sprintf( "Component class $component_class (referenced from binding '%s') does not exist", $binding->name() );
     };
-    return $cached_instance;
+    return $component;
 }
 
 sub context     { return $_[0]->{_context}  }
 sub set_context { $_[0]->{_context} = $_[1] }
-sub page_context_number     { return $_[0]->{_page_context_number}  }
-sub set_page_context_number { $_[0]->{_page_context_number} = $_[1] }
+sub render_state     { return $_[0]->{_render_state}  }
+sub set_render_state { $_[0]->{_render_state} = $_[1] }
+sub node_id     { return $_[0]->{_node_id}  }
+sub set_node_id { $_[0]->{_node_id} = $_[1] }
 
 1;
