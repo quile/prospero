@@ -35,4 +35,4 @@ my $output = $component->render_in_context( $context );
 
 print $output;
 
-print Dumper( $component );
+print Dumper( $context->request_frame() );

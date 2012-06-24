@@ -8,7 +8,7 @@ sub new {
     my ( $class, @args ) = @_;
     my $self = $class->SUPER::new( @args );
 
-    $self->{_renderedComponents} = {};
+    $self->{_rendered_components} = {};
     return $self;
 }
 
