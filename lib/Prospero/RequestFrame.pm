@@ -18,8 +18,19 @@ sub add_rendered_component {
     my $class = ref( $component );
     my $node_id = $component->node_id();
 
-    push (@{ $self->{_rendered_components}->{$class} ||= [] }, $node_id );
+    $self->{_rendered_components}->{$class} ||= {};
+    $self->{_rendered_components}->{$class}->{$node_id}++;
     return $self;
+}
+
+sub did_render_component {
+    my ( $self, $component ) = @_;
+
+    my $class = ref( $component );
+    my $node_id = $component->node_id();
+
+    return exists $self->{_rendered_components}->{$class}
+        && exists $self->{_rendered_components}->{$class}->{$node_id};
 }
 
 1;

@@ -12,7 +12,9 @@ sub render_state      {
     return $_[0]->{_render_state} ||= Prospero::RenderState->new();
 }
 sub set_render_state  { $_[0]->{_render_state} = $_[1] }
-sub request_frame     { return $_[0]->{request_frame}  }
-sub set_request_frame { $_[0]->{request_frame} = $_[1] }
+sub outgoing_request_frame     { return $_[0]->{_outgoing_request_frame}  }
+sub set_outgoing_request_frame { $_[0]->{_outgoing_request_frame} = $_[1] }
+sub incoming_request_frame     { return $_[0]->{_incoming_request_frame}  }
+sub set_incoming_request_frame { $_[0]->{_incoming_request_frame} = $_[1] }
 
 1;

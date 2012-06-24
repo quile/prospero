@@ -56,7 +56,7 @@ sub append_to_response {
 
 sub did_render {
     my ( $self, $response, $context ) = @_;
-    $context->request_frame()->add_rendered_component( $self );
+    $context->outgoing_request_frame()->add_rendered_component( $self );
     $self->render_state()->decrease_page_context_depth();
 }
 

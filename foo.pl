@@ -26,7 +26,7 @@ my $context = Prospero::Context->new({
             DEBUG => "parser",
         },
     },
-    request_frame => Prospero::RequestFrame->new(),
+    outgoing_request_frame => Prospero::RequestFrame->new(),
 });
 
 my $component = Unit::Component::Hello->new();
@@ -35,4 +35,4 @@ my $output = $component->render_in_context( $context );
 
 print $output;
 
-print Dumper( $context->request_frame() );
+print Dumper( $context->outgoing_request_frame() );
