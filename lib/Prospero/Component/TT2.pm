@@ -8,6 +8,7 @@ use base qw( Prospero::Component );
 use Prospero::Component::TT2::Grammar;
 
 use Template;
+use Carp qw( croak );
 use Data::Dumper;
 
 sub _engine {
@@ -30,7 +31,7 @@ sub take_values_from_request {
     my $output;
     unless ( $engine->process( $template_path, {
             self => $self,
-            prospero => {
+            prospero__ => {
                 __action => "pull",
                 __request => $request,
             }
@@ -62,7 +63,7 @@ sub append_to_response {
     my $output;
     unless ( $engine->process( $template_path, {
             self => $self,
-            prospero => {
+            prospero__ => {
                 __action => "push",
                 __response => $response,
             },
@@ -142,7 +143,7 @@ sub bind {
 
         return <<EOP
 do {
-my (\$start, \$finish) = \$stash->get("self")->bind( $name, \$stash->get("prospero") );
+my (\$start, \$finish) = \$stash->get("self")->bind( $name, \$stash->get("prospero__") );
 
 \$output .= \$start;
 $block
@@ -153,7 +154,7 @@ EOP
     } else {
         return <<EOP
 do {
-my (\$start, \$finish) = \$stash->get('self')->bind( $name, \$stash->get("prospero") );
+my (\$start, \$finish) = \$stash->get('self')->bind( $name, \$stash->get("prospero__") );
 #if ( \$finish ) { die "Component $name expects to wrap content" }
 \$output .= \$start;
 };
