@@ -10,8 +10,6 @@ use Prospero;
 
 use Prospero::Component::TT2;
 use Prospero::Component::TT2::Grammar;
-use Prospero::Context;
-use Prospero::RequestFrame;
 
 use Unit::Component::Hello;
 use Unit::Component::Foo;
@@ -36,3 +34,9 @@ my $output = $component->render_in_context( $context );
 print $output;
 
 print Dumper( $context->outgoing_request_frame() );
+
+$context->set_incoming_request_frame( $context->outgoing_request_frame() );
+$context->set_outgoing_request_frame();
+
+my $request = Prospero::Request->new();
+$component->rewind_request_in_context( $request, $context );

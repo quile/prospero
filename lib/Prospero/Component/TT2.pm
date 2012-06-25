@@ -8,6 +8,7 @@ use base qw( Prospero::Component );
 use Prospero::Component::TT2::Grammar;
 
 use Template;
+use Data::Dumper;
 
 sub _engine {
     my ( $self, $context ) = @_;
@@ -17,9 +18,32 @@ sub _engine {
     });
 }
 
+sub take_values_from_request {
+    my ( $self, $request, $context ) = @_;
+
+    print STDERR "Component ".ref( $self )." - ".$self->node_id()." taking values\n";
+
+    $self->set_context( $context );
+    my $engine = $self->_engine( $context );
+    my $template_path = $self->template_path();
+
+    my $output;
+    unless ( $engine->process( $template_path, {
+            self => $self,
+            prospero => {
+                __action => "pull",
+                __request => $request,
+            }
+        }, \$output ) ) {
+        die $engine->error;
+    }
+
+    $self->set_context( undef );
+}
+
 sub will_render {
-    my ( $self, $context ) = @_;
-    $self->SUPER::will_render( $context );
+    my ( $self, $response, $context ) = @_;
+    $self->SUPER::will_render( $response, $context );
 }
 
 sub append_to_response {
@@ -36,7 +60,13 @@ sub append_to_response {
     my $template_path = $self->template_path();
 
     my $output;
-    unless ( $engine->process( $template_path, { self => $self }, \$output ) ) {
+    unless ( $engine->process( $template_path, {
+            self => $self,
+            prospero => {
+                __action => "push",
+                __response => $response,
+            },
+        }, \$output ) ) {
         die $engine->error;
     }
 
@@ -66,7 +96,9 @@ sub template_path {
 
 # rename this
 sub bind {
-    my ( $self, $name ) = @_;
+    my ( $self, $name, $prospero ) = @_;
+
+    croak( "No meta-information passed in" ) unless $prospero;
 
     # get binding with name
     my $binding = $self->binding_with_name( $name ) or die "No such binding: $name";
@@ -82,12 +114,14 @@ sub bind {
     #$self->push_values_to_component( $component );
 
     # render or unwind
-    my $content = $component->render_in_context( $self->context() );
-
-    # pull values out
-    #$self->pull_values_from_component( $component );
-
-    return split( quotemeta(Prospero::Component::CONTENT_TAG()), $content );
+    if ( $prospero->{__action} eq "pull" ) {
+        $component->rewind_request_in_context( $prospero->{__request}, $self->context() );
+        #$self->pull_values_from_component( $component );
+        return ("", "");
+    } elsif ( $prospero->{__action} eq "push" ) {
+        my $content = $component->render_in_context( $self->context() );
+        return split( quotemeta(Prospero::Component::CONTENT_TAG()), $content );
+    }
 }
 
 #-------------------------------------------------------
@@ -108,7 +142,7 @@ sub bind {
 
         return <<EOP
 do {
-my (\$start, \$finish) = \$stash->get("self")->bind( $name );
+my (\$start, \$finish) = \$stash->get("self")->bind( $name, \$stash->get("prospero") );
 
 \$output .= \$start;
 $block
@@ -119,8 +153,8 @@ EOP
     } else {
         return <<EOP
 do {
-my (\$start, \$finish) = \$stash->get('self')->bind( $name );
-#if ( \$finish ) { die "Component $name needs to wrap content" }
+my (\$start, \$finish) = \$stash->get('self')->bind( $name, \$stash->get("prospero") );
+#if ( \$finish ) { die "Component $name expects to wrap content" }
 \$output .= \$start;
 };
 EOP

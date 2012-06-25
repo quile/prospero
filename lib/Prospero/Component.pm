@@ -26,7 +26,7 @@ sub new {
 }
 
 sub will_respond {
-    my ( $self, $context ) = @_;
+    my ( $self, $request, $context ) = @_;
 
     $self->render_state()->increase_page_context_depth();
 }
@@ -34,16 +34,17 @@ sub will_respond {
 sub take_values_from_request {
     my ( $self, $request, $context ) = @_;
 
+    $self->unimplemented();
 }
 
 sub did_respond {
-    my ( $self, $context ) = @_;
+    my ( $self, $request, $context ) = @_;
 
     $self->render_state()->decrease_page_context_depth();
 }
 
 sub will_render {
-    my ( $self, $context ) = @_;
+    my ( $self, $response, $context ) = @_;
 
     $self->render_state()->increase_page_context_depth();
 }
@@ -65,11 +66,19 @@ sub render_in_context {
 
     my $response = Prospero::Response->new();
 
-    $self->will_render( $context );
+    $self->will_render( $response, $context );
     $self->append_to_response( $response, $context );
     $self->did_render( $response, $context );
 
     return $response->content();
+}
+
+sub rewind_request_in_context {
+    my ( $self, $request, $context ) = @_;
+
+    $self->will_respond( $request, $context );
+    $self->take_values_from_request( $request, $context );
+    $self->did_respond( $request, $context );
 }
 
 sub resolve_rendered_content {

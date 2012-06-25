@@ -10,7 +10,7 @@ use Prospero::Request;
 use Prospero::Response;
 use Prospero::RenderState;
 use Prospero::Component;
-
+use Prospero::RequestFrame;
 
 =head1 NAME
 
