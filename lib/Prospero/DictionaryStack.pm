@@ -46,4 +46,16 @@ sub reset_frames {
     $self->{_frames} = [ $initial_frame ];
 }
 
+sub keys {
+    my ( $self ) = @_;
+
+    my $keys = [];
+    foreach my $frame (@{ $self->{_frames} }) {
+        push ( @$keys, keys %$frame );
+    }
+    my $uniq = {};
+    map { $uniq->{$_}++ } @$keys;
+    return [ keys %$uniq ];
+}
+
 1;

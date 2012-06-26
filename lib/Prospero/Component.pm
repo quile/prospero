@@ -114,11 +114,42 @@ sub component_for_binding {
     return $component;
 }
 
+sub push_values_to_component {
+    my ( $self, $component, $binding ) = @_;
+
+    # set the bindings
+    foreach my $key ( keys %$binding ) {
+        next if ( $key eq "type" || $key eq "name" );
+        my $bv = $binding->value_for_key( $key );
+        my $value;
+        if (ref( $bv ) eq "CODE" ) {
+            $value = $bv->( $self );
+        } else {
+            $value = $self->value_for_key( $bv );
+        }
+        $component->set_value_for_key( $value, $key );
+    }
+}
+
+sub pull_values_from_component {
+    my ( $self, $component, $binding ) = @_;
+
+    foreach my $key ( keys %$binding ) {
+        next if ( $key eq "type" || $key eq "name" );
+        my $bv = $binding->value_for_key( $key );
+        unless ( ref( $bv ) ) {
+            my $value = $component->value_for_key( $key );
+            $self->set_value_for_key( $value, $bv );
+        }
+    }
+}
+
 sub context     { return $_[0]->{_context}  }
 sub set_context { $_[0]->{_context} = $_[1] }
 sub render_state     { return $_[0]->{_render_state}  }
 sub set_render_state { $_[0]->{_render_state} = $_[1] }
 sub node_id     { return $_[0]->{_node_id}  }
 sub set_node_id { $_[0]->{_node_id} = $_[1] }
+
 
 1;

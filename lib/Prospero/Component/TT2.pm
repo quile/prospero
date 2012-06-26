@@ -112,12 +112,12 @@ sub bind {
     my $component = $self->component_for_binding( $binding ) or die "Can't instantiate component for binding $name";
 
     # bind values into it
-    #$self->push_values_to_component( $component );
+    $self->push_values_to_component( $component, $binding );
 
     # render or unwind
     if ( $prospero->{__action} eq "pull" ) {
         $component->rewind_request_in_context( $prospero->{__request}, $self->context() );
-        #$self->pull_values_from_component( $component );
+        $self->pull_values_from_component( $component, $binding );
         return ("", "");
     } elsif ( $prospero->{__action} eq "push" ) {
         my $content = $component->render_in_context( $self->context() );
