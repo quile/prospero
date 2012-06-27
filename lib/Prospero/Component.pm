@@ -77,7 +77,9 @@ sub rewind_request_in_context {
     my ( $self, $request, $context ) = @_;
 
     $self->will_respond( $request, $context );
-    $self->take_values_from_request( $request, $context );
+    if ( $context->incoming_request_frame() ) {
+        $self->take_values_from_request( $request, $context );
+    }
     $self->did_respond( $request, $context );
 }
 
@@ -144,12 +146,29 @@ sub pull_values_from_component {
     }
 }
 
+sub page_with_name {
+    my ( $self, $name, $context ) = @_;
+
+    $context ||= $self->context();
+
+    my $component_class = $self->component_class_for_name( $name, $context );
+    croak( "Couldn't determine component class for $name" ) unless $component_class;
+
+    my $page = $component_class->new( $context->render_state() );
+    return $page;
+}
+
+# TODO:kd - make this a lot smarter.
+sub component_class_for_name {
+    my ( $self, $name, $context ) = @_;
+    return $name;
+}
+
 sub context     { return $_[0]->{_context}  }
 sub set_context { $_[0]->{_context} = $_[1] }
 sub render_state     { return $_[0]->{_render_state}  }
 sub set_render_state { $_[0]->{_render_state} = $_[1] }
 sub node_id     { return $_[0]->{_node_id}  }
 sub set_node_id { $_[0]->{_node_id} = $_[1] }
-
 
 1;

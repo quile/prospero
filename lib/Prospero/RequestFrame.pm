@@ -33,4 +33,9 @@ sub did_render_component {
         && exists $self->{_rendered_components}->{$class}->{$node_id};
 }
 
+sub rendered_components {
+    my ( $self ) = @_;
+    return $self->{_rendered_components};
+}
+
 1;

@@ -38,5 +38,7 @@ print Dumper( $context->outgoing_request_frame() );
 $context->set_incoming_request_frame( $context->outgoing_request_frame() );
 $context->set_outgoing_request_frame();
 
+#delete $context->incoming_request_frame()->rendered_components()->{"Unit::Component::Baz"}->{"2_3_9"};
+
 my $request = Prospero::Request->new();
 $component->rewind_request_in_context( $request, $context );

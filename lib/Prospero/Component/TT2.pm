@@ -22,6 +22,10 @@ sub _engine {
 sub take_values_from_request {
     my ( $self, $request, $context ) = @_;
 
+    unless ( $context->incoming_request_frame()->did_render_component( $self ) ) {
+        print STDERR "Did not render component $self with id ".$self->node_id()." in frame\n";
+        return;
+    }
     print STDERR "Component ".ref( $self )." - ".$self->node_id()." taking values\n";
 
     $self->set_context( $context );
