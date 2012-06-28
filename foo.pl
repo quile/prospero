@@ -8,6 +8,7 @@ use Data::Dumper;
 
 use Prospero;
 
+use Prospero::Request::Offline;
 use Prospero::Component::TT2;
 use Prospero::Component::TT2::Grammar;
 
@@ -40,5 +41,7 @@ $context->set_outgoing_request_frame();
 
 #delete $context->incoming_request_frame()->rendered_components()->{"Unit::Component::Baz"}->{"2_3_9"};
 
-my $request = Prospero::Request->new();
+my $request = Prospero::Request::Offline->new( params => { "2_2" => [ "fruity fun!" ], } );
 $component->rewind_request_in_context( $request, $context );
+
+print $component->mango()."\n";
