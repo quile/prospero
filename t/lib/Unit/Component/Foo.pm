@@ -6,6 +6,8 @@ use base qw( Prospero::Component::TT2 );
 
 use Prospero::BindingDictionary;
 
+use Unit::Component::Baz;
+
 sub goo     { return $_[0]->{_goo}  }
 sub set_goo { $_[0]->{_goo} = $_[1] }
 sub banana     { return $_[0]->{_banana}  }

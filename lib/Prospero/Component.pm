@@ -6,7 +6,9 @@ use warnings;
 use Try::Tiny;
 use Carp qw( croak );
 
+use Prospero::RenderState;
 use Prospero::BindingDictionary;
+use Prospero::Response;
 
 use base qw( Prospero::Object );
 

@@ -6,6 +6,9 @@ use base qw( Prospero::Component::TT2 );
 
 use Prospero::BindingDictionary;
 
+use Unit::Component::Foo;
+use Unit::Component::Bar;
+
 sub foo { "bar" }
 sub bar { "baz" }
 
