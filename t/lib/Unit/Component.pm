@@ -77,7 +77,7 @@ sub test_pull_bindings : Tests {
     $context->set_incoming_request_frame( $context->outgoing_request_frame() );
     $context->set_outgoing_request_frame();
 
-    my $request = Prospero::Request::Offline->new( params => { "2_2" => [ "fruity fun!" ], } );
+    my $request = Prospero::Request::Offline->new( params => { "1_3" => [ "fruity fun!" ], } );
     $component->rewind_request_in_context( $request, $context );
 
     ok( $component->mango() eq "fruity fun!", "Pulled value from subcomponent" );

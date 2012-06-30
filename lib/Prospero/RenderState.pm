@@ -13,7 +13,7 @@ sub new {
 
 sub _blank_state {
     return {
-        _page_context => [ 1 ],
+        _page_context => [ 0 ],
     }
 }
 
@@ -52,9 +52,8 @@ sub node_id {
 sub next_node_id {
     my ( $self ) = @_;
 
-    my $next = $self->node_id();
     $self->increment_node_id();
-    return $next;
+    return $self->node_id();
 }
 
 1;
