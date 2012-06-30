@@ -71,7 +71,6 @@ sub test_keys : Tests {
     $d->reset_frames();
     $keys = $d->keys();
     is_deeply( $keys, [], "Keys OK" );
-
 }
 
 1;
