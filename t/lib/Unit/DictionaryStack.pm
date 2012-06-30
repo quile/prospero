@@ -1,4 +1,4 @@
-package Unit::Component;
+package Unit::DictionaryStack;
 
 use strict;
 

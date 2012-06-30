@@ -10,7 +10,7 @@ our @EXPORT_OK = qw(
 );
 
 sub array_from_object {
-    my ( $class, $object ) = @_;
+    my ( $object ) = @_;
     return [] unless defined $object;
     if ( ref( $object ) eq "ARRAY" ) {
         return $object;
