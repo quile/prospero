@@ -58,4 +58,9 @@ sub keys {
     return [ keys %$uniq ];
 }
 
+sub frames {
+    my ( $self ) = @_;
+    return $self->{_frames};
+}
+
 1;
