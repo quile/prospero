@@ -25,6 +25,7 @@ sub bindings {
     return Prospero::BindingDictionary->new({
         baz => {
             type => "Unit::Component::Baz",
+            quux => q(banana),
         },
     });
 }

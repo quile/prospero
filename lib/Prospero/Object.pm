@@ -28,4 +28,8 @@ sub unimplemented {
     croak "Unimplemented";
 }
 
+sub self {
+    return $_[0];
+}
+
 1;

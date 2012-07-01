@@ -6,6 +6,9 @@ use base qw( Prospero::Component::TT2 );
 
 use Prospero::PageResource;
 
+sub quux     { return $_[0]->{_quux}  }
+sub set_quux { $_[0]->{_quux} = $_[1] }
+
 sub required_page_resources {
     return [
         Prospero::PageResource->javascript( "/foo/bar/bananas.js" ),
