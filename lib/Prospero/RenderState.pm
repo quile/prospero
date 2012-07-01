@@ -5,6 +5,8 @@ use warnings;
 
 use base qw( Prospero::Object );
 
+use Prospero::Utility qw( array_from_object );
+
 sub new {
     my $class = shift;
     my $self = $class->_blank_state();
@@ -54,6 +56,52 @@ sub next_node_id {
 
     $self->increment_node_id();
     return $self->node_id();
+}
+
+
+# ----------- these help components manage page resources ---------
+
+sub page_resources {
+    my ( $self ) = @_;
+    return $self->_ordered_page_resources();
+}
+
+# this holds the resources in the order they are added.  It's not
+# particularly accurate because components get included/rendered
+# in an order that's not the same as the order they appear on
+# the page, BUT it means that all the resources a given component
+# requests WILL BE in the order that it requests them.
+
+sub _ordered_page_resources {
+    my ($self) = @_;
+    return $self->{_ordered_page_resources} || [];
+}
+
+sub add_page_resource {
+    my ( $self, $resource ) = @_;
+    $self->{_page_resources} ||= {};
+    $self->{_ordered_page_resources} ||= [];
+    # Only add it to the list if it's not already there.
+    my $location = $resource->location();
+    unless ($self->{_page_resources}->{$location}) {
+        push ( @{ $self->{_ordered_page_resources} }, $resource );
+    }
+    $self->{_page_resources}->{$location} = $resource;
+}
+
+sub add_page_resources {
+    my ( $self, $resources ) = @_;
+    $resources = array_from_object( $resources );
+    foreach my $r ( @$resources ) {
+        $self->add_page_resource( $r );
+    }
+}
+
+sub remove_page_resource {
+    my ( $self, $resource ) = @_;
+    $self->{_page_resources} ||= {};
+    delete $self->{_page_resources}->{$resource->location()};
+    $self->{_ordered_page_resources} = [ grep { $_->location() ne $resource->location() } @{ $self->{_ordered_page_resources} } ];
 }
 
 1;

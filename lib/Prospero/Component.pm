@@ -60,6 +60,12 @@ sub append_to_response {
 sub did_render {
     my ( $self, $response, $context ) = @_;
     $context->outgoing_request_frame()->add_rendered_component( $self );
+
+    $self->render_state()->add_page_resources( $self->required_page_resources() );
+
+    if ( $self->is_root_component() ) {
+    }
+
     $self->render_state()->decrease_page_context_depth();
 }
 
@@ -164,6 +170,17 @@ sub page_with_name {
 sub component_class_for_name {
     my ( $self, $name, $context ) = @_;
     return $name;
+}
+
+# override this to declare external files (CSS, JS) that this
+# component needs in order to function on the client
+sub required_page_resources {
+    return [];
+}
+
+sub is_root_component {
+    my ( $self ) = @_;
+    return $self->node_id eq "1";
 }
 
 sub context     { return $_[0]->{_context}  }

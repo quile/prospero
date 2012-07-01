@@ -5,6 +5,7 @@ use strict;
 use base qw( Test::Class );
 
 use Test::More;
+use Data::Dumper;
 
 use Prospero::Component;
 use Prospero::Context;
@@ -81,6 +82,14 @@ sub test_pull_bindings : Tests {
     $component->rewind_request_in_context( $request, $context );
 
     ok( $component->mango() eq "fruity fun!", "Pulled value from subcomponent" );
+}
+
+sub test_page_resources : Tests {
+    my ( $self ) = @_;
+    my $c = Unit::Component::Hello->new();
+    my $output = $c->render_in_context( $self->{_context} );
+    my $render_state = $c->render_state();
+    diag Dumper( $render_state );
 }
 
 1;

@@ -5,9 +5,17 @@ use warnings;
 use base qw( Prospero::Component::TT2 );
 
 use Prospero::BindingDictionary;
+use Prospero::PageResource;
 
 use Unit::Component::Foo;
 use Unit::Component::Bar;
+
+sub required_page_resources {
+    return [
+        Prospero::PageResource->javascript( "/foo/bar/bananas.js" ),
+        Prospero::PageResource->stylesheet( "/foo/baz/mangos.css" ),
+    ];
+}
 
 sub foo { "bar" }
 sub bar { "baz" }
