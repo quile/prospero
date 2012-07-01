@@ -90,6 +90,7 @@ sub test_page_resources : Tests {
     my $output = $c->render_in_context( $self->{_context} );
     my $render_state = $c->render_state();
     diag Dumper( $render_state );
+    diag Dumper( $output );
 }
 
 1;
