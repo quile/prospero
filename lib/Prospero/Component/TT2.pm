@@ -101,10 +101,11 @@ sub template_path {
 
 # rename this
 sub bind {
-    my ( $self, $name, $prospero ) = @_;
+    my ( $self, $name, $prospero, $tag_attributes ) = @_;
 
     croak( "No meta-information passed in" ) unless $prospero;
 
+    $DB::single = 1;
     # get binding with name
     my $binding = $self->binding_with_name( $name ) or die "No such binding: $name";
 
@@ -114,6 +115,8 @@ sub bind {
 
     # determine component type and instantiate
     my $component = $self->component_for_binding( $binding ) or die "Can't instantiate component for binding $name";
+
+    $component->set_tag_attributes( $tag_attributes || {} );
 
     # bind values into it
     $self->push_values_to_component( $component, $binding );
@@ -139,15 +142,29 @@ package Template::Directive;
 use strict;
 use warnings;
 
+# sub __include {
+#     my ($self, $nameargs) = @_;
+#     my ($file, $args) = @$nameargs;
+#     my $hash = shift @$args;
+#     $file = $self->filenames($file);
+#     $file .= @$hash ? ', { ' . join(', ', @$hash) . ' }' : '';
+#     return "$OUTPUT \$context->include($file);";
+# }
+
 sub bind {
-    my ( $class, $name, $block ) = @_;
+    my ( $class, $nameargs, $block ) = @_;
+
+    my ( $names, $args ) = @$nameargs;
+    my $hash = shift @$args;
+    my $v = @$hash ? '{ ' . join( ', ', @$hash ) . ' }' : '';
+    my $name = shift @$names;
 
     if ( $block ) {
         $block = pad( $block, 2 ) if $Template::Directive::PRETTY;
 
         return <<EOP
 do {
-my (\$start, \$finish) = \$stash->get("self")->bind( $name, \$stash->get("prospero__") );
+my (\$start, \$finish) = \$stash->get("self")->bind( $name, \$stash->get("prospero__"), $v );
 
 \$output .= \$start;
 $block
@@ -158,7 +175,7 @@ EOP
     } else {
         return <<EOP
 do {
-my (\$start, \$finish) = \$stash->get('self')->bind( $name, \$stash->get("prospero__") );
+my (\$start, \$finish) = \$stash->get('self')->bind( $name, \$stash->get("prospero__"), $v );
 #if ( \$finish ) { die "Component $name expects to wrap content" }
 \$output .= \$start;
 };

@@ -181,14 +181,6 @@ sub is_root_component {
     return $self->node_id eq "1";
 }
 
-sub context     { return $_[0]->{_context}  }
-sub set_context { $_[0]->{_context} = $_[1] }
-sub render_state     { return $_[0]->{_render_state}  }
-sub set_render_state { $_[0]->{_render_state} = $_[1] }
-sub node_id     { return $_[0]->{_node_id}  }
-sub set_node_id { $_[0]->{_node_id} = $_[1] }
-
-
 # override this to declare external files (CSS, JS) that this
 # component needs in order to function on the client
 sub required_page_resources {
@@ -241,5 +233,19 @@ sub page_resources_of_type_in_response_as_html {
     }
     return $content;
 }
+
+sub tag_attribute_with_name {
+    my ( $self, $name ) = @_;
+    return $self->tag_attributes()->{$name};
+}
+
+sub tag_attributes     { return $_[0]->{_tag_attributes}  }
+sub set_tag_attributes { $_[0]->{_tag_attributes} = $_[1] }
+sub context     { return $_[0]->{_context}  }
+sub set_context { $_[0]->{_context} = $_[1] }
+sub render_state     { return $_[0]->{_render_state}  }
+sub set_render_state { $_[0]->{_render_state} = $_[1] }
+sub node_id     { return $_[0]->{_node_id}  }
+sub set_node_id { $_[0]->{_node_id} = $_[1] }
 
 1;

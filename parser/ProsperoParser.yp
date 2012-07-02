@@ -173,9 +173,12 @@ loop:       FOR loopvar ';'         { $_[0]->enter_block('FOR')           }
         |   atomexpr WHILE expr     { $factory->while(@_[3, 1]) }
 ;
 
-bind:       BINDING name AROUND ';' { $_[0]->enter_block('BIND')          }
+bind:       BINDING nameargs AROUND ';' { $_[0]->enter_block('BIND')          }
                 block END           { $factory->bind($_[2], $_[6], $_[0]->leave_block) }
-        |   BINDING name            { $factory->bind($_[2])               }
+        |   BINDING nameargs        { $factory->bind($_[2])               }
+        |   BIND nameargs AROUND ';' { $_[0]->enter_block('BIND')          }
+                block END           { $factory->bind($_[2], $_[6], $_[0]->leave_block) }
+        |   BIND nameargs           { $factory->bind($_[2])               }
 ;
 
 loopvar:    IDENT ASSIGN term args  { [ @_[1, 3, 4] ]                     }

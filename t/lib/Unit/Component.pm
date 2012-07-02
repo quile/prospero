@@ -90,7 +90,16 @@ sub test_page_resources : Tests {
     my $output = $c->render_in_context( $self->{_context} );
     my $render_state = $c->render_state();
     diag Dumper( $render_state );
-    diag Dumper( $output );
+
+    ok( scalar @{ $render_state->page_resources() } == 3, "correct number of page resources" );
+    ok( $output =~ m!src="/foo/bar/bananas.js!, "Tags appear for page resources" );
+}
+
+sub test_tag_attributes : Tests {
+    my ( $self ) = @_;
+    my $c = Unit::Component::Hello->new();
+    my $output = $c->render_in_context( $self->{_context} );
+    ok( $output =~ /Belch: ok/, "Tag attributes read by component correctly" );
 }
 
 1;
