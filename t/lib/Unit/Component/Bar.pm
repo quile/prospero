@@ -2,7 +2,7 @@ package Unit::Component::Bar;
 
 use strict;
 use warnings;
-use base qw( Prospero::Component::TT2 );
+use base qw( Prospero::Plugin::TT2::Component );
 
 use Prospero::BindingDictionary;
 

@@ -23,6 +23,11 @@ sub new {
     return $self;
 }
 
+sub init {
+    my ( $self ) = @_;
+    return $self;
+}
+
 sub unimplemented {
     my ( $self ) = @_;
     croak "Unimplemented";

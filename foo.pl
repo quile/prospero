@@ -9,8 +9,8 @@ use Data::Dumper;
 use Prospero;
 
 use Prospero::Request::Offline;
-use Prospero::Component::TT2;
-use Prospero::Component::TT2::Grammar;
+use Prospero::Plugin::TT2::Component;
+use Prospero::Plugin::TT2::Component::Grammar;
 
 use Unit::Component::Hello;
 use Unit::Component::Foo;
@@ -21,7 +21,7 @@ my $context = Prospero::Context->new({
     environment => {
         TT2_CONFIG => {
             INCLUDE_PATH => "t/templates",
-            GRAMMAR => Prospero::Component::TT2::Grammar->new(),
+            GRAMMAR => Prospero::Plugin::TT2::Component::Grammar->new(),
             DEBUG => "parser",
         },
     },

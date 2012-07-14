@@ -1,11 +1,11 @@
-package Prospero::Component::TT2;
+package Prospero::Plugin::TT2::Component;
 
 use strict;
 use warnings;
 
 use base qw( Prospero::Component );
 
-use Prospero::Component::TT2::Grammar;
+use Prospero::Plugin::TT2::Grammar;
 
 use Template;
 use Carp qw( croak );
@@ -15,7 +15,7 @@ sub _engine {
     my ( $self, $context ) = @_;
     $context->environment()->{_TT2} ||= Template->new({
         %{$context->environment()->{TT2_CONFIG}},
-        GRAMMAR => Prospero::Component::TT2::Grammar->new(),
+        GRAMMAR => Prospero::Plugin::TT2::Grammar->new(),
     });
 }
 
@@ -118,6 +118,7 @@ sub bind {
 
     $component->set_tag_attributes( $tag_attributes || {} );
 
+    $component->set_parent( $self );
     # bind values into it
     $self->push_values_to_component( $component, $binding );
 
@@ -141,15 +142,6 @@ package Template::Directive;
 
 use strict;
 use warnings;
-
-# sub __include {
-#     my ($self, $nameargs) = @_;
-#     my ($file, $args) = @$nameargs;
-#     my $hash = shift @$args;
-#     $file = $self->filenames($file);
-#     $file .= @$hash ? ', { ' . join(', ', @$hash) . ' }' : '';
-#     return "$OUTPUT \$context->include($file);";
-# }
 
 sub bind {
     my ( $class, $nameargs, $block ) = @_;

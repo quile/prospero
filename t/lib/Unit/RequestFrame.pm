@@ -20,7 +20,7 @@ sub setup : Test( startup ) {
     $self->{_context} = Prospero::Context->new({
         environment => {
             TT2_CONFIG => {
-                INCLUDE_PATH => "t/templates",
+                INCLUDE_PATH => [ "share/templates/en", "t/templates", ],
                 DEBUG => 1,
             },
         },

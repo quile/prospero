@@ -28,7 +28,7 @@
 #
 #========================================================================
 
-package Prospero::Component::TT2::Grammar;
+package Prospero::Plugin::TT2::Component::Grammar;
 
 use strict;
 use warnings;

@@ -2,10 +2,11 @@ package Unit::Component::Hello;
 
 use strict;
 use warnings;
-use base qw( Prospero::Component::TT2 );
+use base qw( Prospero::Plugin::TT2::Component );
 
 use Prospero::BindingDictionary;
 use Prospero::PageResource;
+use Prospero::Component::System::TextField;
 
 use Unit::Component::Foo;
 use Unit::Component::Bar;
@@ -22,6 +23,8 @@ sub bar { "baz" }
 
 sub mango     { return $_[0]->{mango}  }
 sub set_mango { $_[0]->{mango} = $_[1] }
+sub gronk     { return $_[0]->{_gronk}  }
+sub set_gronk { $_[0]->{_gronk} = $_[1] }
 
 sub bindings {
     return Prospero::BindingDictionary->new({
@@ -32,6 +35,10 @@ sub bindings {
         },
         bar => {
             type => "Unit::Component::Bar",
+        },
+        text_field => {
+            type => "Prospero::Component::System::TextField",
+            value => q(gronk),
         },
     })
 }

@@ -5,6 +5,7 @@ use warnings;
 
 use Try::Tiny;
 use Carp qw( croak );
+use Scalar::Util qw( weaken );
 
 use Prospero::RenderState;
 use Prospero::BindingDictionary;
@@ -234,9 +235,19 @@ sub page_resources_of_type_in_response_as_html {
     return $content;
 }
 
-sub tag_attribute_with_name {
+sub tag_attribute_for_key {
     my ( $self, $name ) = @_;
     return $self->tag_attributes()->{$name};
+}
+
+sub tag_attribute_string {
+    my ( $self ) = @_;
+    my $kvpairs = [];
+    foreach my $key ( keys %{ $self->tag_attributes() || {} } ) {
+        my $value = $self->tag_attribute_for_key( $key );
+        push @$kvpairs, qq($key="$value");
+    }
+    return join(" ", @$kvpairs);
 }
 
 sub tag_attributes     { return $_[0]->{_tag_attributes}  }
@@ -247,5 +258,10 @@ sub render_state     { return $_[0]->{_render_state}  }
 sub set_render_state { $_[0]->{_render_state} = $_[1] }
 sub node_id     { return $_[0]->{_node_id}  }
 sub set_node_id { $_[0]->{_node_id} = $_[1] }
+sub parent     { return $_[0]->{_parent}  }
+sub set_parent {
+    $_[0]->{_parent} = $_[1];
+    weaken $_[0]->{_parent};
+}
 
 1;

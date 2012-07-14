@@ -1,6 +1,6 @@
 <strong>This is SPARTA.</strong>
 <h4>Goo: [% self.goo %]</h4>
-<h5>Belch: [% self.tag_attribute_with_name("belch") %]</h5>
+<h5>Belch: [% self.tag_attribute_for_key("belch") %]</h5>
 <ul>
   [% FOR gladiator IN [ 1..10 ] %]
     [% BINDING baz %]

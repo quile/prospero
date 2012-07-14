@@ -21,7 +21,7 @@ sub setup : Test( startup ) {
     $self->{_context} = Prospero::Context->new({
         environment => {
             TT2_CONFIG => {
-                INCLUDE_PATH => "t/templates",
+                INCLUDE_PATH => [ "share/templates/en", "t/templates", ],
                 DEBUG => 1,
             },
         },
@@ -65,7 +65,7 @@ sub test_pull_bindings : Tests {
     my $context = Prospero::Context->new({
         environment => {
             TT2_CONFIG => {
-                INCLUDE_PATH => "t/templates",
+                INCLUDE_PATH => [ "share/templates/en", "t/templates", ],
                 DEBUG => 1,
             },
         },
@@ -78,9 +78,10 @@ sub test_pull_bindings : Tests {
     $context->set_incoming_request_frame( $context->outgoing_request_frame() );
     $context->set_outgoing_request_frame();
 
-    my $request = Prospero::Request::Offline->new( params => { "1_3" => [ "fruity fun!" ], } );
+    my $request = Prospero::Request::Offline->new( params => { "1_4" => [ "fruity fun!" ], } );
     $component->rewind_request_in_context( $request, $context );
 
+    diag $output;
     ok( $component->mango() eq "fruity fun!", "Pulled value from subcomponent" );
 }
 
@@ -89,9 +90,9 @@ sub test_page_resources : Tests {
     my $c = Unit::Component::Hello->new();
     my $output = $c->render_in_context( $self->{_context} );
     my $render_state = $c->render_state();
-    diag Dumper( $render_state );
+    #diag Dumper( $render_state );
 
-    ok( scalar @{ $render_state->page_resources() } == 3, "correct number of page resources" );
+    ok( scalar @{ $render_state->page_resources() } == 4, "correct number of page resources" );
     ok( $output =~ m!src="/foo/bar/bananas.js!, "Tags appear for page resources" );
 }
 

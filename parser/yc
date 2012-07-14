@@ -18,7 +18,7 @@
 #========================================================================
 
 : ${GRAMMAR:="ProsperoParser.yp"}
-: ${OUTPUT:="../lib/Prospero/Component/TT2/Grammar.pm"}
+: ${OUTPUT:="../lib/Prospero/Plugin/TT2/Grammar.pm"}
 : ${TEMPLATE:="ProsperoGrammar.pm.skel"}
 
 echo "Compiling parser grammar (${GRAMMAR} -> ${OUTPUT})"
