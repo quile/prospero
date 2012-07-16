@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <%_PAGE_RESOURCES_%>
+  </head>
+  <body>
+    <h1>This is a Form Test</h1>
+
+    [% BIND form AROUND %]
+    <ul>
+      <li> Name: [% BIND name %]</li>
+      <li> Hidden: [% BIND hidden %]</li>
+      <li> </li>
+      <li> [% BIND submit %]</li>
+    </ul>
+    [% END %]
+
+  </body>
+</html>

@@ -2,7 +2,7 @@ package Prospero::Component::System::URL;
 
 use strict;
 use base qw(
-    Prospero::Component
+    Prospero::Component::System
 );
 
 #====================================
@@ -20,7 +20,7 @@ sub init {
     #$self->setDirectAction();
     #$self->setTargetComponentName();
     $self->set_url();
-    $self->set_query_dictionary({});
+    $self->set_query_dictionary( Prospero::DictionaryStack->new() );
     $self->set_raw_query_dictionary({});
     $self->set_query_string();
     $self->set_should_suppress_query_dictionary( 0 );
@@ -123,7 +123,7 @@ sub query_dictionary {
 }
 
 sub set_query_dictionary {
-    my ($self, $qd) = @_;
+    my ( $self, $qd ) = @_;
     # dopey kyle: make a copy before changing this, seeing as
     # how it's BOUND IN from outside!
     my $qd_copy = $qd->as_flat();
@@ -163,14 +163,14 @@ sub query_dictionary_key_value_pairs {
     # if there's a query string, unpack it and use it instead of the query dictionary
     my $qd = $self->query_dictionary();
     if ($self->query_string()) {
-        $qd = Prospero::DictionaryStack->new()->init_with_query_string($self->{_query_string});
+        $qd = Prospero::DictionaryStack->new()->init_with_query_string( $self->{_query_string} );
     }
     my $rqd = $self->raw_query_dictionary();
 
     # next we go through the query dictionary itself
     # and skip values that are "subtracted".  We also
     # replace values that are "replaced"
-    foreach my $hash ($qd, $rqd) {
+    foreach my $hash ($qd->as_flat(), $rqd) {
         foreach my $key (keys %$hash) {
             next if ($self->should_suppress_query_dictionary_key($key));
             my $value = $self->{_query_dictionary_replacements}->value_for_key($key) ||
@@ -332,7 +332,7 @@ sub append_to_response {
     if ( ref($self) eq "Prospero::Component::System::URL" ) {
         $response->set_content( $self->asString() );
     } else {
-        $self->SUPER::append_to_response($response, $context);
+        $self->SUPER::append_to_response( $response, $context );
     }
     $self->init(); # Clear this instance so it can be re-used next time
     return;

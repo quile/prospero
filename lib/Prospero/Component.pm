@@ -58,7 +58,7 @@ sub will_render {
 sub append_to_response {
     my ( $self, $response, $context ) = @_;
 
-    $self->unimplemented();
+    #$self->unimplemented();
 }
 
 sub did_render {
@@ -123,6 +123,9 @@ sub component_for_binding {
     my $component;
     try {
         $component = $component_class->new( $self->render_state() );
+        if ( $component && $component->can( "init" ) ) {
+            $component->init();
+        }
     } catch {
         warn sprintf( "Component class $component_class (referenced from binding '%s') does not exist", $binding->name() );
     };

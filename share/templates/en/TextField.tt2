@@ -1,8 +1,8 @@
-<input name="[% self.name %]"
+<input name="[% self.name | html %]"
     id="[% self.node_id %]"
     title="[% self.parent_binding_name %]"
     [% self.tag_attribute_string %]
     [% IF self.size %]size="[% self.size %]"[% END %]
     [% IF self.max_length %]maxlength="[% self.max_length %]"[% END %]
-    value="[% self.value %]" />
+    value="[% self.value | html %]" />
 <span id="[% self.node_id %]-error" class="error" style="display: none;"></span>

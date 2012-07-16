@@ -1,0 +1,4 @@
+<input type="submit" id="[% self.node_id %]" name="[% self.button_name %]" title="[% self.parent_binding_name %]"
+       [% IF self.button_value %]value="[% self.button_value | html %]"[% END %]
+       [% self.tag_attribute_string %]
+       />

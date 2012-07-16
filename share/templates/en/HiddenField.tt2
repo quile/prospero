@@ -1,0 +1,5 @@
+<input type="hidden" name="[% self.name | html %]"
+    id="[% self.node_id %]"
+    title="[% self.parent_binding_name %]"
+    [% self.tag_attribute_string %]
+    value="[% self.value | html %]" />

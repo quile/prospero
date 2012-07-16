@@ -96,7 +96,7 @@ sub template_path {
     my ( $self ) = @_;
     my $name = ref( $self );
     $name =~ s/::/\//g;
-    return "$name.html";
+    return "$name.tt2";
 }
 
 # rename this
