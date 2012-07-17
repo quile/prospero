@@ -25,6 +25,8 @@ sub init {
     $self->set_method("POST");
 }
 
+sub id     { return $_[0]->{_id} || $_[0]->node_id() }
+sub set_id { $_[0]->{_id} = $_[1] }
 sub method     { return $_[0]->{_method}  }
 sub set_method { $_[0]->{_method} = $_[1] }
 sub enc_type     { return $_[0]->{_enc_type}  }

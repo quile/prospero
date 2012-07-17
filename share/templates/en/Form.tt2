@@ -1,9 +1,8 @@
-<form id="[% self.node_id %]" name="[% self.form_name %]" method="[% self.method %]" title="[% self.parent_binding_name %]"
-[% IF self.has_enc_type %]enctype="[% self.enc_type %]" [% END %]action="[% IF self.url %][% self.url %][% ELSE %][% IF self.has_server %][% IF self.has_protocol %][% self.protocol %]://[% END %][% self.server %][% END %][% self.action %][% IF self.anchor %]#[% self.anchor %][% END %][% END %]" [% self.tag_attributes_string %]>
-[% IF self.has_query_dictionary %]
-  [% FOR key_value_pair IN self.query_dictionary_key_value_pairs %]
-    [% BIND hidden_key_value %]
-  [% END %]
-[% END %]
-[% BINDING content %]
+<form id="[% self.id %]" name="[% self.form_name %]" method="[% self.method %]" title="[% self.parent_binding_name %]" [% IF self.has_enc_type %]enctype="[% self.enc_type %]" [% END %]action="[% IF self.url %][% self.url %][% ELSE %][% IF self.has_server %][% IF self.has_protocol %][% self.protocol %]://[% END %][% self.server %][% END %][% self.action %][% IF self.anchor %]#[% self.anchor %][% END %][% END %]" [% self.tag_attributes_string %]>
+[% IF self.has_query_dictionary -%]
+  [% FOR key_value_pair IN self.query_dictionary_key_value_pairs -%]
+    [% BIND hidden_key_value -%]
+  [% END -%]
+[% END -%]
+[% BINDING content -%]
 </form>

@@ -6,6 +6,9 @@ use base qw(
     Prospero::Component::System::FormComponent
 );
 
+use Prospero::PageResource;
+
+
 sub required_page_resources {
     my ( $self ) = @_;
     return [

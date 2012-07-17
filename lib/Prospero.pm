@@ -5,12 +5,17 @@ use strict;
 use warnings;
 
 use Prospero::Object;
+use Prospero::DictionaryStack;
+use Prospero::BindingDictionary;
+use Prospero::Binding;
 use Prospero::Context;
 use Prospero::Request;
 use Prospero::Response;
 use Prospero::RenderState;
 use Prospero::Component;
 use Prospero::RequestFrame;
+use Prospero::Utility;
+use Prospero::Components;
 
 =head1 NAME
 

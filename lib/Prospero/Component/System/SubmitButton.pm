@@ -2,6 +2,7 @@ package Prospero::Component::System::SubmitButton;
 
 use strict;
 use base qw(
+    Prospero::Component::System
     Prospero::Component::System::FormComponent
 );
 

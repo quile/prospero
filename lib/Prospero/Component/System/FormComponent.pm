@@ -5,6 +5,9 @@ use warnings;
 
 use base qw( Prospero::Component );
 
+sub id     { return $_[0]->{_id} || $_[0]->node_id() }
+sub set_id { $_[0]->{_id} = $_[1] }
+
 sub is_required     {
     my ( $self ) = @_;
     return $self->{_is_required}

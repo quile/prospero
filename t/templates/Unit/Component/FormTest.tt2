@@ -7,10 +7,11 @@
 
     [% BIND form AROUND %]
     <ul>
-      <li> Name: [% BIND name %]</li>
-      <li> Hidden: [% BIND hidden %]</li>
-      <li> </li>
-      <li> [% BIND submit %]</li>
+      <li> text_field: [% BIND text_field %]</li>
+      <li> password: [% BIND password %]</li>
+      <li> hidden_field: [% BIND hidden_field %]</li>
+      <li> text: [% BIND text %]</li>
+      <li> [% BIND submit_button %]</li>
     </ul>
     [% END %]
 

@@ -1,0 +1,2 @@
+<textarea name="[% self.name %]" id="[% self.id %]" title="[% self.parent_binding_name %]" [% self.tag_attribute_string -%] [% IF self.rows %]rows="[% self.rows %]"[% END -%] [% IF columns %]cols="[% self.columns %]"[% END -%] />[% self.value %]</textarea>
+    <span id="[% self.node_id %]-error" class="error" style="display:none;"></span>

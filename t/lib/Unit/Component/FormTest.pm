@@ -16,17 +16,27 @@ sub bindings {
     return Prospero::BindingDictionary->new({
         form => {
             type => "Prospero::Component::System::Form",
+            action => sub { '/foo/bar/baz' },
         },
-        hidden => {
+        hidden_field => {
             type => "Prospero::Component::System::HiddenField",
             value => q(stuff.hidden_field),
         },
-        name => {
+        text_field => {
             type => "Prospero::Component::System::TextField",
             value => q(stuff.text_field),
         },
-        submit => {
+        password => {
+            type => "Prospero::Component::System::Password",
+            value => q(stuff.text_field),
+        },
+        text => {
+            type => "Prospero::Component::System::Text",
+            value => q(stuff.text),
+        },
+        submit_button => {
             type => "Prospero::Component::System::SubmitButton",
+            value => sub { 'Click me!' },
         },
     });
 }
