@@ -9,8 +9,25 @@ use Prospero::PageResource;
 
 use Prospero::Component::System::Components;
 
+sub init {
+    my ( $self ) = @_;
+    $self->set_stuff({
+        text_field => "Me text",
+        hidden_field => "You hidden",
+        password => "xyzzy",
+        text => "Ethel the Aardvark Goes Quantity Surveying",
+        popup => "green",
+    })
+}
+
 sub stuff     { return $_[0]->{_stuff}  }
 sub set_stuff { $_[0]->{_stuff} = $_[1] }
+
+sub append_to_response {
+    my ( $self, $response, $context ) = @_;
+
+    $self->SUPER::append_to_response( $response, $context );
+}
 
 sub bindings {
     return Prospero::BindingDictionary->new({
@@ -33,6 +50,20 @@ sub bindings {
         text => {
             type => "Prospero::Component::System::Text",
             value => q(stuff.text),
+        },
+        popup_menu => {
+            type => "Prospero::Component::System::PopUpMenu",
+            selection => q(stuff.popup),
+            values => sub {[
+                qw( red green blue )
+            ]},
+            labels => sub {{
+                red => "Red!",
+                green => "Green!",
+                blue => "Blue!",
+            }},
+            allows_no_selection => sub { 1 },
+            any_string => sub { "Pick a colour" },
         },
         submit_button => {
             type => "Prospero::Component::System::SubmitButton",

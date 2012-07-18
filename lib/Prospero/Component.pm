@@ -28,8 +28,13 @@ sub new {
     $self->set_render_state( $render_state );
 
     $self->{_node_id} = $render_state->next_node_id();
+
+    $self->init();
+
     return $self;
 }
+
+sub init {}
 
 sub will_respond {
     my ( $self, $request, $context ) = @_;
@@ -123,9 +128,6 @@ sub component_for_binding {
     my $component;
     try {
         $component = $component_class->new( $self->render_state() );
-        if ( $component && $component->can( "init" ) ) {
-            $component->init();
-        }
     } catch {
         warn sprintf( "Component class $component_class (referenced from binding '%s') does not exist", $binding->name() );
     };

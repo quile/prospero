@@ -105,7 +105,6 @@ sub bind {
 
     croak( "No meta-information passed in" ) unless $prospero;
 
-    $DB::single = 1;
     # get binding with name
     my $binding = $self->binding_with_name( $name ) or die "No such binding: $name";
 

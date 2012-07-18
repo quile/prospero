@@ -26,7 +26,7 @@ sub take_values_from_request {
     if ( $self->allows_other() ) {
         if ( $self->selection() eq $self->other_value() ) {
             if ($self->other_alternate_key()) {
-                $self->set_value_for_key( $self->other_text(), "root_component." . $self->other_alternate_key());
+                $self->set_value_for_key( $self->other_text(), "parent." . $self->other_alternate_key());
             } else {
                 $self->set_selection( $self->other_text() );
             }
@@ -36,7 +36,7 @@ sub take_values_from_request {
     $self->reset_values();
 }
 
-sub reset_value {
+sub reset_values {
     my ( $self ) = @_;
 
     $self->set_any_string('');
@@ -76,7 +76,7 @@ sub display_string_for_item {
     my ( $self, $item ) = @_;
 
     if ( UNIVERSAL::can($item, "value_for_key") ) {
-        return $item->value_for_key( $self->value_for_key("display_string") );
+        return $item->value_for_key( $self->value_for_key( "display_string" ) );
     }
     my $key = $self->value_for_key( "display_string" );
 
@@ -94,10 +94,10 @@ sub value_for_item {
     my ( $self, $item ) = @_;
 
     if ( UNIVERSAL::can( $item, "value_for_key" ) ) {
-        return $item->value_for_key( $self->value_for_key("VALUE") );
+        return $item->value_for_key( $self->value_for_key( "value" ) );
     }
     if ( ref($item) eq "HASH" ) {
-        my $key = $self->value_for_key("value");
+        my $key = $self->value_for_key( "value" );
         if (exists($item->{$key})) {
             return $item->{$key};
         } else {
@@ -120,35 +120,35 @@ sub item_is_selected {
     my ( $self, $item ) = @_;
     my $value;
 
-    if (UNIVERSAL::can($item, "valueForKey")) {
-        $value = $item->valueForKey($self->valueForKey("VALUE"));
-    } elsif (IF::Dictionary::isHash($item) && exists ($item->{$self->valueForKey("VALUE")})) {
-        $value = $item->{$self->valueForKey("VALUE")};
+    if ( UNIVERSAL::can( $item, "value_for_key" ) ) {
+        $value = $item->value_for_key( $self->value_for_key( "value" ) );
+    } elsif ( ref( $item ) eq "HASH" && exists $item->{$self->value_for_key( "value" )} ) {
+        $value = $item->{$self->value_for_key( "value" )};
     } else {
         $value = $item;
     }
 
-    return 0 unless $value ne "";
-    return 0 unless (IF::Array::isArray($self->valueForKey("SELECTED_VALUES")));
+    return 0 if $value eq "";
+
+    my $values = $self->value_for_key( "selected_values" ) || [ $self->selection() ];
+    return 0 unless ( ref( $values ) );
     #TODO: Optimise this by hashing it
-    foreach my $selectedValue (@{$self->valueForKey("SELECTED_VALUES")}) {
-        unless (ref $selectedValue) {
-            #IF::Log::debug("Checking ($selectedValue, $value) to see if it's selected");
-            #IF::Log::debug("Should ignore case ".$self->shouldIgnoreCase()." - Should ignore accents ".$self->shouldIgnoreAccents()." - Value is $value - Selected value is $selectedValue");
-            return 1 if $self->valuesAreEqual($selectedValue, $value);
+    foreach my $selected_value ( @$values ) {
+        unless ( ref $selected_value ) {
+            return 1 if $self->values_are_equal( $selected_value, $value );
 
             # this could be optimised:
-            if ($selectedValue =~ /^[0-9\.]+$/ &&
+            if ($selected_value =~ /^[0-9\.]+$/ &&
                 $value =~ /^[0-9\.]+$/ &&
-                $selectedValue == $value) {
+                $selected_value == $value ) {
                 return 1;
             }
             next;
         }
-        if (UNIVERSAL::can($selectedValue, "valueForKey")) {
-            return 1 if $self->valuesAreEqual($selectedValue->valueForKey($self->valueForKey("VALUE")), $value);
+        if ( UNIVERSAL::can( $selected_value, "value_for_key" ) ) {
+            return 1 if $self->values_are_equal( $selected_value->value_for_key( $self->value_for_key( "value" ) ), $value );
         } else {
-            return 1 if $self->valuesAreEqual($selectedValue->{$self->valueForKey("VALUE")}, $value);
+            return 1 if $self->values_are_equal( $selected_value->{$self->value_for_key( "value" )}, $value );
         }
     }
     return 0;
@@ -170,116 +170,121 @@ sub values_are_equal {
     return ($a eq $b);
 }
 
-# sub setValues {
-#     my $self = shift;
-#     $self->{VALUES} = shift;
+# sub set_values {
+#     my ( $self, $values ) = @_;
+#     $self->{_values} = $values;
 #
-#     if ($self->{LABELS}) {
-#         $self->{LIST} = $self->listFromLabelsAndValues();
+#     if ( $self->{_labels} ) {
+#         $self->{_list} = $self->list_from_labels_and_values();
 #     }
 # }
 #
-# sub setLabels {
-#     my $self = shift;
-#     $self->{LABELS} = shift;
+# sub set_labels {
+#     my ( $self, $values ) = @_;
+#     $self->{_labels} = $values;
 #
-#     if ($self->{VALUES}) {
-#         $self->{LIST} = $self->listFromLabelsAndValues();
+#     if ( $self->{_values} ) {
+#         $self->{_list} = $self->list_from_labels_and_values();
 #     }
 # }
 #
-# sub listFromLabelsAndValues {
-#     my $self = shift;
+# sub list_from_labels_and_values {
+#     my ( $self ) = @_;
 #
-#     return [] unless $self->{VALUES} && $self->{LABELS};
+#     return [] unless $self->{_values} && $self->{_labels};
 #
 #     my $list = [];
-#     foreach my $value (@{$self->{VALUES}}) {
-#         push (@$list, { VALUE => $value, LABEL => $self->{LABELS}->{$value} });
+#     foreach my $value ( @{ $self->{_values} } ) {
+#         push (@$list, { VALUE => $value, LABEL => $self->{_labels}->{$value} } );
 #     }
 #     return $list;
 # }
-
-
-
-
-
-
 
 sub name     { return $_[0]->{_name} || $_[0]->node_id() }
 sub set_name { $_[0]->{_name} = $_[1] }
 
 sub list {
-    my $self = shift;
-    unless ($self->{_list}) {
-        my $list;
-        if ($self->values() &&
-            $self->value() &&
-            $self->displayString()) {
-            $list = [];
-            foreach my $value (@{$self->values()}) {
-                push (@$list, { $self->value() => $value, $self->displayString() => $self->labels()->{$value} });
-            }
-        } else {
-            $list = [];
-            foreach my $item (@{$self->{LIST}}) {
-                push (@$list, $item);
-            }
-        }
+    my ( $self ) = @_;
 
-        if ($self->allowsNoSelection()) {
-            if ($self->value() && $self->displayString()) {
-                unshift (@$list, { $self->value() => $self->anyValue(), $self->displayString() => $self->anyString() });
-            } else {
-                unshift (@$list, ''); # TODO this is bogus but the only way to ensure that an empty value gets sent in this case
-            }
-        }
+   # $DB::single = 1;
 
-        if ($self->allowsOther()) {
-            # Check to see if other is already in the list...
-            my $hasOther = 0;
-            foreach my $item (@$list) {
-                if (ref($item)) {
-                    if ($item->{$self->value()} eq $self->otherValue()) {
-                        $hasOther = 1;
-                        last;
-                    }
-                } else {
-                    if ($item eq $self->otherValue()) {
-                        $hasOther = 1;
-                        last;
-                    }
-                }
-            }
-            # ...Only add the other value if it doesn't exist.
-            unless ($hasOther) {
-                if ($self->value() && $self->displayString()) {
-                    push (@$list, {$self->value() => $self->otherValue(), $self->displayString() => $self->otherLabel()});
-                } else {
-                    push (@$list, $self->otherValue());
-                }
-            }
+    return $self->{_list} if $self->{_list};
+
+    my $list;
+    if ($self->values() &&
+        $self->value() &&
+        $self->display_string()) {
+        $list = [];
+        foreach my $value (@{$self->values()}) {
+            push (@$list, { $self->value() => $value, $self->display_string() => $self->labels()->{$value} });
         }
-        $self->{_list} = $list;
+    } else {
+        $list = [];
+        foreach my $item (@{$self->{list}}) {
+            push (@$list, $item);
+        }
     }
+
+    if ($self->allows_no_selection()) {
+        if ($self->value() && $self->display_string()) {
+            unshift (@$list, { $self->value() => $self->any_value(), $self->display_string() => $self->any_string() });
+        } else {
+            unshift (@$list, ''); # TODO this is bogus but the only way to ensure that an empty value gets sent in this case
+        }
+    }
+
+    if ($self->allows_other()) {
+        # Check to see if other is already in the list...
+        my $has_other = 0;
+        foreach my $item (@$list) {
+            if (ref($item)) {
+                if ($item->{$self->value()} eq $self->other_value()) {
+                    $has_other = 1;
+                    last;
+                }
+            } else {
+                if ($item eq $self->other_value()) {
+                    $has_other = 1;
+                    last;
+                }
+            }
+        }
+        # ...Only add the other value if it doesn't exist.
+        unless ($has_other) {
+            if ($self->value() && $self->display_string()) {
+                push (@$list, {$self->value() => $self->other_value(), $self->display_string() => $self->other_label()});
+            } else {
+                push (@$list, $self->other_value());
+            }
+        }
+    }
+    $self->{_list} = $list;
     return $self->{_list};
 }
 
-sub setList {
-    my $self = shift;
-    $self->{_list} = shift;
+sub set_list {
+    my ( $self, $list ) = @_;
+    $self->{_list} = $list;
 }
 
+sub value     { return $_[0]->{_value} || "VALUE" }
+sub set_value { $_[0]->{_value} = $_[1] }
+sub display_string     { return $_[0]->{_display_string} || "LABEL" }
+sub set_display_string { $_[0]->{_display_string} = $_[1] }
 sub values     { return $_[0]->{_values}  }
 sub set_values { $_[0]->{_values} = $_[1] }
 sub labels     { return $_[0]->{_labels}  }
 sub set_labels { $_[0]->{_labels} = $_[1] }
 sub selection     { return $_[0]->{_selection}  }
 sub set_selection { $_[0]->{_selection} = $_[1] }
+sub selected_values     { return $_[0]->{_selected_values}  }
+sub set_selected_values { $_[0]->{_selected_values} = $_[1] }
 sub allows_no_selection     { return $_[0]->{_allows_no_selection}  }
 sub set_allows_no_selection { $_[0]->{_allows_no_selection} = $_[1] }
 sub any_string     { return $_[0]->{_any_string} || $_[0]->tag_attribute_for_key("anyString") }
 sub set_any_string { $_[0]->{_any_string} = $_[1] }
+sub any_value     { return $_[0]->{_any_value} || $_[0]->tag_attribute_for_key("anyValue") }
+sub set_any_value { $_[0]->{_any_value} = $_[1] }
 sub should_ignore_case     { return $_[0]->{_should_ignore_case}  }
 sub set_should_ignore_case { $_[0]->{_should_ignore_case} = $_[1] }
 sub should_ignore_accents     { return $_[0]->{_should_ignore_accents}  }

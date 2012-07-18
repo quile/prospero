@@ -11,6 +11,7 @@
       <li> password: [% BIND password %]</li>
       <li> hidden_field: [% BIND hidden_field %]</li>
       <li> text: [% BIND text %]</li>
+      <li> popup: [% BIND popup_menu %]</li>
       <li> [% BIND submit_button %]</li>
     </ul>
     [% END %]

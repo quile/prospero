@@ -7,5 +7,6 @@ use Prospero::Component::System::Text;
 use Prospero::Component::System::HiddenField;
 use Prospero::Component::System::SubmitButton;
 use Prospero::Component::System::URL;
+use Prospero::Component::System::PopUpMenu;
 
 1;
