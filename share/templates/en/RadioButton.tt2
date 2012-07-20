@@ -1,0 +1,1 @@
+<input type="radio" name="[% self.name | html %]" value="[% self.value | html %]" [% IF self.is_checked %]checked="checked"[% END %] [% self.tag_attribute_string %] />

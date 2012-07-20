@@ -19,9 +19,11 @@ sub required_page_resources {
 sub take_values_from_request {
     my ( $self, $request, $context ) = @_;
 
-    $self->SUPER::take_values_from_request( $request, $context );
+    # Don't need to call super as there are no subcomponents.
+    # Subclasses of this don't need to call super either.
+    #$self->SUPER::take_values_from_request( $request, $context );
 
-    $self->set_selection( $request->param( $self->name() ) );
+    $self->set_selection( $request->form_value_for_key( $self->name() ) );
 
     if ( $self->allows_other() ) {
         if ( $self->selection() eq $self->other_value() ) {

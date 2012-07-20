@@ -1,0 +1,19 @@
+<span id="[% self.node_id %]">
+  [% IF self.should_render_in_table -%]
+    <table>
+      [% FOR item IN self.list -%]
+        <tr>
+          <td>
+            [% BIND button -%]
+          </td>
+          <td>[% self.display_string_for_item( item ) %]</td>
+        </tr>
+      [% END -%]
+    </table>
+  [% ELSE -%]
+    [% FOR item IN self.list -%]
+      [% BIND button %] [% self.display_string_for_item( item ) -%]
+      [% IF self.is_vertical %]<br />[% END -%]
+    [% END -%]
+  [% END -%]
+</span>

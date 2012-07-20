@@ -28,7 +28,7 @@ sub take_values_from_request {
     my ( $self, $request, $context ) = @_;
 
     $self->SUPER::take_values_from_request( $request, $context );
-    $self->set_value( $request->param( $self->name() ) );
+    $self->set_value( $request->form_value_for_key( $self->name() ) );
     print STDERR "Value of input field ".$self->name()." is ".$self->value();
 }
 

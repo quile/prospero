@@ -12,7 +12,10 @@
       <li> hidden_field: [% BIND hidden_field %]</li>
       <li> text: [% BIND text %]</li>
       <li> popup: [% BIND popup_menu %]</li>
-      <li> [% BIND submit_button %]</li>
+      <li> scrolling list: [% BIND scrolling_list %]</li>
+      <li> radio buttons: [% BIND radio_buttons %]</li>
+      <li> check boxes: [% BIND check_box_group %]</li>
+      <li> [% BIND submit_button value="Go!" %]</li>
     </ul>
     [% END %]
 

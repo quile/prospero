@@ -8,5 +8,10 @@ use Prospero::Component::System::HiddenField;
 use Prospero::Component::System::SubmitButton;
 use Prospero::Component::System::URL;
 use Prospero::Component::System::PopUpMenu;
+use Prospero::Component::System::ScrollingList;
+use Prospero::Component::System::RadioButton;
+use Prospero::Component::System::RadioButtonGroup;
+use Prospero::Component::System::CheckBox;
+use Prospero::Component::System::CheckBoxGroup;
 
 1;

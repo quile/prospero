@@ -8,8 +8,10 @@ use base qw( Prospero::Component );
 use Prospero::Plugin::TT2::Grammar;
 
 use Template;
-use Carp qw( croak );
+use Carp         qw( croak  );
+use Scalar::Util qw( weaken );
 use Data::Dumper;
+use Try::Tiny;
 
 sub _engine {
     my ( $self, $context ) = @_;
@@ -22,13 +24,15 @@ sub _engine {
 sub take_values_from_request {
     my ( $self, $request, $context ) = @_;
 
+    croak "take_values_from_request called without context" unless $context;
+    $self->set_context( $context );
+
     unless ( $context->incoming_request_frame()->did_render_component( $self ) ) {
         print STDERR "Did not render component $self with id ".$self->node_id()." in frame\n";
         return;
     }
     print STDERR "Component ".ref( $self )." - ".$self->node_id()." taking values\n";
 
-    $self->set_context( $context );
     my $engine = $self->_engine( $context );
     my $template_path = $self->template_path();
 
@@ -43,7 +47,7 @@ sub take_values_from_request {
         die $engine->error;
     }
 
-    $self->set_context( undef );
+    #$self->set_context( undef );
 }
 
 sub will_render {
@@ -80,7 +84,7 @@ sub append_to_response {
         $response->append_content_string( $output );
     }
 
-    $self->set_context( undef );
+    #$self->set_context( undef );
 
     # return the rendered output
     return $output;
@@ -101,7 +105,7 @@ sub template_path {
 
 # rename this
 sub bind {
-    my ( $self, $name, $prospero, $tag_attributes ) = @_;
+    my ( $self, $name, $prospero, $stash, $tag_attributes ) = @_;
 
     croak( "No meta-information passed in" ) unless $prospero;
 
@@ -114,7 +118,6 @@ sub bind {
 
     # determine component type and instantiate
     my $component = $self->component_for_binding( $binding ) or die "Can't instantiate component for binding $name";
-
     $component->set_tag_attributes( $tag_attributes || {} );
 
     $component->set_parent( $self );
@@ -123,6 +126,7 @@ sub bind {
 
     # render or unwind
     if ( $prospero->{__action} eq "pull" ) {
+        $DB::single = 1;
         $component->rewind_request_in_context( $prospero->{__request}, $self->context() );
         $self->pull_values_from_component( $component, $binding );
         return ("", "");
@@ -130,6 +134,34 @@ sub bind {
         my $content = $component->render_in_context( $self->context() );
         return split( quotemeta(Prospero::Component::CONTENT_TAG()), $content );
     }
+}
+
+
+sub value_for_key {
+    my ( $self, $key ) = @_;
+    my $v = $self->SUPER::value_for_key( $key ) || $self->stash_value_for_key( $key );
+}
+
+sub stash_value_for_key {
+    my ( $self, $key ) = @_;
+    my $stash = $self->_stash();
+    return undef unless $stash;
+    return $stash->get( $key );
+}
+
+sub _stash {
+    my ( $self ) = @_;
+    return $self->{_stash} if $self->{_stash};
+    my $context = $self->context();
+    croak "No context found" unless $context;
+    my $environment = $context->environment();
+    croak "No environment" unless $environment;
+    try {
+        $self->{_stash} = $environment->{_TT2}->{SERVICE}->{CONTEXT}->{STASH};
+    } catch {
+        die $_;
+    };
+    return $self->{_stash};
 }
 
 #-------------------------------------------------------
@@ -155,7 +187,7 @@ sub bind {
 
         return <<EOP
 do {
-my (\$start, \$finish) = \$stash->get("self")->bind( $name, \$stash->get("prospero__"), $v );
+my (\$start, \$finish) = \$stash->get("self")->bind( $name, \$stash->get("prospero__"), \$stash, $v );
 
 \$output .= \$start;
 $block
@@ -166,7 +198,7 @@ EOP
     } else {
         return <<EOP
 do {
-my (\$start, \$finish) = \$stash->get('self')->bind( $name, \$stash->get("prospero__"), $v );
+my (\$start, \$finish) = \$stash->get('self')->bind( $name, \$stash->get("prospero__"), \$stash, $v );
 #if ( \$finish ) { die "Component $name expects to wrap content" }
 \$output .= \$start;
 };

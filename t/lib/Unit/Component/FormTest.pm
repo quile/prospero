@@ -11,13 +11,17 @@ use Prospero::Component::System::Components;
 
 sub init {
     my ( $self ) = @_;
+    $self->SUPER::init();
     $self->set_stuff({
         text_field => "Me text",
         hidden_field => "You hidden",
         password => "xyzzy",
         text => "Ethel the Aardvark Goes Quantity Surveying",
-        popup => "green",
-    })
+        popup => "pink",
+        radio_button_group => "yellow",
+        scrolling_list => [ "white", "davis" ],
+        check_box_group => [ "higgins", "thorburn" ],
+    });
 }
 
 sub stuff     { return $_[0]->{_stuff}  }
@@ -55,15 +59,53 @@ sub bindings {
             type => "Prospero::Component::System::PopUpMenu",
             selection => q(stuff.popup),
             values => sub {[
-                qw( red green blue )
+                qw( blue pink black )
             ]},
             labels => sub {{
-                red => "Red!",
-                green => "Green!",
                 blue => "Blue!",
+                pink => "Pink!",
+                black => "Black!",
             }},
             allows_no_selection => sub { 1 },
             any_string => sub { "Pick a colour" },
+        },
+        scrolling_list => {
+            type => "Prospero::Component::System::ScrollingList",
+            selection => q(stuff.scrolling_list),
+            values => sub {[
+                qw( davis mountjoy o_sullivan white hendry )
+            ]},
+            labels => sub {{
+                davis => "Steve Davis",
+                mountjoy => "Doug Mountjoy",
+                o_sullivan => "Ronnie O'Sullivan",
+                white => "Jimmy White",
+                hendry => "Stephen Hendry",
+            }},
+        },
+        radio_buttons => {
+            type => "Prospero::Component::System::RadioButtonGroup",
+            selection => q(stuff.radio_button_group),
+            values => sub {[
+                qw( yellow green brown )
+            ]},
+            labels => sub {{
+                yellow => "Yellow!",
+                green => "Green!",
+                brown => "Brown!",
+            }},
+        },
+        check_box_group => {
+            type => "Prospero::Component::System::CheckBoxGroup",
+            selection => q(stuff.check_box_group),
+            values => sub {[
+                qw( higgins taylor thorburn )
+            ]},
+            labels => sub {{
+                higgins => "Alex 'Hurricane' Higgins",
+                taylor => "Dennis Taylor",
+                thorburn => "Cliff Thorburn",
+            }},
         },
         submit_button => {
             type => "Prospero::Component::System::SubmitButton",

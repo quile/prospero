@@ -63,7 +63,7 @@ sub will_render {
 sub append_to_response {
     my ( $self, $response, $context ) = @_;
 
-    #$self->unimplemented();
+    $self->unimplemented();
 }
 
 sub did_render {
@@ -77,6 +77,7 @@ sub did_render {
     }
 
     $self->render_state()->decrease_page_context_depth();
+    $self->set_context();
 }
 
 sub render_in_context {
@@ -115,21 +116,24 @@ sub binding_with_name {
     my ( $self, $name ) = @_;
     my $binding = $self->bindings()->value_for_key( $name );
     return undef unless $binding;
-    $binding->set_name( $name );
+    $binding->set_binding_name( $name );
     return $binding;
 }
 
 sub component_for_binding {
     my ( $self, $binding ) = @_;
 
+    croak "Can't create component without context" unless $self->context();
     return undef unless $binding;
 
     my $component_class = $binding->type();
     my $component;
     try {
         $component = $component_class->new( $self->render_state() );
+        $component->set_parent_binding_name( $binding->binding_name() );
+        $component->set_context( $self->context() );
     } catch {
-        warn sprintf( "Component class $component_class (referenced from binding '%s') does not exist", $binding->name() );
+        warn sprintf( "Component class $component_class (referenced from binding '%s') does not exist", $binding->binding_name() );
     };
     return $component;
 }
@@ -139,7 +143,7 @@ sub push_values_to_component {
 
     # set the bindings
     foreach my $key ( keys %$binding ) {
-        next if ( $key eq "type" || $key eq "name" );
+        next if ( $key eq "type" || $key eq "parent_binding_name" );
         my $bv = $binding->value_for_key( $key );
         my $value;
         if (ref( $bv ) eq "CODE" ) {
@@ -155,7 +159,7 @@ sub pull_values_from_component {
     my ( $self, $component, $binding ) = @_;
 
     foreach my $key ( keys %$binding ) {
-        next if ( $key eq "type" || $key eq "name" );
+        next if ( $key eq "type" || $key eq "parent_binding_name" );
         my $bv = $binding->value_for_key( $key );
         unless ( ref( $bv ) ) {
             my $value = $component->value_for_key( $key );
@@ -268,5 +272,8 @@ sub set_parent {
     $_[0]->{_parent} = $_[1];
     weaken $_[0]->{_parent};
 }
+sub parent_binding_name     { return $_[0]->{_parent_binding_name}  }
+sub set_parent_binding_name { $_[0]->{_parent_binding_name} = $_[1] }
+
 
 1;

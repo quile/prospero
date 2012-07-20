@@ -67,6 +67,23 @@ sub param {
     return;
 }
 
+sub form_value_for_key {
+    my ( $self, $key ) = @_;
+    my $value = $self->param( $key );
+    return $value;
+}
+
+sub form_values_for_key {
+    my ( $self, $key ) = @_;
+    my @values = $self->param( $key );
+    return \@values;
+}
+
+sub form_keys {
+    my ( $self ) = @_;
+    return [ $self->param() ];
+}
+
 sub dropCookie {
     return undef;
 }

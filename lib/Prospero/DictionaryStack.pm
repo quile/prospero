@@ -17,6 +17,7 @@ sub push_frame {
     my ( $self, $dictionary ) = @_;
     $dictionary ||= {};
     unshift @{ $self->{_frames} }, $dictionary;
+    return $self;
 }
 
 sub pop_frame {
