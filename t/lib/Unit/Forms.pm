@@ -56,10 +56,9 @@ sub test_rewind : Tests {
     );
     $self->{_context}->set_incoming_request_frame( $self->{_outgoing_request_frame} );
     $self->{_context}->set_outgoing_request_frame();
-
     $self->{_component}->rewind_request_in_context( $request, $self->{_context} );
 
-    diag Dumper $self->{_component}->stuff();
+    #diag Dumper $self->{_component}->stuff();
     is_deeply( $self->{_component}->stuff(), {
             'scrolling_list' => [
                 'mountjoy',

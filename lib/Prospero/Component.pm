@@ -26,9 +26,7 @@ sub new {
         $render_state = Prospero::RenderState->new();
     }
     $self->set_render_state( $render_state );
-
     $self->{_node_id} = $render_state->next_node_id();
-
     $self->init();
 
     return $self;

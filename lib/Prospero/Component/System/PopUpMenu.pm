@@ -21,20 +21,18 @@ sub take_values_from_request {
 
     # Don't need to call super as there are no subcomponents.
     # Subclasses of this don't need to call super either.
-    #$self->SUPER::take_values_from_request( $request, $context );
 
     $self->set_selection( $request->form_value_for_key( $self->name() ) );
 
-    if ( $self->allows_other() ) {
-        if ( $self->selection() eq $self->other_value() ) {
-            if ($self->other_alternate_key()) {
-                $self->set_value_for_key( $self->other_text(), "parent." . $self->other_alternate_key());
-            } else {
-                $self->set_selection( $self->other_text() );
-            }
-
-        }
-    }
+    # if ( $self->allows_other() ) {
+    #     if ( $self->selection() eq $self->other_value() ) {
+    #         if ($self->other_alternate_key()) {
+    #             $self->set_value_for_key( $self->other_text(), "parent." . $self->other_alternate_key());
+    #         } else {
+    #             $self->set_selection( $self->other_text() );
+    #         }
+    #     }
+    # }
     $self->reset_values();
 }
 
@@ -235,31 +233,31 @@ sub list {
         }
     }
 
-    if ($self->allows_other()) {
-        # Check to see if other is already in the list...
-        my $has_other = 0;
-        foreach my $item (@$list) {
-            if (ref($item)) {
-                if ($item->{$self->value()} eq $self->other_value()) {
-                    $has_other = 1;
-                    last;
-                }
-            } else {
-                if ($item eq $self->other_value()) {
-                    $has_other = 1;
-                    last;
-                }
-            }
-        }
-        # ...Only add the other value if it doesn't exist.
-        unless ($has_other) {
-            if ($self->value() && $self->display_string()) {
-                push (@$list, {$self->value() => $self->other_value(), $self->display_string() => $self->other_label()});
-            } else {
-                push (@$list, $self->other_value());
-            }
-        }
-    }
+    # if ($self->allows_other()) {
+    #     # Check to see if other is already in the list...
+    #     my $has_other = 0;
+    #     foreach my $item (@$list) {
+    #         if (ref($item)) {
+    #             if ($item->{$self->value()} eq $self->other_value()) {
+    #                 $has_other = 1;
+    #                 last;
+    #             }
+    #         } else {
+    #             if ($item eq $self->other_value()) {
+    #                 $has_other = 1;
+    #                 last;
+    #             }
+    #         }
+    #     }
+    #     # ...Only add the other value if it doesn't exist.
+    #     unless ($has_other) {
+    #         if ($self->value() && $self->display_string()) {
+    #             push (@$list, {$self->value() => $self->other_value(), $self->display_string() => $self->other_label()});
+    #         } else {
+    #             push (@$list, $self->other_value());
+    #         }
+    #     }
+    # }
     $self->{_list} = $list;
     return $self->{_list};
 }
@@ -291,15 +289,15 @@ sub should_ignore_case     { return $_[0]->{_should_ignore_case}  }
 sub set_should_ignore_case { $_[0]->{_should_ignore_case} = $_[1] }
 sub should_ignore_accents     { return $_[0]->{_should_ignore_accents}  }
 sub set_should_ignore_accents { $_[0]->{_should_ignore_accents} = $_[1] }
-sub allows_other     { return $_[0]->{_allows_other}  }
-sub set_allows_other { $_[0]->{_allows_other} = $_[1] }
-sub other_text     { return $_[0]->{_other_text}  }
-sub set_other_text { $_[0]->{_other_text} = $_[1] }
-sub other_value     { return $_[0]->{_other_value} || "OTHER" }
-sub set_other_value { $_[0]->{_other_value} = $_[1] }
-sub other_label     { return $_[0]->{_other_label} || "OTHER" }
-sub set_other_label { $_[0]->{_other_label} = $_[1] }
-sub other_alternate_key     { return $_[0]->{_other_alternate_key}  }
-sub set_other_alternate_key { $_[0]->{_other_alternate_key} = $_[1] }
+# sub allows_other     { return $_[0]->{_allows_other}  }
+# sub set_allows_other { $_[0]->{_allows_other} = $_[1] }
+# sub other_text     { return $_[0]->{_other_text}  }
+# sub set_other_text { $_[0]->{_other_text} = $_[1] }
+# sub other_value     { return $_[0]->{_other_value} || "OTHER" }
+# sub set_other_value { $_[0]->{_other_value} = $_[1] }
+# sub other_label     { return $_[0]->{_other_label} || "OTHER" }
+# sub set_other_label { $_[0]->{_other_label} = $_[1] }
+# sub other_alternate_key     { return $_[0]->{_other_alternate_key}  }
+# sub set_other_alternate_key { $_[0]->{_other_alternate_key} = $_[1] }
 
 1;
