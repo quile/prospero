@@ -15,6 +15,13 @@ sub required_page_resources {
     ];
 }
 
+sub init {
+    my ( $self ) = @_;
+    $self->SUPER::init();
+    $self->set_size( 10 );
+    $self->set_is_multiple( 1 );
+}
+
 sub take_values_from_request {
     my ( $self, $request, $context ) = @_;
 

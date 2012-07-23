@@ -49,7 +49,7 @@ sub bindings {
         },
         password => {
             type => "Prospero::Component::System::Password",
-            value => q(stuff.text_field),
+            value => q(stuff.password),
         },
         text => {
             type => "Prospero::Component::System::Text",
