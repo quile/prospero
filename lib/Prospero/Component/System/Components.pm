@@ -13,5 +13,7 @@ use Prospero::Component::System::RadioButton;
 use Prospero::Component::System::RadioButtonGroup;
 use Prospero::Component::System::CheckBox;
 use Prospero::Component::System::CheckBoxGroup;
+use Prospero::Component::System::DateEditor;
+use Prospero::Component::System::TimeEditor;
 
 1;

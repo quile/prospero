@@ -21,17 +21,19 @@ sub init {
         radio_button_group => "yellow",
         scrolling_list => [ "white", "davis" ],
         check_box_group => [ "higgins", "thorburn" ],
+        date_editor => "1944-06-06",
+        time_editor => "16:20:00",
     });
 }
 
 sub stuff     { return $_[0]->{_stuff}  }
 sub set_stuff { $_[0]->{_stuff} = $_[1] }
 
-sub append_to_response {
-    my ( $self, $response, $context ) = @_;
-
-    $self->SUPER::append_to_response( $response, $context );
-}
+# sub append_to_response {
+#     my ( $self, $response, $context ) = @_;
+#
+#     $self->SUPER::append_to_response( $response, $context );
+# }
 
 sub bindings {
     return Prospero::BindingDictionary->new({
@@ -106,6 +108,18 @@ sub bindings {
                 taylor => "Dennis Taylor",
                 thorburn => "Cliff Thorburn",
             }},
+        },
+        date_editor => {
+            type => "Prospero::Component::System::DateEditor",
+            date_string => q(stuff.date_editor),
+            start_year => sub { "1939" },
+            end_year => sub { "1945" },
+        },
+        time_editor => {
+            type => "Prospero::Component::System::TimeEditor",
+            time_string => q(stuff.time_editor),
+            should_show_seconds => sub { 1 },
+            is_twenty_four_hour => sub { 1 },
         },
         submit_button => {
             type => "Prospero::Component::System::SubmitButton",

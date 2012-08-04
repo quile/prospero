@@ -216,13 +216,6 @@ sub _content_with_page_resources_from_response {
     return $content;
 }
 
-# This asks the renderstate for all accumulated page resources
-# and generates tags that pull them into the page.  This is
-# a bit gnarly because generating HTML from here is bad,
-# bit this stuff will change very infrequently.
-# This should be moved to IF::Page once all the
-# pages are ported to be subclasses of that.
-
 sub page_resources_of_type_in_response_as_html {
     my ( $self, $type, $response ) = @_;
 
@@ -272,6 +265,5 @@ sub set_parent {
 }
 sub parent_binding_name     { return $_[0]->{_parent_binding_name}  }
 sub set_parent_binding_name { $_[0]->{_parent_binding_name} = $_[1] }
-
 
 1;

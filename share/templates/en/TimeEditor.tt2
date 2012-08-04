@@ -1,0 +1,13 @@
+[% BINDING hours %]
+[% BINDING minutes %]
+[% IF self.should_show_seconds %]
+  [% BINDING seconds %]
+[% END %]
+[% UNLESS self.is_twenty_four_hour %]
+  [% BINDING am_pm %]
+[% END %]
+[% IF self.should_show_now_link %]
+<span style="font-size: 9px">
+  <A href="#">now</a>
+</span>
+[% END %]

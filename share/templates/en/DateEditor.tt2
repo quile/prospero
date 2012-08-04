@@ -1,0 +1,9 @@
+[% BINDING month %]
+[% BINDING day %]
+[% BINDING year %]
+
+[% IF self.should_show_today_link %]
+<span style="font-size: 9px">
+  <a onClick="javascript:setDateSelectionWithDate(this, '<BINDING:NAME>', <BINDING:CURRENT_YEAR>, <BINDING:CURRENT_MONTH>, <BINDING:CURRENT_DAY>);">today</a>
+</span>
+[% END %]

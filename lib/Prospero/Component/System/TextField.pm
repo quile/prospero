@@ -32,12 +32,6 @@ sub take_values_from_request {
     print STDERR "Value of input field ".$self->name()." is ".$self->value();
 }
 
-sub name {
-    my ( $self ) = @_;
-    return $self->{_name} || $self->node_id();
-}
-sub set_name { $_[0]->{_name} = $_[1] }
-
 sub size     { return $_[0]->{_size}  }
 sub set_size { $_[0]->{_size} = $_[1] }
 sub max_length     { return $_[0]->{_max_length}  }

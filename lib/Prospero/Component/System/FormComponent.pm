@@ -7,6 +7,11 @@ use base qw( Prospero::Component );
 
 sub id     { return $_[0]->{_id} || $_[0]->node_id() }
 sub set_id { $_[0]->{_id} = $_[1] }
+sub name {
+    my ( $self ) = @_;
+    return $self->{_name} || $self->node_id();
+}
+sub set_name { $_[0]->{_name} = $_[1] }
 
 sub is_required     {
     my ( $self ) = @_;
@@ -35,17 +40,17 @@ sub set_validation_failure_message { $_[0]->{_validation_failure_message} = $_[1
 sub validator     { return $_[0]->{_validator}  }
 sub set_validator { $_[0]->{_validator} = $_[1] }
 
-sub hasValidValues {
-    my ( $self ) = @_;
-    if ( $self->is_required() && !$self->has_value_for_validation() ) {
-        return 0;
-    }
-    return 1;
-}
-
-sub hasValueForValidation {
-    my ( $self ) = @_;
-    $self->unimplemented();
-}
+# sub hasValidValues {
+#     my ( $self ) = @_;
+#     if ( $self->is_required() && !$self->has_value_for_validation() ) {
+#         return 0;
+#     }
+#     return 1;
+# }
+#
+# sub hasValueForValidation {
+#     my ( $self ) = @_;
+#     $self->unimplemented();
+# }
 
 1;

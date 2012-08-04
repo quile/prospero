@@ -52,6 +52,12 @@ sub test_rewind : Tests {
             "1_7" => [ "mountjoy", "hendry" ],
             "1_8" => "brown",
             "1_9" => [ "taylor", "thorburn" ],
+            "1_10_month" => "12",
+            "1_10_day"   => "07",
+            "1_10_year"  => "1941",
+            "1_11_hour"   => "8",
+            "1_11_minute" => "33",
+            "1_11_second" => "07",
         },
     );
     $self->{_context}->set_incoming_request_frame( $self->{_outgoing_request_frame} );
@@ -73,7 +79,9 @@ sub test_rewind : Tests {
                 'thorburn'
             ],
             'popup' => 'black',
-            'text_field' => 'Your mother was a hamster'
+            'text_field' => 'Your mother was a hamster',
+            'date_editor' => '1941-12-07',
+            'time_editor' => '08:33:07',
         },
         "Pulled values from request into structured object",
     )
