@@ -1,0 +1,35 @@
+GOALS
+-----
+
+* Almost no dependencies beyond standard Perl
+* Not coupled to any one server-side web framework
+* Not coupled to any one client-side JS framework
+* Fast
+* Reliable
+* Simple
+* Consistent
+
+
+
+
+
+Prospero will be ready for a 0.1 release when:
+
+* there is a Plack adaptor
+* there are more tests for the system components
+* there is documentation at least outlining the
+  system architecture
+
+
+Prospero will be ready for a 0.3 release when:
+
+* there is a Catalyst plugin
+* there is a more formal way to determine consistency
+  between requests
+* more system components have been ported from IF/WM
+
+Prospero will be ready for a 0.5 release when:
+
+* it has been in use for some time on a live site
+* it has detailed documentation, including a manual
+  and tutorials
