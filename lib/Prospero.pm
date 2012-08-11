@@ -23,42 +23,36 @@ Prospero - Solve the hard problems, not the easy ones.
 
 =head1 VERSION
 
-Version 0.01
+Version 0.1
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.1';
 
 
 =head1 SYNOPSIS
 
-Perhaps a little code snippet.
+Prospero is a platform-independent system for
 
-    use Prospero;
+=over 4
 
-    my $foo = Prospero->new();
-    ...
+=item * Building pages out of reusable components
 
-=head1 EXPORT
+=item * Handling complex dynamic forms transparently
 
-A list of functions that can be exported.  You can delete this section
-if you don't export anything, such as for a purely object-oriented module.
+=item * Structuring your display logic entirely separately
+from everything else, allowing very easy "skin" changes, i18n, etc.
 
-=head1 SUBROUTINES/METHODS
+=back
 
-=head2 function1
+It is designed on solid engineering principles and has as its direct spiritual
+ancestor Apple's B<WebObjects> framework.  It uses techniques found in
+the B<Cocoa> framework (previously B<NeXTStep>) to provide functionality
+that will be familiar to programmers of B<OSX>, B<iOS> and B<WebObjects>.
 
-=cut
-
-sub function1 {
-}
-
-=head2 function2
-
-=cut
-
-sub function2 {
-}
+It is not bound to any "popular" web framework and has no dependencies
+on any of them, insofar as it is designed to be platform-neutral.  It can
+function equally well within a web framework, as its own, or entirely off-line.
 
 =head1 AUTHOR
 
@@ -70,41 +64,20 @@ Please report any bugs or feature requests to C<bug-prospero at rt.cpan.org>, or
 the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Prospero>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
-
-
-
 =head1 SUPPORT
 
 You can find documentation for this module with the perldoc command.
 
     perldoc Prospero
 
-
-You can also look for information at:
-
-=over 4
-
-=item * RT: CPAN's request tracker (report bugs here)
-
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Prospero>
-
-=item * AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/Prospero>
-
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/Prospero>
-
-=item * Search CPAN
-
-L<http://search.cpan.org/dist/Prospero/>
-
-=back
-
-
 =head1 ACKNOWLEDGEMENTS
 
+This code is a ground-up clean-room re-implementation of some parts of
+the "IF" framework found here:
+
+L<https://github.com/quile/if-framework>
+
+but does not directly use any of the "IF" code.
 
 =head1 LICENSE AND COPYRIGHT
 
