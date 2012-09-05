@@ -15,7 +15,7 @@ use Prospero::RenderState;
 use Prospero::Component;
 use Prospero::RequestFrame;
 use Prospero::Utility;
-use Prospero::Components;
+use Prospero::Component::System::Components;
 
 =head1 NAME
 

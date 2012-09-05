@@ -39,7 +39,8 @@ sub bindings {
     return Prospero::BindingDictionary->new({
         form => {
             type => "Prospero::Component::System::Form",
-            action => sub { '/foo/bar/baz' },
+            action => sub { '/foo/bar' },
+            method => sub { 'GET' },
         },
         hidden_field => {
             type => "Prospero::Component::System::HiddenField",

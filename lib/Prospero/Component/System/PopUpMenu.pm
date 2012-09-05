@@ -7,7 +7,7 @@ use base qw(
 );
 
 use Prospero::PageResource;
-use Text::Unaccent;
+use Text::Unaccent::PurePerl;
 
 sub required_page_resources {
     my ( $self ) = @_;
@@ -158,8 +158,8 @@ sub values_are_equal {
     my ( $self, $a, $b ) = @_;
 
     if ( $self->should_ignore_accents() ) {
-        $a = unac_string( "utf-8", $a );
-        $b = unac_string( "utf-8", $b );
+        $a = unac_string( "UTF-8", $a );
+        $b = unac_string( "UTF-8", $b );
     }
 
     if ( $self->should_ignore_case() ) {

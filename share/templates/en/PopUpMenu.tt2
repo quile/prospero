@@ -1,4 +1,4 @@
-<select name="[% self.name %]" id="[% self.id %]" size="[% self.size %]" [% self.tag_attribute_string %]>
+<select name="[% self.name %]" id="[% self.id %]" [% self.tag_attribute_string %]>
   [% FOR item IN self.list -%]
   <option value="[% self.value_for_item(item) %]"[% IF self.item_is_selected(item) %] selected="selected"[% END %]>[% self.display_string_for_item(item) %]</option>
   [% END -%]

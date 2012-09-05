@@ -17,7 +17,6 @@ sub new {
     my $arguments = { @args };
     return bless {
         'headers_in'  => $arguments->{headers_in} || {},
-        'headers_out' => $arguments->{headers_out} || {},
         'param'       => $arguments->{param}
                       || $arguments->{params}
                       || {},
@@ -38,11 +37,6 @@ sub setUri {
 sub headers_in {
     my ( $self ) = @_;
     return $self->{headers_in};
-}
-
-sub headers_out {
-    my ( $self ) = @_;
-    return $self->{headers_out};
 }
 
 sub param {
@@ -67,24 +61,8 @@ sub param {
     return;
 }
 
-sub form_value_for_key {
-    my ( $self, $key ) = @_;
-    my $value = $self->param( $key );
-    return $value;
-}
-
-sub form_values_for_key {
-    my ( $self, $key ) = @_;
-    my @values = $self->param( $key );
-    return \@values;
-}
-
-sub form_keys {
-    my ( $self ) = @_;
-    return [ $self->param() ];
-}
-
-sub dropCookie {
+# TBD...
+sub drop_cookie {
     return undef;
 }
 
