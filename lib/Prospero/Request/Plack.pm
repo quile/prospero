@@ -43,7 +43,7 @@ sub param {
             }
         }
     } else {
-        my @params = $$self->{_request}->param();
+        my @params = $self->{_request}->param();
         return @params;
     }
     return;

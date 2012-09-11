@@ -29,12 +29,6 @@ sub init {
 sub stuff     { return $_[0]->{_stuff}  }
 sub set_stuff { $_[0]->{_stuff} = $_[1] }
 
-# sub append_to_response {
-#     my ( $self, $response, $context ) = @_;
-#
-#     $self->SUPER::append_to_response( $response, $context );
-# }
-
 sub bindings {
     return Prospero::BindingDictionary->new({
         form => {
