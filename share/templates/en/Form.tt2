@@ -4,5 +4,6 @@
     [% BIND hidden_key_value -%]
   [% END -%]
 [% END -%]
+  [% BIND frame_number %]
 [% BINDING content -%]
 </form>

@@ -36,6 +36,5 @@ plack_middlewares:
         - InteractiveDebugger
         -
 
-session: "Cookie"
-session_cookie_key: 'test-cookie'
-
+session: "YAML"
+#session_cookie_key: 'test-cookie'

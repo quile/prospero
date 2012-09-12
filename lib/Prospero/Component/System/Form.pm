@@ -62,6 +62,11 @@ sub set_is_multipart {
 sub bindings {
     my ( $self ) = @_;
     return Prospero::BindingDictionary->new({
+        frame_number => {
+            type  => "Prospero::Component::System::HiddenField",
+            name  => sub { "prospero-frame-number" },
+            value => sub { $self->context()->frame_number() },
+        },
         content => {
             type => "CONTENT",
         },
