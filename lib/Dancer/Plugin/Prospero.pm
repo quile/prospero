@@ -25,14 +25,9 @@ hook before => sub {
     __PACKAGE__->prospero_context( __PACKAGE__->_new_context() );
     __PACKAGE__->prospero_request( Prospero::Request::Dancer->new($r) );
 
-    #debug __PACKAGE__->prospero_context();
-
     # push the frame number into the Prospero world
     my $current_frame_number = session( 'frame_number' ) || 0;
     __PACKAGE__->prospero_context()->set_frame_number( $current_frame_number );
-
-    #debug session('frame_offset');
-    #debug session('frame_number');
 
     my $incoming_frame_number = param( "prospero-frame-number" );
 
@@ -93,6 +88,46 @@ sub _new_context {
 
 register_plugin;
 
-# TODO:kd - when documenting, mention that the cookie-based sessions are not (yet) supported.
-
 1;
+
+__END__
+
+=pod
+
+=head1 NAME
+
+Dancer::Plugin::Prospero - Use Prospero within a Dancer application
+
+=head1 DESCRIPTION
+
+This module provides the glue between the Prospero system and Dancer.
+It is implemented as C<before> and C<after> hooks that run when
+a web request is received and immediately before a response is
+returned.  Those hooks initialise the context for a Prospero
+request, and take care of setting up the request frames that make
+the Prospero gearing work.
+
+=head1 CONFIGURATION
+
+You must C<use> the module within your application.  You must also
+specify one of the session modules. (Note: Unfortunately, it will not
+--currently-- work with the cookie-based session, because the C<after>
+hook runs too late in the process to update the session cookie.)
+
+=head1 DEPENDENCY
+
+This module depends on L<Prospero> and L<Dancer>.
+
+=head1 AUTHOR
+
+Kyle Dawkins, info@kyledawkins.com
+
+=head1 COPYRIGHT
+
+This module is copyright (c) 2012 Kyle Dawkins <info@kyledawkins.com>
+
+=head1 LICENSE
+
+This library is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
+
+=cut
