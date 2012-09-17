@@ -114,6 +114,15 @@ specify one of the session modules. (Note: Unfortunately, it will not
 --currently-- work with the cookie-based session, because the C<after>
 hook runs too late in the process to update the session cookie.)
 
+=head1 METHODS
+
+There are no methods that you call directly.  If you
+
+use Dancer::Plugin::Prospero;
+
+then the required hooks will automatically be installed and Prospero's stateful
+machinery will be in place.
+
 =head1 DEPENDENCY
 
 This module depends on L<Prospero> and L<Dancer>.
