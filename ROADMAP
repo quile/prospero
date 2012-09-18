@@ -15,7 +15,7 @@ GOALS
 
 Prospero will be ready for a 0.1 release when:
 
-* there is a Plack adaptor
+* there is a plugin for a popular web framework
 * there are more tests for the system components
 * there is documentation at least outlining the
   system architecture
@@ -24,6 +24,7 @@ Prospero will be ready for a 0.1 release when:
 Prospero will be ready for a 0.3 release when:
 
 * there is a Catalyst plugin
+* there is a working JS implementation
 * there is a more formal way to determine consistency
   between requests
 * more system components have been ported from IF/WM

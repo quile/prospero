@@ -42,6 +42,11 @@ sub init {
     my ( $self ) = @_;
     $self->SUPER::init(@_);
     $self->set_date_string( "0000-00-00" );
+    $self->set_month_names( [qw(
+        January February March April
+        May June July August
+        September October November December
+    )]);
 }
 
 sub take_values_from_request {
@@ -83,7 +88,7 @@ sub months_as_strings {
 
     my $months_as_array = [];
     foreach my $index (1..12) {
-        push (@$months_as_array, { value => sprintf("%02d", $index), display_string => "MONTH_$index", });
+        push (@$months_as_array, { value => sprintf("%02d", $index), display_string => $self->month_names()->[$index-1], });
     }
     if ($self->allows_no_selection()) {
         unshift (@$months_as_array, { value => "", display_string => "" });
@@ -154,6 +159,8 @@ sub allows_no_selection     { return $_[0]->{_allows_no_selection}  }
 sub set_allows_no_selection { $_[0]->{_allows_no_selection} = $_[1] }
 sub should_show_today_link     { return $_[0]->{_should_show_today_link}  }
 sub set_should_show_today_link { $_[0]->{_should_show_today_link} = $_[1] }
+sub month_names     { return $_[0]->{_month_names}  }
+sub set_month_names { $_[0]->{_month_names} = $_[1] }
 
 
 sub start_year {

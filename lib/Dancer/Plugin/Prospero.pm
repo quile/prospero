@@ -5,6 +5,7 @@ use warnings;
 
 use Dancer qw(:syntax);
 use Dancer::Plugin;
+use Dancer::Error;
 
 use Prospero;
 use Prospero::Request::Dancer;
@@ -16,9 +17,50 @@ register prospero_context => sub { (@_ == 2) ? $_context = $_[1] : $_context };
 my $_request;
 register prospero_request => sub { (@_ == 2) ? $_request = $_[1] : $_request };
 
+register prospero_page => sub {
+    my ( $component_name ) = @_;
+
+    debug "Instantiating $component_name";
+
+    # TODO:kd - use Dancer to dynamically load the class
+    # and/or allow component namespaces
+    return $component_name->new();
+};
+
+# Wrap an action with the rewinding and response generation
+register prospero_handler => sub {
+    my ( $component, $code ) = @_;
+
+    $code ||= sub {};
+
+    my $context = __PACKAGE__->prospero_context();
+
+    # 1. rewind
+    $component->rewind_request_in_context( __PACKAGE__->prospero_request(), __PACKAGE__->prospero_context() );
+
+    # 2. call code
+    my $response_component = undef;
+    if ( ref( $code ) eq "CODE" ) {
+        $response_component = $code->( $component, $context ) || $component;
+    } else {
+        debug "Action $code specified by name";
+        if ( $component->can( $code ) ) {
+            $response_component = $component->$code( $context ) || $component;
+        } else {
+            return send_error( "Action $code doesn't exist on $component", "404" );
+        }
+    }
+
+    return $response_component->render_in_context( __PACKAGE__->prospero_context() );
+};
+
 # TODO:kd - don't run this for static resources
 hook before => sub {
     my $r = request;
+
+    # TODO:kd - skip if requesting something other than a routed URL
+    return if ( $r->path() =~ /if-static/ );
+
     debug 'Starting Prospero request...';
 
     # build a context:
@@ -70,8 +112,8 @@ hook after  => sub {
     session( 'frame_offset' => $frame_offset );
     session( 'frame_number' => $frame_number );
 
-    debug "Session, frame number $frame_number, offset $frame_offset, frames ";
-    debug $frames;
+    #debug "Session, frame number $frame_number, offset $frame_offset, frames ";
+    #debug $frames;
 };
 
 

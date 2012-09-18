@@ -12,10 +12,15 @@ our $VERSION = '0.1';
 
 
 get '/foo/bar' => sub {
-    my $component = Unit::Component::FormTest->new();
+    my $page = prospero_page( "Unit::Component::FormTest" );
 
-    $component->rewind_request_in_context( prospero_request, prospero_context );
-    return $component->render_in_context( prospero_context );
+    prospero_handler $page;
+};
+
+get '/foo/bar/submit' => sub {
+    my $page = prospero_page( "Unit::Component::FormTest" );
+
+    prospero_handler $page => "submit";
 };
 
 true;

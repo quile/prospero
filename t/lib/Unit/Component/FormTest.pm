@@ -9,6 +9,8 @@ use Prospero::PageResource;
 
 use Prospero::Component::System::Components;
 
+use Data::Dumper;
+
 sub init {
     my ( $self ) = @_;
     $self->SUPER::init();
@@ -29,11 +31,20 @@ sub init {
 sub stuff     { return $_[0]->{_stuff}  }
 sub set_stuff { $_[0]->{_stuff} = $_[1] }
 
+sub submit {
+    my ( $self, $context ) = @_;
+
+    print STDERR "Submitted form info:";
+    print STDERR Dumper( $self->stuff() );
+
+    return undef;
+}
+
 sub bindings {
     return Prospero::BindingDictionary->new({
         form => {
             type => "Prospero::Component::System::Form",
-            action => sub { '/foo/bar' },
+            action => sub { '/foo/bar/submit' },
             method => sub { 'GET' },
         },
         hidden_field => {

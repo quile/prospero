@@ -161,6 +161,10 @@ frame's render tree has the chance to take values from the incoming request,
 after which its bindings are synchronised back up the render tree.
 This makes sense, because when the page was originally rendered, nodes
 higher in the tree push their values into components beneath them in the tree.
+What it means for you is that you can push your objects into your page,
+and render it, and when the user responds, all the data is sent to the right
+place without you ever having to do anything.
+
 
 
 =head1 AUTHOR
