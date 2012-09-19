@@ -22,11 +22,6 @@ sub init {
 sub name {
     my ( $self ) = @_;
     return $self->{_name} || $self->node_id();
-
-    # if ($self->directAction()) {
-    #     IF::Log::debug("We have a direct action, so returning _ACTION:".$self->targetComponent()."/".$self->directAction());
-    #     return "_ACTION:".$self->targetComponent()."/".$self->directAction();
-    # }
 }
 
 # sub direct_action     { return $_[0]->{_direct_action}  }

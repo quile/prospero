@@ -21,8 +21,8 @@ register prospero_page => sub {
     my ( $component_name ) = @_;
 
     debug "Instantiating $component_name";
+    Dancer::ModuleLoader->load( $component_name );
 
-    # TODO:kd - use Dancer to dynamically load the class
     # and/or allow component namespaces
     return $component_name->new();
 };
@@ -140,6 +140,12 @@ __END__
 
 Dancer::Plugin::Prospero - Use Prospero within a Dancer application
 
+=head1 SYNOPSIS
+
+
+  use Dancer::Plugin::Prospero;
+
+
 =head1 DESCRIPTION
 
 This module provides the glue between the Prospero system and Dancer.
@@ -158,12 +164,79 @@ hook runs too late in the process to update the session cookie.)
 
 =head1 METHODS
 
-There are no methods that you call directly.  If you
+=head2 prospero_context
 
-use Dancer::Plugin::Prospero;
+This will return the Prospero context object that the Dancer plugin
+creates automatically from an incoming request.
 
-then the required hooks will automatically be installed and Prospero's stateful
-machinery will be in place.
+=head2 prospero_request
+
+Get the Prospero version of the incoming request.  This is created
+automatically by the plugin.
+
+=head2 prospero_page
+
+
+  my $page = prospero_page( "My::Page::Class" );
+
+This instantiates a Prospero component, and configures it to work
+under Dancer.   You will generally use this at the beginning
+of one of your actions.  It only takes a single argument,
+which is the name of the class.
+
+=head2 prospero_handler
+
+This abstracts the nuts and bolts of the Prospero request-response
+loop away from you and allows you to just write the code that responds
+to web requests.
+
+  prospero_handler $page => sub {
+      my ( $self ) = @_;
+      ...
+      return prospero_page( "Some::Other::Page" );
+  }
+
+You can specify the name of a method on $page as the second argument
+instead of a code reference:
+
+
+  prospero_handler $page => "handle_submit";
+
+which will invoke the method $page->handle_submit() with the
+correct arguments.  This allows you to build a component's
+handling logic into its class.
+
+A very simple example might be something like:
+
+  get '/some/page/show' => sub {
+      my $page = prospero_page( "Some::Page" );
+
+      # do some stuff with your new instance
+      # ...
+
+      # return it to the browser
+      prospero_handler $page;
+  };
+
+  get '/some/page/submit' => sub {
+      my $page = prospero_page( "Some::Page" );
+
+      prospero_handler $page => sub {
+          my ( $self ) = @_;
+
+          # Page has been submitted and all data unwound and
+          # your objects have been updated.
+
+          # You can so fancy validation, or save your objects, or throw an
+          # error, or whatever.  This is your action.
+
+          # Lastly, you can either instantiate and return a totally new page,
+          # or you can return undef, which will render $page (with all its
+          # values intact)
+      };
+  };
+
+
 
 =head1 DEPENDENCY
 

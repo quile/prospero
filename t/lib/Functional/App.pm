@@ -1,8 +1,7 @@
 package Functional::App;
 
 use Prospero;
-use Prospero::Adaptor::Dancer;
-use Unit::Component::FormTest;
+#use Unit::Component::FormTest;
 
 use Dancer ':syntax';
 

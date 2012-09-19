@@ -17,7 +17,7 @@
       <li> check boxes: [% BIND check_box_group %]</li>
       <li> date: [% BIND date_editor %]</li>
       <li> time: [% BIND time_editor %]</li>
-      <li> [% BIND submit_button value="Go!" %]</li>
+      <li> [% BIND submit_button %]</li>
     </ul>
     [% END %]
 

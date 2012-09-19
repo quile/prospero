@@ -1,1 +1,1 @@
-<input type="submit" id="[% self.id %]" name="[% self.button_name %]" title="[% self.parent_binding_name %]" [% IF self.button_value %]value="[% self.button_value | html %]"[% END -%] [% self.tag_attribute_string -%] />
+<input type="submit" id="[% self.id %]" name="[% self.button_name %]" title="[% self.parent_binding_name %]" [% IF self.value %]value="[% self.value | html %]"[% END -%] [% self.tag_attribute_string -%] />
