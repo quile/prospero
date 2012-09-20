@@ -4,6 +4,6 @@ use Prospero;
 use Dancer;
 use Functional::App;
 
-debug config;
+#debug config;
 
 dance;
