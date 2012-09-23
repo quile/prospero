@@ -5,15 +5,6 @@ use base qw(
     Prospero::Component::System::ScrollingList
 );
 
-use Prospero::PageResource;
-
-sub required_page_resources {
-    my ( $self ) = @_;
-    return [
-        Prospero::PageResource->javascript( "/if-static/javascript/IF/CheckBoxGroup.js" ),
-    ];
-}
-
 sub init {
     my ( $self ) = @_;
     $self->SUPER::init(@_);

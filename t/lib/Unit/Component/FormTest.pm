@@ -5,7 +5,6 @@ use warnings;
 use base qw( Prospero::Plugin::TT2::Component);
 
 use Prospero::BindingDictionary;
-use Prospero::PageResource;
 
 use Prospero::Component::System::Components;
 

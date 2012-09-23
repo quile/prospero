@@ -5,15 +5,7 @@ use base qw(
     Prospero::Component::System::PopUpMenu
 );
 
-use Prospero::PageResource;
 use Prospero::Utility qw( array_from_object );
-
-sub required_page_resources {
-    my ( $self ) = @_;
-    return [
-        Prospero::PageResource->javascript( "/if-static/javascript/IF/ScrollingList.js" ),
-    ];
-}
 
 sub init {
     my ( $self ) = @_;

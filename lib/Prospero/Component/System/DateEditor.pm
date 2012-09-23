@@ -10,15 +10,6 @@ use base qw(
 
 use DateTime;
 
-use Prospero::PageResource;
-
-sub required_page_resources {
-    my ( $self ) = @_;
-    return [
-        Prospero::PageResource->javascript("/if-static/javascript/IF/DateEditor.js"),
-    ];
-}
-
 sub set_date_string {
     my ( $self, $date_string ) = @_;
 

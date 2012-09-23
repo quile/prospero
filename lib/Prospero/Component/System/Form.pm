@@ -10,12 +10,8 @@ use Prospero::BindingDictionary;
 sub required_page_resources {
     my ($self) = @_;
     return [
-        Prospero::PageResource->javascript("/if-static/javascript/jquery/jquery-1.2.6.js"),
-        Prospero::PageResource->javascript("/if-static/javascript/jquery/plugins/jquery.if.js"),
-        Prospero::PageResource->javascript("/if-static/javascript/IF/Component.js"),
-        Prospero::PageResource->javascript("/if-static/javascript/IF/FormComponent.js"),
-        Prospero::PageResource->javascript("/if-static/javascript/IF/Form.js"),
-        Prospero::PageResource->javascript("/if-static/javascript/IF/Validator.js"),
+        Prospero::PageResource->javascript("http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"),
+        Prospero::PageResource->javascript("/javascript/prospero.js"),
     ];
 }
 

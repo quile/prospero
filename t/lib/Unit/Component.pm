@@ -92,7 +92,7 @@ sub test_page_resources : Tests {
     my $render_state = $c->render_state();
     #diag Dumper( $render_state );
 
-    ok( scalar @{ $render_state->page_resources() } == 4, "correct number of page resources" );
+    ok( scalar @{ $render_state->page_resources() } == 5, "correct number of page resources" );
     ok( $output =~ m!src="/foo/bar/bananas.js!, "Tags appear for page resources" );
 }
 

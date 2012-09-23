@@ -86,6 +86,16 @@ hook before => sub {
 };
 
 hook after  => sub {
+    my $response = shift;
+    unless ( __PACKAGE__->prospero_context() ) {
+        return $response;
+    }
+
+    my $frame = __PACKAGE__->prospero_context()->outgoing_request_frame();
+    unless ( $frame && scalar keys %{ $frame->rendered_components } ) {
+        return $response;
+    }
+
     debug 'Ending Prospero request... serialising request frame';
     my $frames = session('frames') || [];
     my $frame_offset = session('frame_offset') || 0;
@@ -95,7 +105,6 @@ hook after  => sub {
     # rendering, so push it into the session frame list, truncating the
     # list if it's grown too long.
 
-    my $frame = __PACKAGE__->prospero_context()->outgoing_request_frame();
     if ( $frame ) {
         push @$frames, $frame;
 
@@ -114,6 +123,7 @@ hook after  => sub {
 
     #debug "Session, frame number $frame_number, offset $frame_offset, frames ";
     #debug $frames;
+    return $response;
 };
 
 

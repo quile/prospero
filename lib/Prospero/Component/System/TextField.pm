@@ -6,16 +6,6 @@ use base qw(
     Prospero::Component::System::FormComponent
 );
 
-use Prospero::PageResource;
-
-
-sub required_page_resources {
-    my ( $self ) = @_;
-    return [
-        Prospero::PageResource->javascript("/if-static/javascript/IF/TextField.js"),
-    ];
-}
-
 sub reset_values {
     my ($self) = @_;
     delete $self->{_name};

@@ -94,15 +94,70 @@ var prospero = (function() {
                 self.displayErrorMessage( self.requiredErrorMessage() );
             }
         }
-
     });
 
+    // Subclasses for the system components.
+    // Lots of them don't actually need any
+    // special code.
+
+    function TextField( nodeId ) {
+        FormComponent.apply( this, arguments );
+        return this;
+    }
+    jQuery.extend( TextField.prototype, FormComponent.prototype );
+
+    function Text( nodeId ) {
+        TextField.apply( this, arguments );
+        return this;
+    }
+    jQuery.extend( Text.prototype, TextField.prototype );
+
+    function HiddenField( nodeId ) {
+        TextField.apply( this, arguments );
+        return this;
+    }
+    jQuery.extend( HiddenField.prototype, TextField.prototype );
+
+    function Password( nodeId ) {
+        TextField.apply( this, arguments );
+        return this;
+    }
+    jQuery.extend( Password.prototype, TextField.prototype );
+
+    function PopUpMenu( nodeId ) {
+        FormComponent.apply( this, arguments );
+        return this;
+    }
+    jQuery.extend( PopUpMenu.prototype, FormComponent.prototype );
+
+
+    function RadioButtonGroup( nodeId ) {
+        PopUpMenu.apply( this, arguments );
+        return this;
+    }
+    jQuery.extend( RadioButtonGroup.prototype, PopUpMenu.prototype, {
+        value: function() {
+            return this._element.find('input[type="radio"]').val();
+        },
+        setValue: function( v ) {
+            this._element.find('input[type="radio"]').val( [v] );
+        }
+    });
 
     // exports
     return {
         // export the component classes
         Component: Component,
         FormComponent: FormComponent,
+
+        // System components
+        TextField: TextField,
+        Text: Text,
+        HiddenField: HiddenField,
+        Password: Password,
+        PopUpMenu: PopUpMenu,
+        RadioButtonGroup: RadioButtonGroup,
+
 
         // export a method to look up components in the hierarchy
         componentWithId: function( nodeId ) {
