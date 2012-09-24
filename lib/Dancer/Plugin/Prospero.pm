@@ -8,6 +8,7 @@ use Dancer::Plugin;
 use Dancer::Error;
 
 use Prospero;
+use Prospero::Plugin::TT2;
 use Prospero::Request::Dancer;
 
 # request's context

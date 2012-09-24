@@ -29,15 +29,20 @@ sub reset {
 
 # These are used in page generation
 sub increase_page_context_depth {
-    my $self = shift;
+    my ( $self ) = @_;
     push (@{$self->{_page_context}}, 0);
     return $self;
 }
 
 sub decrease_page_context_depth {
-    my $self = shift;
+    my ( $self ) = @_;
     pop (@{$self->{_page_context}});
     return $self;
+}
+
+sub page_context_depth {
+    my ( $self ) = @_;
+    return scalar @{ $self->{_page_context} };
 }
 
 sub increment_node_id {
@@ -57,7 +62,6 @@ sub next_node_id {
     $self->increment_node_id();
     return $self->node_id();
 }
-
 
 # ----------- these help components manage page resources ---------
 
