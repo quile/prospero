@@ -9,14 +9,17 @@ use Data::Dumper;
 
 __PACKAGE__->register_plugin(
     callbacks => {
-        will_render => sub {
+        component_will_render => sub {
             my ( $component, $response, $context ) = @_;
             # build the tree of components here
         },
-        did_render => sub {
+        component_did_render => sub {
             my ( $component, $response, $context ) = @_;
             # insert the JS that builds the client-side page structure
-            # if did_render is called on the root component
+        },
+        page_did_render => sub {
+            my ( $page, $response, $context ) = @_;
+
         },
     },
 );

@@ -13,7 +13,7 @@ use Data::Dumper;
 
 __PACKAGE__->register_plugin(
     callbacks => {
-        will_render => sub {
+        component_will_render => sub {
             my ( $component, $response, $context ) = @_;
             # print STDERR "->" x ( $component->render_state()->page_context_depth() - 1 );
             # print STDERR " " . $component."\n";

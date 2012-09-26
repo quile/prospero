@@ -15,10 +15,10 @@ use Prospero::Plugin;
 
 use base qw( Prospero::Object );
 
-sub CONTENT_TAG { "<__CONTENT__>" }
+sub CONTENT_TAG { "<%_CONTENT_%>" }
 my $COMBINED_PAGE_RESOURCE_TAG = "<%_PAGE_RESOURCES_%>";
-my $CSS_PAGE_RESOURCE_TAG = "<%_CSS_PAGE_RESOURCES_%>";
-my $JS_PAGE_RESOURCE_TAG = "<%_JS_PAGE_RESOURCES_%>";
+my $CSS_PAGE_RESOURCE_TAG      = "<%_CSS_PAGE_RESOURCES_%>";
+my $JS_PAGE_RESOURCE_TAG       = "<%_JS_PAGE_RESOURCES_%>";
 
 sub new {
     my ( $class, $render_state, @args ) = @_;
@@ -57,7 +57,7 @@ sub did_respond {
 sub will_render {
     my ( $self, $response, $context ) = @_;
     $self->render_state()->increase_page_context_depth();
-    Prospero::Plugin->execute_callback_with_arguments( "will_render", $self, $response, $context );
+    Prospero::Plugin->execute_callback_with_arguments( "component_will_render", $self, $response, $context );
 }
 
 sub append_to_response {
@@ -71,13 +71,15 @@ sub did_render {
     $context->outgoing_request_frame()->add_rendered_component( $self );
 
     $self->render_state()->add_page_resources( $self->required_page_resources() );
+    $self->render_state()->decrease_page_context_depth();
+
+    Prospero::Plugin->execute_callback_with_arguments( "component_did_render", $self, $response, $context );
 
     if ( $self->is_root_component() ) {
         $self->add_page_resources_to_response_in_context( $response, $context );
+        Prospero::Plugin->execute_callback_with_arguments( "page_did_render", $self, $response, $context );
     }
 
-    Prospero::Plugin->execute_callback_with_arguments( "did_render", $self, $response, $context );
-    $self->render_state()->decrease_page_context_depth();
     $self->set_context();
 }
 
@@ -101,10 +103,6 @@ sub rewind_request_in_context {
         $self->take_values_from_request( $request, $context );
     }
     $self->did_respond( $request, $context );
-}
-
-sub resolve_rendered_content {
-    my ( $self, $rendered_content, $context, $render_state ) = @_;
 }
 
 # Override this in all your components
