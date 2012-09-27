@@ -8,6 +8,9 @@ use base qw(
 
 use Text::Unaccent::PurePerl;
 
+sub javascript_class { "prospero.PopUpMenu" }
+
+
 sub take_values_from_request {
     my ( $self, $request, $context ) = @_;
 

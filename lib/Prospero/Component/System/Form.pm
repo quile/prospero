@@ -15,6 +15,8 @@ sub required_page_resources {
     ];
 }
 
+#sub javascript_class { "prospero.Form" }
+
 sub init {
     my $self = shift;
     $self->SUPER::init(@_);

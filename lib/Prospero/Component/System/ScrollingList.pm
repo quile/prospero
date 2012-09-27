@@ -5,6 +5,8 @@ use base qw(
     Prospero::Component::System::PopUpMenu
 );
 
+#sub javascript_class { "prospero.ScrollingList" }
+
 use Prospero::Utility qw( array_from_object );
 
 sub init {

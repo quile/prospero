@@ -6,6 +6,8 @@ use base qw(
     Prospero::Component::System::FormComponent
 );
 
+sub javascript_class { "prospero.TextField" }
+
 sub reset_values {
     my ($self) = @_;
     delete $self->{_name};

@@ -5,6 +5,8 @@ use base qw(
     Prospero::Component::System::TextField
 );
 
+sub javascript_class { "prospero.Text" }
+
 sub rows     { return $_[0]->{_rows}  }
 sub set_rows { $_[0]->{_rows} = $_[1] }
 sub columns     { return $_[0]->{_columns}  }

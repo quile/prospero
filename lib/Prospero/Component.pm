@@ -56,8 +56,13 @@ sub did_respond {
 
 sub will_render {
     my ( $self, $response, $context ) = @_;
-    $self->render_state()->increase_page_context_depth();
+
+    # announce that the page is about to render
+    if ( $self->is_root_component() ) {
+        Prospero::Plugin->execute_callback_with_arguments( "page_will_render", $self, $response, $context );
+    }
     Prospero::Plugin->execute_callback_with_arguments( "component_will_render", $self, $response, $context );
+    $self->render_state()->increase_page_context_depth();
 }
 
 sub append_to_response {

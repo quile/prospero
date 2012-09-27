@@ -6,6 +6,8 @@ use Dancer ':syntax';
 
 use Dancer::Plugin::Prospero;
 
+use Prospero::Plugin::Javascript;
+
 our $VERSION = '0.1';
 
 get '/foo/bar' => sub {

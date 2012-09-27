@@ -5,6 +5,8 @@ use base qw(
     Prospero::Component::System::PopUpMenu
 );
 
+sub javascript_class { "prospero.RadioButtonGroup" }
+
 sub init {
     my ( $self ) = @_;
     $self->SUPER::init(@_);
