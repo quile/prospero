@@ -144,6 +144,37 @@ var prospero = (function() {
         }
     });
 
+    function ScrollingList( nodeId ) {
+        PopUpMenu.apply( this, arguments );
+        return this;
+    }
+    jQuery.extend( ScrollingList.prototype, PopUpMenu.prototype );
+
+    function CheckBoxGroup( nodeId ) {
+        ScrollingList.apply( this, arguments );
+        return this;
+    }
+    jQuery.extend( CheckBoxGroup.prototype, ScrollingList.prototype, {
+        value: function() {
+            var values = [];
+            this._element.find('input[type="checkbox"]:checked').each( function( index, cb ) {
+                values.push( jQuery(cb).val() );
+            });
+            return values;
+        },
+        setValue: function(v) {
+            this._element.find('input[type="checkbox"]').each( function( index, cb ) {
+                var jcb = jQuery(cb);
+                jcb.attr( 'checked', false );
+                jQuery(v).each( function( vindex, val ) {
+                    if ( val === jcb.attr('value') ) {
+                        jcb.attr( 'checked', true );
+                    }
+                })
+            });
+        }
+    } );
+
     // exports
     return {
         // export the component classes
@@ -157,7 +188,8 @@ var prospero = (function() {
         Password: Password,
         PopUpMenu: PopUpMenu,
         RadioButtonGroup: RadioButtonGroup,
-
+        ScrollingList: ScrollingList,
+        CheckBoxGroup: CheckBoxGroup,
 
         // export a method to look up components in the hierarchy
         componentWithId: function( nodeId ) {

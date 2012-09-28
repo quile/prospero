@@ -5,7 +5,7 @@ use base qw(
     Prospero::Component::System::ScrollingList
 );
 
-#sub javascript_class { "prospero.CheckBoxGroup" }
+sub javascript_class { "prospero.CheckBoxGroup" }
 
 sub init {
     my ( $self ) = @_;
